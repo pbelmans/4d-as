@@ -2,7 +2,7 @@ baseURL = "/"
 locale = "en-us"
 title = "4-dimensional Artin–Schelter regular algebras"
 disableKinds = ["taxonomy", "term", "RSS"]
-ignoreFiles = ['/data/references\.bib$', '/data/README\.md$']
+ignoreFiles = ['/data/references\.bib$', '/data/README\.md$', '/data/.*\.(blg|bcf|bbl)$']
 
 [markup.goldmark.renderer]
 unsafe = true
