@@ -1,5 +1,6 @@
 name: "Ore extension of commutative"
 kind: "named"
+pym: true
 poisson: true
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true

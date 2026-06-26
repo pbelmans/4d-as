@@ -1,22 +1,42 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
-<h2>Named families</h2>
+
+<h2>Deformations of the polynomial algebra: Pym's six cases</h2>
+<p>The commutative polynomial ring, together with the six irreducible components
+of the variety of quantum deformations of \(\mathbb{P}^3\) classified by Pym
+(<a href="https://arxiv.org/abs/1403.6444">arXiv:1403.6444</a>): the skew
+polynomial ring \(L(1,1,1,1)\), the Sklyanin algebra \(R(2,2)\) and its central
+extension \(R(1,3)\), the Cassidy–Goetz–Shelton algebra \(L(1,1,2)\), the Ore
+extension \(S(2,3)\), and the exceptional component \(E(3)\).</p>
 <table class="family-table">
   <tbody>
-  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "named" }}
+  {{ range sort hugo.Data.families "sortkey" }}{{ if or .pym (eq .slug "commutative") }}
     <tr>
-      <td><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
-      <td>{{ with $f.construction }}{{ . }}{{ end }}</td>
+      <td><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a></td>
+      <td>{{ with .construction }}{{ . }}{{ end }}</td>
     </tr>
   {{ end }}{{ end }}
   </tbody>
 </table>
-<h2>Double Ore families</h2>
+
+<h2>Named families</h2>
+<table class="family-table">
+  <tbody>
+  {{ range sort hugo.Data.families "sortkey" }}{{ if and (eq .kind "named") (not .pym) (ne .slug "commutative") }}
+    <tr>
+      <td><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a></td>
+      <td>{{ with .construction }}{{ . }}{{ end }}</td>
+    </tr>
+  {{ end }}{{ end }}
+  </tbody>
+</table>
+
+<h2>Double Ore extensions</h2>
 <p>The 26 double Ore extensions of Zhang–Zhang, labelled A–Z.</p>
 <ul class="ore-list">
-  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "double-Ore" }}
-  <li><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></li>
+  {{ range sort hugo.Data.families "sortkey" }}{{ if eq .kind "double-Ore" }}
+  <li><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a></li>
   {{ end }}{{ end }}
 </ul>
 {{ end }}
