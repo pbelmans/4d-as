@@ -6,6 +6,9 @@ num_parameters: 2
 hh0: [1, 2, 5]
 hh_qgr: [1, 0, 2, 7]
 point_scheme_dim: 1
+year: 2016
+slug: "s-infinity"
+sortkey: "2016 s-infinity"
 parameters:
   - symbol: "β, γ"
     description: >

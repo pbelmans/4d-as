@@ -5,6 +5,9 @@ quadratic: true
 num_parameters: 4
 hh0: [1, 9, 7]
 point_scheme_dim: 0
+year: 2010
+slug: "cassidy-vancliff-3"
+sortkey: "2010 cassidy-vancliff-3"
 parameters:
   - symbol: "u_{13}, u_{14}, u_{24}, u_{34}"
     description: >

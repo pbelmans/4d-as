@@ -6,6 +6,9 @@ num_parameters: 2
 hh0: [1, 2, 9]
 hh_qgr: [1, 0, 2, 7]
 point_scheme_dim: 1
+year: 1982
+slug: "sklyanin"
+sortkey: "1982 sklyanin"
 parameters:
   - symbol: "β, γ"
     description: >

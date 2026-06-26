@@ -6,6 +6,9 @@ num_parameters: 1
 hh0: [2, 1, 1]
 hh_qgr: [1, 1, 0, 4]
 point_scheme_dim: 1
+year: 2016
+slug: "r3a"
+sortkey: "2016 r3a"
 parameters:
   - symbol: "a"
     description: "A single scalar parameter."

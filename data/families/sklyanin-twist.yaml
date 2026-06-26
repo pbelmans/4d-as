@@ -6,6 +6,9 @@ num_parameters: 2
 hh0: [1, 8, 21]
 hh_qgr: [1, 0, 14, 19]
 point_scheme_dim: 0
+year: 2016
+slug: "sklyanin-twist"
+sortkey: "2016 sklyanin-twist"
 parameters:
   - symbol: "β, γ"
     description: >

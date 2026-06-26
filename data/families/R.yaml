@@ -6,16 +6,15 @@ num_parameters: 1
 hh0: [2, 1, 0]
 hh_qgr: [1, 2, 6, 9]
 point_scheme_dim: 2
+year: 2025
+slug: "ore-r"
+sortkey: "2025 ore-r"
 parameters:
   - symbol: "h"
     description: "deformation parameter (generic scalar)"
 introduced:
   reference: "2511.08390"
   note: "Family R in the classification of Koszul AS-regular algebras of dimension 4 (arXiv:2511.08390)."
-construction: >
-  An iterated Ore extension giving a quadratic Koszul AS-regular algebra of
-  global dimension 4 (a noncommutative \(\mathbb{P}^3\)). Family R is one of
-  the components A–Z of the classification.
 relations:
   - "x_2 x_1 + x_1 x_2"
   - "x_4 x_3 + x_3 x_4"

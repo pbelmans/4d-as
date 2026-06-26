@@ -6,6 +6,9 @@ num_parameters: 6
 hh0: [4, 9, 9]
 hh_qgr: [1, 3, 6, 8]
 point_scheme_dim: 1
+year: 2015
+slug: "pym"
+sortkey: "2015 pym"
 parameters:
   - symbol: "c_1, c_2, c_3, d_1, d_2, d_3"
     description: 'Six scalars; \(b_i = -c_{i-1} - 2\) are determined by the \(c_i\).'

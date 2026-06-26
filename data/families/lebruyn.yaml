@@ -6,6 +6,9 @@ num_parameters: 12
 hh0: [1, 7, 19]
 hh_qgr: [1, 0, 7, 12]
 point_scheme_dim: 1
+year: 1996
+slug: "lebruyn"
+sortkey: "1996 lebruyn"
 parameters:
   - symbol: "a, b, c"
     description: "Coefficients of the three base relations."

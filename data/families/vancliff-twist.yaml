@@ -6,6 +6,9 @@ num_parameters: 3
 hh0: [3, 4, 3]
 hh_qgr: [1, 2, 4, 7]
 point_scheme_dim: 1
+year: 1994
+slug: "vancliff-twist"
+sortkey: "1994 vancliff-twist"
 parameters:
   - symbol: "α, β, λ"
     description: 'Scalars with \(λ \neq αβ\).'
