@@ -10,6 +10,7 @@ sortkey: "2025 a5"
 ks_rank: 1
 ks_inj: false
 ks_surj: true
+centre_z4: 0
 parameters:
   - symbol: "d, a_1, a_4, a_7"
     description: >

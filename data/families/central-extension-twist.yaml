@@ -10,6 +10,7 @@ sortkey: "2025 central-extension-twist"
 ks_rank: 4
 ks_inj: false
 ks_surj: true
+centre_z4: 1
 parameters:
   - symbol: "q, b, c_0, c_1, c_2"
     description: "Five scalar parameters of the twisted central extension."

@@ -15,6 +15,7 @@ ks_inj: true
 ks_surj: false
 centre_z2: 10
 centre_z3: 20
+centre_z4: 35
 normal_1: 3
 normal_2: 9
 introduced:

@@ -15,6 +15,7 @@ ks_inj: true
 ks_surj: true
 centre_z2: 0
 centre_z3: 0
+centre_z4: 0
 normal_1: 0
 normal_2: 0
 parameters:

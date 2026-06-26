@@ -10,6 +10,7 @@ sortkey: "2024 kirkman-t"
 ks_rank: 0
 ks_inj: true
 ks_surj: false
+centre_z4: 2
 parameters: []
 introduced:
   reference: "2410.08959"

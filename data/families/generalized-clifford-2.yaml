@@ -14,6 +14,7 @@ ks_inj: false
 ks_surj: false
 centre_z2: 2
 centre_z3: 0
+centre_z4: 5
 normal_1: -1
 normal_2: 1
 parameters:

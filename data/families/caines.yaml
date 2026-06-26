@@ -15,6 +15,7 @@ ks_inj: false
 ks_surj: false
 centre_z2: 2
 centre_z3: 0
+centre_z4: 3
 parameters:
   - symbol: "a, b, c, d"
     description: "Four scalars (\\(c \\neq 0\\))."

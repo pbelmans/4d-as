@@ -35,8 +35,9 @@ trivial centre in low degrees — the sole exception being the
 
 ## Every family
 
-The number of independent central quadrics and cubics
-(\(\dim \operatorname{Z}(A)_2\), \(\dim \operatorname{Z}(A)_3\)) for every family:
+The number of independent central quadrics, cubics and quartics
+(\(\dim \operatorname{Z}(A)_2\), \(\dim \operatorname{Z}(A)_3\),
+\(\dim \operatorname{Z}(A)_4\)) for every family:
 
 {{< family-table "centre" >}}
 
