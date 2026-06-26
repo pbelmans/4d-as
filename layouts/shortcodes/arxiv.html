@@ -1,3 +1,4 @@
-{{- /* arXiv link; the favicon is attached by CSS. Usage: {{< arxiv "2511.08390" >}} */ -}}
+{{- /* arXiv link; favicon attached by CSS. Usage: {{< arxiv "2511.08390" >}} */ -}}
 {{- $id := .Get 0 -}}
 <a href="https://arxiv.org/abs/{{ $id }}">arXiv:{{ $id }}</a>
+{{- /* trim trailing newline */ -}}
