@@ -16,7 +16,7 @@ Given a flat family of such algebras over a base scheme \(S\), with fibre
 deformation that \(v\) induces. It measures how moving in the base deforms the
 fibre.
 
-Following [arXiv:2511.08390](https://arxiv.org/abs/2511.08390), this gives a
+Following {{< arxiv "2511.08390" >}}, this gives a
 criterion for recognising components of the moduli stack:
 
 - if the Kodaira–Spencer map at \(p\) is **surjective**, the closure of the
