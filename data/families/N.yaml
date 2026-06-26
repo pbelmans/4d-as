@@ -13,6 +13,8 @@ sortkey: "2009 ore-n"
 ks_rank: 2
 ks_inj: false
 ks_surj: true
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "f"
     description: "scalar parameter"

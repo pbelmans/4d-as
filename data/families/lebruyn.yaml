@@ -12,6 +12,8 @@ sortkey: "1996 lebruyn"
 ks_rank: 7
 ks_inj: false
 ks_surj: true
+centre_z2: 1
+centre_z3: 2
 parameters:
   - symbol: "a, b, c"
     description: "Coefficients of the three base relations."

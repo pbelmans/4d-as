@@ -12,6 +12,8 @@ sortkey: "2015 l112sigma"
 ks_rank: 4
 ks_inj: false
 ks_surj: true
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "p_0, p_1, λ, α, β"
     description: >

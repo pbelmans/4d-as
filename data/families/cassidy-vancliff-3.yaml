@@ -11,6 +11,8 @@ sortkey: "2010 cassidy-vancliff-3"
 ks_rank: 4
 ks_inj: true
 ks_surj: false
+centre_z2: 0
+centre_z3: 1
 parameters:
   - symbol: "u_{13}, u_{14}, u_{24}, u_{34}"
     description: >

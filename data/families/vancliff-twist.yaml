@@ -12,6 +12,8 @@ sortkey: "1994 vancliff-twist"
 ks_rank: 3
 ks_inj: true
 ks_surj: false
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "α, β, λ"
     description: 'Scalars with \(λ \neq αβ\).'

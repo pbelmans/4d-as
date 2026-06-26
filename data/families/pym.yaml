@@ -12,6 +12,8 @@ sortkey: "2015 pym"
 ks_rank: 9
 ks_inj: false
 ks_surj: true
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "c_1, c_2, c_3, d_1, d_2, d_3"
     description: 'Six scalars; \(b_i = -c_{i-1} - 2\) are determined by the \(c_i\).'

@@ -12,6 +12,8 @@ sortkey: "2016 s-infinity-twist"
 ks_rank: 2
 ks_inj: true
 ks_surj: false
+centre_z2: 1
+centre_z3: 0
 parameters:
   - symbol: "β, γ"
     description: >

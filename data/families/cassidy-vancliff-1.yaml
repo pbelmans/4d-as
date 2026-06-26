@@ -12,6 +12,8 @@ sortkey: "2010 cassidy-vancliff-1"
 ks_rank: 1
 ks_inj: true
 ks_surj: true
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "α, β"
     description: 'Primitive 4th roots of unity (\(α^2 = β^2 = -1\)).'

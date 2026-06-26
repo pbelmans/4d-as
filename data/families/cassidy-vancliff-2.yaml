@@ -12,6 +12,8 @@ sortkey: "2010 cassidy-vancliff-2"
 ks_rank: 3
 ks_inj: false
 ks_surj: false
+centre_z2: 2
+centre_z3: 0
 parameters:
   - symbol: "α_1, α_2, β_1, β_2"
     description: "Four scalars."

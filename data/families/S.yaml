@@ -13,6 +13,8 @@ sortkey: "2009 ore-s"
 ks_rank: 1
 ks_inj: true
 ks_surj: true
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "h"
     description: "deformation parameter (generic scalar)"

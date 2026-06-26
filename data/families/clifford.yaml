@@ -12,6 +12,8 @@ sortkey: "1995 clifford"
 ks_rank: 9
 ks_inj: false
 ks_surj: true
+centre_z2: 4
+centre_z3: 0
 parameters:
   - symbol: "a_{ijℓ}"
     description: >

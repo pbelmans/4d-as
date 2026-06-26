@@ -12,6 +12,8 @@ sortkey: "1982 sklyanin"
 ks_rank: 2
 ks_inj: true
 ks_surj: true
+centre_z2: 2
+centre_z3: 0
 parameters:
   - symbol: "β, γ"
     description: >

@@ -12,6 +12,8 @@ sortkey: "9999 deformed-skew-1"
 ks_rank: 4
 ks_inj: false
 ks_surj: true
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "q_{13}, q_{14}, q_{23}, q_{24}"
     description: "skew-commutation parameters."

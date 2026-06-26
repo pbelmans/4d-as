@@ -12,6 +12,8 @@ sortkey: "1990 skew"
 ks_rank: 6
 ks_inj: true
 ks_surj: true
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "q_{ij}"
     description: 'one nonzero scalar for each pair \(i < j\) (six in total).'

@@ -13,6 +13,8 @@ sortkey: "2009 ore-d"
 ks_rank: 2
 ks_inj: true
 ks_surj: true
+centre_z2: 0
+centre_z3: 0
 parameters:
   - symbol: "p"
     description: "scalar parameter"
