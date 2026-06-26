@@ -34,4 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
       rows.forEach(function (r) { tbody.appendChild(r); });
     });
   });
+
+  // Filtering: text search + "hide double Ore", composed. Sorting preserves
+  // each row's display state, so the two features integrate.
+  var search = document.getElementById("fam-search");
+  var hideOre = document.getElementById("hide-ore");
+  function applyFilter() {
+    var q = (search ? search.value : "").trim().toLowerCase();
+    Array.prototype.forEach.call(tbody.rows, function (r) {
+      var hidden = hideOre && hideOre.checked && r.getAttribute("data-kind") === "double-Ore";
+      var match = !q || r.textContent.toLowerCase().indexOf(q) !== -1;
+      r.style.display = match && !hidden ? "" : "none";
+    });
+  }
+  if (search) search.addEventListener("input", applyFilter);
+  if (hideOre) hideOre.addEventListener("change", applyFilter);
 });

@@ -5,6 +5,11 @@
 <a href="{{ "families/" | relURL }}">families</a> for the full presentations.
 Click a column heading to sort.</p>
 
+<div class="table-controls">
+  <input type="search" id="fam-search" placeholder="search families…" aria-label="search families">
+  <label><input type="checkbox" id="hide-ore"> hide double Ore</label>
+</div>
+
 <div class="table-responsive">
 <table class="sortable">
   <thead>
@@ -23,7 +28,7 @@ Click a column heading to sort.</p>
   </thead>
   <tbody>
   {{ range sort hugo.Data.families "sortkey" "asc" }}
-    <tr>
+    <tr data-kind="{{ .kind }}">
       <td><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a></td>
       <td>{{ .year }}</td>
       <td>{{ .num_parameters }}</td>
