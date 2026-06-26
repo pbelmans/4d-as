@@ -4,7 +4,7 @@
 <h2>Iterated Ore families</h2>
 <ul>
   {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
-  <li><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></li>
+  <li><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></li>
   {{ end }}{{ end }}
 </ul>
 <h2>Named families</h2>

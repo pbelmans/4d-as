@@ -19,7 +19,7 @@ See <a href="{{ "explained/" | relURL }}">Explained</a> for the definitions and
   <tbody>
   {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
     <tr>
-      <td><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
+      <td><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
       <td>{{ $f.num_parameters }}</td>
       <td>{{ $f.point_scheme_dim }}</td>
       <td>{{ delimit $f.hh0 ", " }}</td>
