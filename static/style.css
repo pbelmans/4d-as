@@ -73,7 +73,6 @@ dl.family-data ul.relations li { padding: 0.05rem 0; }
 table.family-table td { text-align: left; vertical-align: baseline; }
 table.family-table td:first-child { white-space: nowrap; font-family: "Poppins", Georgia, serif; }
 table.family-table td:last-child { color: #444; }
-ul.ore-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; }
 table.overview td { text-align: left; }
 table.overview td:nth-child(2) { text-align: center; }
 

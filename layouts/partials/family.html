@@ -15,7 +15,7 @@
   <dd>{{ with $f.point_scheme }}{{ . }}{{ end }}{{ if isset $f "point_scheme_dim" }}{{ if $f.point_scheme }} (dimension \({{ $f.point_scheme_dim }}\)){{ else }}dimension \({{ $f.point_scheme_dim }}\){{ end }}{{ end }}.</dd>
   {{ end }}
 
-  {{ with $f.centre }}<dt>Centre</dt><dd>{{ . }}.</dd>{{ end }}
+  {{ with $f.centre }}<dt><a href="{{ "explained/centre/" | relURL }}">Centre</a></dt><dd>{{ . }}.</dd>{{ end }}
 
   {{ if isset $f "hh0" }}
   <dt>Hochschild cohomology</dt>

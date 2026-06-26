@@ -51,3 +51,8 @@ If you still use `bibtex`:
 ## Acknowledgements
 
 I would like to thank Colin Ingalls. All remaining mistakes are my own.
+
+This website is part of the
+[CatsiNCAGe project](https://pbelmans.ncag.info/projects/catsincage/). The author
+was supported by the Dutch Research Council (NWO) as part of the grant
+[doi:10.61686/RZKLF82806](https://doi.org/10.61686/RZKLF82806).
