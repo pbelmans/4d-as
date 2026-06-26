@@ -17,7 +17,11 @@ for (const entry of cite.data) {
     template: 'apa',
     lang: 'en-US',
   })
-  refs[entry.id] = { html: html.trim(), DOI: entry.DOI || null }
+  // sort key: first author's family name (fallback: title), lowercased
+  const first = entry.author && entry.author[0]
+  const author = ((first && (first.family || first.literal)) || entry.title || '')
+    .toLowerCase()
+  refs[entry.id] = { key: entry.id, html: html.trim(), DOI: entry.DOI || null, author }
 }
 
 writeFileSync('data/refs.json', JSON.stringify(refs, null, 2) + '\n')

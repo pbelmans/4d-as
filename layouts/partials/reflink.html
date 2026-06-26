@@ -1,3 +1,4 @@
-{{- /* Short inline reference link by citation key -> references page anchor. */ -}}
+{{- /* Inline reference link by citation key -> references page anchor, with source favicon. */ -}}
 {{- $key := . -}}
-<a href="{{ "references/" | relURL }}#ref-{{ $key }}">{{ if hasPrefix $key "MR" }}{{ $key }}{{ else }}arXiv:{{ $key }}{{ end }}</a>
+{{- $icon := cond (hasPrefix $key "MR") "icons/mathscinet.png" "icons/arxiv.ico" -}}
+<a href="{{ "references/" | relURL }}#ref-{{ $key }}"><img class="srcicon" src="{{ $icon | relURL }}" alt="">{{ if hasPrefix $key "MR" }}{{ $key }}{{ else }}arXiv:{{ $key }}{{ end }}</a>

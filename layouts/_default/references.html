@@ -1,9 +1,17 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
-<div class="references">
-  {{ range $k, $ref := hugo.Data.refs }}
-  {{ partial "citation.html" $k }}
+<div class="bibliography">
+  {{ range sort hugo.Data.refs "author" "asc" }}
+  <div class="reference" id="ref-{{ .key }}">
+    {{ .html | safeHTML }}
+    {{ if hasPrefix .key "MR" }}
+    <a href="https://mathscinet.ams.org/mathscinet-getitem?mr={{ strings.TrimPrefix "MR" .key }}"><img class="srcicon" src="{{ "icons/mathscinet.png" | relURL }}" alt="">{{ .key }}</a>
+    {{ else }}
+    <a href="https://arxiv.org/abs/{{ .key }}"><img class="srcicon" src="{{ "icons/arxiv.ico" | relURL }}" alt="">arXiv:{{ .key }}</a>
+    {{ end }}
+    {{ with .DOI }}<a href="https://doi.org/{{ . }}"><img class="srcicon" src="{{ "icons/doi.svg" | relURL }}" alt="">doi</a>{{ end }}
+  </div>
   {{ end }}
 </div>
 {{ end }}
