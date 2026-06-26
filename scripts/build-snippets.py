@@ -90,7 +90,12 @@ def relations(path):
                 rels.append(m.group(1))
             elif ln.strip() and not ln.startswith(" "):
                 break
-    return [mul(norm_ids(r)) for r in rels]
+    # mul() inserts '*' between space-separated factors; fix the few spots where
+    # a factor is really an operator: unary minus "(- a b)" -> "(-*a*b)", and a
+    # division touching a parenthesised group "1/(a b)" -> "1/*(a*b)".
+    def clean(s):
+        return s.replace("-*", "-").replace("/*", "/").replace("*/", "/")
+    return [clean(mul(norm_ids(r))) for r in rels]
 
 
 def derives(path):
