@@ -34,4 +34,4 @@ relations:
 references:
   - "MR3366864"
   - "2511.08390"
-notes: "Point scheme: a line, two conics and two points."
+point_scheme: 'a line, two conics and two points'

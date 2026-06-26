@@ -31,4 +31,4 @@ relations:
 references:
   - "MR1272579"
   - "2511.08390"
-notes: 'Point scheme: five lines (\(K_4\) minus one edge).'
+point_scheme: 'five lines (\(K_4\) minus one edge)'

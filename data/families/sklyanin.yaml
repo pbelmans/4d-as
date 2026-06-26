@@ -37,7 +37,5 @@ references:
   - "MR684124"
   - "MR1175941"
   - "2511.08390"
-notes: >
-  Point scheme: a quartic elliptic curve \(E\) and four points. Centre
-  \(k[Ω_1, Ω_2]\) (GK-dimension \(2\)), so the algebra is not module-finite over
-  its centre when \(σ\) has infinite order.
+point_scheme: 'a quartic elliptic curve \(E\) and four points'
+centre: '\(k[Ω_1, Ω_2]\) (GK-dimension \(2\)); not module-finite over the centre when \(σ\) has infinite order'

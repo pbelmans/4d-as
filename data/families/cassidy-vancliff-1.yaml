@@ -33,4 +33,4 @@ relations:
 references:
   - "MR2580455"
   - "2511.08390"
-notes: "Point scheme: 20 points."
+point_scheme: '20 points'

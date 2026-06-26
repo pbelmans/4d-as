@@ -1,4 +1,4 @@
-name: "central extension of 3d Sklyanin"
+name: "central extension of Sklyanin"
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -39,7 +39,5 @@ relations:
 references:
   - "MR1429334"
   - "2511.08390"
-notes: >
-  \(x_4\) is central. Point scheme: a twisted cubic and 8 points.
-  \(\dim Z_2 = 1\), \(\dim Z_3 = 2\) (a central quadric and central cubics by
-  construction).
+point_scheme: 'a twisted cubic and 8 points'
+centre: '\(\dim Z_2 = 1\), \(\dim Z_3 = 2\) (a central quadric and central cubics by construction); \(x_4\) is central'

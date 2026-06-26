@@ -33,4 +33,4 @@ relations:
 references:
   - "MR3901632"
   - "2511.08390"
-notes: "Point scheme: a line, a conic and a twisted cubic (a bouquet of rational normal curves)."
+point_scheme: 'a line, a conic and a twisted cubic (a bouquet of rational normal curves)'

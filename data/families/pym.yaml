@@ -33,4 +33,4 @@ relations:
 references:
   - "MR3366864"
   - "2511.08390"
-notes: "Point scheme: three lines and a rational normal quartic."
+point_scheme: 'three lines and a rational normal quartic'

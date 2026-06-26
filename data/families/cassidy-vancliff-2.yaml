@@ -31,4 +31,5 @@ relations:
 references:
   - "MR2580455"
   - "2511.08390"
-notes: 'Point scheme: 20 points. \(\dim Z_2 = 2\).'
+point_scheme: '20 points'
+centre: '\(\dim Z_2 = 2\)'

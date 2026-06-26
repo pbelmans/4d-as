@@ -32,4 +32,4 @@ relations:
 references:
   - "MR1272579"
   - "2511.08390"
-notes: 'Point scheme: a line and a quadric surface (dimension \(2\)).'
+point_scheme: 'a line and a quadric surface'

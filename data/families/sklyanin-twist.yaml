@@ -35,6 +35,5 @@ references:
   - "MR3490085"
   - "MR3885145"
   - "2511.08390"
-notes: >
-  Point scheme: 20 points (Davies' theorem). Centre still \(k[Ω_1, Ω_2]\)
-  (GK-dimension \(2\)). The centre is not a cocycle-twist invariant.
+point_scheme: '20 points (Davies'' theorem)'
+centre: 'still \(k[Ω_1, Ω_2]\) (GK-dimension \(2\)); not a cocycle-twist invariant'

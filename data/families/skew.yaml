@@ -35,6 +35,5 @@ references:
   - "MR3527537"
   - "MR1086882"
   - "2511.08390"
-notes: >
-  Point scheme: six lines, the tetrahedron skeleton \(K_4\). Trivial centre in
-  low degrees.
+point_scheme: 'six lines, the tetrahedron skeleton \(K_4\)'
+centre: 'trivial in low degrees'
