@@ -24,11 +24,12 @@
   {{ end }}
 
   {{ if isset $f "hh0" }}
-  <dt>Hochschild cohomology</dt>
-  <dd>
-    <a href="{{ "explained/hochschild-cohomology/" | relURL }}">\(\mathrm{HH}^\bullet_0(A)\)</a> \(= (1, {{ index $f.hh0 0 }}, {{ index $f.hh0 1 }}, {{ index $f.hh0 2 }})\){{ with $f.hh_qgr }}<br>
-    <a href="{{ "explained/hochschild-cohomology-of-qgr/" | relURL }}">\(\mathrm{HH}^\bullet(\operatorname{qgr} A)\)</a> \(= ({{ delimit . ", " }})\){{ end }}
-  </dd>
+  <dt><a href="{{ "explained/hochschild-cohomology/" | relURL }}">Hochschild cohomology of \(A\)</a></dt>
+  <dd>\(\mathrm{HH}^\bullet_0(A) = (1, {{ index $f.hh0 0 }}, {{ index $f.hh0 1 }}, {{ index $f.hh0 2 }})\)</dd>
+  {{ end }}
+  {{ with $f.hh_qgr }}
+  <dt><a href="{{ "explained/hochschild-cohomology-of-qgr/" | relURL }}">Hochschild cohomology of \(\operatorname{qgr} A\)</a></dt>
+  <dd>\(\mathrm{HH}^\bullet(\operatorname{qgr} A) = ({{ delimit . ", " }})\)</dd>
   {{ end }}
 
   {{ if isset $f "ks_rank" }}
