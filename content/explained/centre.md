@@ -8,7 +8,7 @@ The **centre** \(\operatorname{Z}(A)\) of a graded algebra is the graded
 subalgebra of elements commuting with everything. For a generic noncommutative
 \(\mathbb{P}^3\) it is trivial in low degrees (\(\operatorname{Z}(A) = k\)); extra
 central elements signal extra geometry. The classic case is a pencil of
-**central quadrics**, as for the Sklyanin algebra.
+**central quadrics**, as for the [Sklyanin](/families/sklyanin/) algebra.
 
 ## Hilbert series of the centre
 
@@ -22,7 +22,7 @@ with small parameter sets:
 |---|---|
 | generic double Ore | \(1\) (trivial centre) |
 | [Sklyanin](/families/sklyanin/), [Sklyanin twist](/families/sklyanin-twist/) | \(1/(1-t^2)^2\), \(\;\operatorname{Z}(A) = k[\Omega_1, \Omega_2]\) |
-| [\(S_\infty\) twist](/families/s-infinity-twist/) | \(1/(1-t^2)\) |
+| [\(S_\infty\) twist](/families/s-infinity-twist/) | \(1 + t^2 + 2t^4 + 2t^6 + \cdots\) (no closed form) |
 | [Clifford](/families/clifford/) | \(1/(1-t^2)^4\), \(\;\operatorname{Z}(A) = k[x_1^2, x_2^2, x_3^2, x_4^2]\) |
 | [central extension of Sklyanin](/families/lebruyn/) | no closed form (a central degree-1 variable and higher central elements) |
 
@@ -31,8 +31,10 @@ carry extra centre: [Cassidy–Vancliff 2](/families/cassidy-vancliff-2/) has tw
 central quadrics and [Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) a
 central cubic, while [Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) and
 [Shelton–Tingey](/families/shelton-tingey/) acquire central elements first in
-degree 4. All the rest — \(S_\infty\), Vancliff, Pym, R(3, a), L(1,1,2)σ and the
-deformed skew polynomials — have trivial centre in low degrees.
+degree 4. All the rest — [\(S_\infty\)](/families/s-infinity/),
+[Vancliff](/families/vancliff/), [Pym](/families/pym/),
+[R(3, a)](/families/r3a/), [L(1,1,2)σ](/families/l112sigma/) and the deformed
+skew polynomials — have trivial centre in low degrees.
 
 ## Overview
 
