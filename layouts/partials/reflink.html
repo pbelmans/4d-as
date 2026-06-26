@@ -1,5 +1,11 @@
 {{- /* Inline reference link by citation key -> the per-page bibliography entry.
-       The source favicon is attached by CSS via the ref-mr / ref-arxiv class. */ -}}
+       MR / arXiv keys get a source favicon (via the ref-mr / ref-arxiv class);
+       any other key (a thesis, book, …) links plainly. */ -}}
 {{- $key := . -}}
-{{- $cls := cond (hasPrefix $key "MR") "ref-mr" "ref-arxiv" -}}
-<a class="{{ $cls }}" href="#ref-{{ $key }}">{{ if hasPrefix $key "MR" }}{{ $key }}{{ else }}arXiv:{{ $key }}{{ end }}</a>
+{{- if hasPrefix $key "MR" -}}
+<a class="ref-mr" href="#ref-{{ $key }}">{{ $key }}</a>
+{{- else if findRE "^[0-9]+\\.[0-9]" $key -}}
+<a class="ref-arxiv" href="#ref-{{ $key }}">arXiv:{{ $key }}</a>
+{{- else -}}
+<a href="#ref-{{ $key }}">reference</a>
+{{- end -}}

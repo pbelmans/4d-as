@@ -4,6 +4,6 @@
 {{- with $r }}
 <div class="reference" id="ref-{{ $key }}">
   {{ .html | safeHTML }}
-  {{ if hasPrefix $key "MR" }}<a href="https://mathscinet.ams.org/mathscinet-getitem?mr={{ strings.TrimPrefix "MR" $key }}">{{ $key }}</a>{{ else }}<a href="https://arxiv.org/abs/{{ $key }}">arXiv:{{ $key }}</a>{{ end }}{{ with .DOI }} <a href="https://doi.org/{{ . }}">doi</a>{{ end }}
+  {{ if hasPrefix $key "MR" }}<a href="https://mathscinet.ams.org/mathscinet-getitem?mr={{ strings.TrimPrefix "MR" $key }}">{{ $key }}</a>{{ else if findRE "^[0-9]+\\.[0-9]" $key }}<a href="https://arxiv.org/abs/{{ $key }}">arXiv:{{ $key }}</a>{{ end }}{{ with .DOI }} <a href="https://doi.org/{{ . }}">doi</a>{{ end }}
 </div>
 {{- end }}
