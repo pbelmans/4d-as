@@ -46,9 +46,28 @@ th, td { text-align: center; }
 tbody tr:hover { background: #fafafa; }
 
 /* family detail */
-dl.family-data { display: grid; grid-template-columns: max-content 1fr; gap: 0.1rem 0.75rem; }
-dl.family-data dt { font-weight: 500; }
+.lead { font-size: 1.05rem; color: #333; }
+dl.family-data {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1.25rem;
+  align-items: baseline;
+  margin-top: 1.25rem;
+}
+dl.family-data dt {
+  font-family: "Poppins", Georgia, serif;
+  font-weight: 500;
+  color: var(--accent);
+  text-align: right;
+}
 dl.family-data dd { margin: 0; }
+dl.family-data ul.relations,
+dl.family-data ul.params { list-style: none; margin: 0; padding: 0; }
+dl.family-data ul.relations li { padding: 0.05rem 0; }
+@media (max-width: 560px) {
+  dl.family-data { grid-template-columns: 1fr; gap: 0.15rem; }
+  dl.family-data dt { text-align: left; margin-top: 0.6rem; }
+}
 
 /* bibliography */
 .bibliography .reference { margin-bottom: 0.6rem; padding-left: 1.6rem; text-indent: -1.6rem; }

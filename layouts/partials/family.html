@@ -1,29 +1,34 @@
 {{- /* Render one family's details. Context: dict with "f" (family data). */ -}}
 {{- $f := .f -}}
-{{ with $f.construction }}<p>{{ . }}</p>{{ end }}
-<p>Relations:</p>
-<ul class="relations">
-  {{ range $f.relations }}<li>\({{ . }}\)</li>{{ end }}
-</ul>
-{{ with $f.parameters }}
-<p>Parameters:</p>
-<ul>
-  {{ range . }}<li>\({{ .symbol }}\) — {{ .description }}</li>{{ end }}
-</ul>
-{{ end }}
+{{ with $f.construction }}<p class="lead">{{ . }}</p>{{ end }}
 <dl class="family-data">
+  <dt>Relations</dt>
+  <dd><ul class="relations">{{ range $f.relations }}<li>\({{ . }}\)</li>{{ end }}</ul></dd>
+
+  {{ with $f.parameters }}
+  <dt>Parameters</dt>
+  <dd><ul class="params">{{ range . }}<li>\({{ .symbol }}\) — {{ .description }}</li>{{ end }}</ul></dd>
+  {{ end }}
+
   {{ if or $f.point_scheme (isset $f "point_scheme_dim") }}
   <dt>Point scheme</dt>
   <dd>{{ with $f.point_scheme }}{{ . }}{{ end }}{{ if isset $f "point_scheme_dim" }}{{ if $f.point_scheme }} (dimension \({{ $f.point_scheme_dim }}\)){{ else }}dimension \({{ $f.point_scheme_dim }}\){{ end }}{{ end }}.</dd>
   {{ end }}
+
   {{ with $f.centre }}<dt>Centre</dt><dd>{{ . }}.</dd>{{ end }}
+
   {{ if isset $f "hh0" }}
-  <dt><a href="{{ "explained/hochschild-cohomology/" | relURL }}">Hochschild cohomology</a></dt>
-  <dd>\(\mathrm{HH}^\bullet_0(A) = (1, {{ index $f.hh0 0 }}, {{ index $f.hh0 1 }}, {{ index $f.hh0 2 }})\){{ with $f.hh_qgr }}; \(\mathrm{HH}^\bullet(\operatorname{qgr} A) = ({{ delimit . ", " }})\){{ end }}.</dd>
+  <dt>Hochschild cohomology</dt>
+  <dd><a href="{{ "explained/hochschild-cohomology/" | relURL }}">\(\mathrm{HH}^\bullet_0(A)\)</a> \(= (1, {{ index $f.hh0 0 }}, {{ index $f.hh0 1 }}, {{ index $f.hh0 2 }})\){{ with $f.hh_qgr }}; <a href="{{ "explained/hochschild-cohomology-of-qgr/" | relURL }}">\(\mathrm{HH}^\bullet(\operatorname{qgr} A)\)</a> \(= ({{ delimit . ", " }})\){{ end }}.</dd>
   {{ end }}
+
   {{ with $f.notes }}<dt>Notes</dt><dd>{{ . }}</dd>{{ end }}
+
+  <dt>Introduced</dt>
+  <dd>{{ $f.year }}, {{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</dd>
+
+  {{ with $f.references }}
+  <dt>References</dt>
+  <dd>{{ range $i, $r := . }}{{ if $i }}, {{ end }}{{ partial "reflink.html" $r }}{{ end }}</dd>
+  {{ end }}
 </dl>
-<p>Introduced in {{ $f.year }}: {{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</p>
-{{ with $f.references }}
-<p>References: {{ range $i, $r := . }}{{ if $i }}, {{ end }}{{ partial "reflink.html" $r }}{{ end }}.</p>
-{{ end }}
