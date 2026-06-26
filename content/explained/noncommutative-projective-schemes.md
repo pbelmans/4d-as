@@ -7,8 +7,8 @@ math: true
 For a commutative graded ring \(A\), Serre's theorem recovers the projective
 scheme \(\operatorname{Proj} A\) from the category of coherent sheaves, which is
 the quotient of finitely generated graded \(A\)-modules by those of finite
-length. **Artin–Zhang** took this as a *definition* in the noncommutative
-setting.
+length. [Artin–Zhang](/references/#ref-MR1304753) took this as a *definition* in
+the noncommutative setting.
 
 Given a connected graded algebra \(A\), let \(\operatorname{gr} A\) be the
 category of finitely generated graded right \(A\)-modules and
