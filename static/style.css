@@ -18,8 +18,8 @@ h1, h2, h3, h4 {
 
 /* navigation */
 nav#menu { font-size: 14px; }
-nav#menu .nav-link { color: rgba(255, 255, 255, 0.85); }
-nav#menu .nav-link:hover { color: #fff; }
+nav#menu .nav-link { color: #81c3fc; }
+nav#menu .nav-link:hover { color: #d9edf7; }
 
 /* source-link favicons */
 .srcicon { height: 14px; width: auto; vertical-align: -2px; margin-right: 2px; }

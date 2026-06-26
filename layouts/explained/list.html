@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ if not .Params.notitle }}<h1>{{ .Title }}</h1>{{ end }}
+{{ .Content }}
+{{ with .Pages }}
+<h2>Topics</h2>
+<ul>
+  {{ range .ByTitle }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.summary }} — {{ . }}{{ end }}</li>
+  {{ end }}
+</ul>
+{{ end }}
+{{ end }}

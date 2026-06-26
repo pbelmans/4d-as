@@ -12,7 +12,12 @@ const cite = new Cite(bib)
 
 const refs = {}
 for (const entry of cite.data) {
-  const html = new Cite(entry).format('bibliography', {
+  // Format without URL/DOI so no plaintext link (e.g. numdam, doi) ends up in
+  // the citation; we render our own MR/arXiv/DOI links separately.
+  const bare = { ...entry }
+  delete bare.URL
+  delete bare.DOI
+  const html = new Cite(bare).format('bibliography', {
     format: 'html',
     template: 'apa',
     lang: 'en-US',
