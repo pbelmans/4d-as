@@ -6,8 +6,7 @@ properties of four-dimensional Artin–Schelter regular algebras.
 The focus is mostly on the **quadratic** (Koszul) case: algebras presented by
 four generators \(x_1, x_2, x_3, x_4\) and quadratic relations, i.e.
 noncommutative analogues of \(\mathbb{P}^3\). The families and their invariants
-follow [arXiv:2511.08390](https://arxiv.org/abs/2511.08390)
-(Bhatoy–Ingalls–LaRoche–Nookala).
+follow [arXiv:2511.08390](https://arxiv.org/abs/2511.08390).
 
 ## Structure
 

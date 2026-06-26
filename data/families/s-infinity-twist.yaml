@@ -4,6 +4,7 @@ generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 2
 hh0: [1, 8, 17]
+hh_qgr: [1, 0, 14, 19]
 point_scheme_dim: 0
 parameters:
   - symbol: "β, γ"

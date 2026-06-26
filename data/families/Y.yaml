@@ -4,6 +4,7 @@ generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 2
 hh0: [2, 3, 4]
+hh_qgr: [1, 1, 16, 20]
 point_scheme_dim: 1
 parameters:
   - symbol: "f"
@@ -12,7 +13,7 @@ parameters:
     description: "deformation parameter (generic scalar)"
 introduced:
   reference: "2511.08390"
-  note: "Family Y in the classification of Koszul AS-regular algebras of dimension 4 by Bhatoy, Ingalls, LaRoche, Nookala."
+  note: "Family Y in the classification of Koszul AS-regular algebras of dimension 4 (arXiv:2511.08390)."
 construction: >
   An iterated Ore extension giving a quadratic Koszul AS-regular algebra of
   global dimension 4 (a noncommutative projective 3-space). Family Y is one of

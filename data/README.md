@@ -10,8 +10,7 @@ regular algebras of global dimension 4 — i.e. a "noncommutative `P^3`".
 - **Relations** are quadratic expressions understood to be equal to `0`.
   Monomials are written in the order they appear, e.g. `x_3 x_1 - h x_1 x_3`
   means `x_3 x_1 - h·x_1 x_3 = 0`.
-- The families and their invariants are from **arXiv:2511.08390**
-  (Bhatoy–Ingalls–LaRoche–Nookala).
+- The families and their invariants are from **arXiv:2511.08390**.
 
 ## Schema
 
