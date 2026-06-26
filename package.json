@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "bib": "node scripts/build-bib.mjs",
-    "build": "npm run bib && hugo --gc --minify"
+    "data": "python3 scripts/build-data.py",
+    "build": "npm run bib && npm run data && hugo --gc --minify"
   },
   "devDependencies": {
     "@citation-js/core": "^0.7.14",

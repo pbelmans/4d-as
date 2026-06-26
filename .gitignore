@@ -3,3 +3,5 @@
 .hugo_build.lock
 /node_modules/
 /data/refs.json
+/static/data.yaml
+/code/

@@ -10,7 +10,11 @@ generators with quadratic relations — the noncommutative analogues of
 outside its present scope.
 
 The families and their invariants follow
-[arXiv:2511.08390](https://arxiv.org/abs/2511.08390).
+{{< arxiv "2511.08390" >}}.
+
+All of the family data — generators, relations, invariants and references — is
+also available as a single machine-readable file: [data.yaml](/data.yaml),
+assembled from the per-family sources in the repository.
 
 The website is maintained by
 [Pieter Belmans](https://pbelmans.ncag.info).
