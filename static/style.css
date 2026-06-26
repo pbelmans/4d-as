@@ -70,9 +70,12 @@ dl.family-data ul.relations li { padding: 0.05rem 0; }
 }
 
 /* families list page */
-dl.family-list dt { font-family: "Poppins", Georgia, serif; margin-top: 0.6rem; }
-dl.family-list dd { margin: 0 0 0 1rem; color: #444; }
+table.family-table td { text-align: left; vertical-align: baseline; }
+table.family-table td:first-child { white-space: nowrap; font-family: "Poppins", Georgia, serif; }
+table.family-table td:last-child { color: #444; }
 ul.ore-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; }
+table.overview td { text-align: left; }
+table.overview td:nth-child(2) { text-align: center; }
 
 /* bibliography */
 .bibliography .reference { margin-bottom: 0.6rem; padding-left: 1.6rem; text-indent: -1.6rem; }

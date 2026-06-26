@@ -11,7 +11,7 @@
   {{ end }}
 
   {{ if or $f.point_scheme (isset $f "point_scheme_dim") }}
-  <dt>Point scheme</dt>
+  <dt><a href="{{ "explained/point-scheme/" | relURL }}">Point scheme</a></dt>
   <dd>{{ with $f.point_scheme }}{{ . }}{{ end }}{{ if isset $f "point_scheme_dim" }}{{ if $f.point_scheme }} (dimension \({{ $f.point_scheme_dim }}\)){{ else }}dimension \({{ $f.point_scheme_dim }}\){{ end }}{{ end }}.</dd>
   {{ end }}
 
@@ -28,7 +28,7 @@
   {{ with $f.notes }}<dt>Notes</dt><dd>{{ . }}</dd>{{ end }}
 
   <dt>Introduced</dt>
-  <dd>{{ $f.year }}, {{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</dd>
+  <dd>{{ if ne $f.year "?" }}{{ $f.year }}, {{ end }}{{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</dd>
 
   {{ with $f.references }}
   <dt>References</dt>

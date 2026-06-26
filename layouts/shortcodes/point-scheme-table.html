@@ -1,0 +1,15 @@
+{{- /* Overview of every family's point scheme: dimension + succinct description. */ -}}
+<div class="table-responsive">
+<table class="overview">
+  <thead><tr><th>family</th><th>dimension</th><th>point scheme</th></tr></thead>
+  <tbody>
+  {{ range sort hugo.Data.families "sortkey" "asc" }}
+    <tr>
+      <td>{{ partial "famlabel.html" . }}</td>
+      <td>{{ if isset . "point_scheme_dim" }}{{ .point_scheme_dim }}{{ else }}?{{ end }}</td>
+      <td>{{ with .point_scheme }}{{ . }}{{ else }}{{ if eq .kind "double-Ore" }}{{ if eq .point_scheme_dim 2 }}a quadric surface{{ else }}a union of lines{{ end }}{{ else }}—{{ end }}{{ end }}</td>
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
+</div>
