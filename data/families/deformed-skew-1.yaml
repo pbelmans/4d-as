@@ -5,6 +5,8 @@ quadratic: true
 num_parameters: 5
 hh0: [3, 4, 3]
 year: "?"
+point_scheme_dim: 1
+point_scheme: 'three lines and a conic'
 slug: "deformed-skew-1"
 sortkey: "9999 deformed-skew-1"
 ks_rank: 4

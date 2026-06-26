@@ -5,6 +5,8 @@ quadratic: true
 num_parameters: 0
 hh0: [1, 1, 7]
 year: 2001
+point_scheme_dim: 0
+point_scheme: '20 points'
 slug: "shelton-tingey"
 sortkey: "2001 shelton-tingey"
 ks_rank: 0

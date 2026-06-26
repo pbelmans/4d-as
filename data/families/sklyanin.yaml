@@ -42,3 +42,5 @@ references:
   - "2511.08390"
 point_scheme: 'a quartic elliptic curve \(E\) and four points'
 centre: '\(k[Ω_1, Ω_2]\) (GK-dimension \(2\)); not module-finite over the centre when \(σ\) has infinite order'
+code_derive:
+  - "alpha = -(beta + gamma)/(1 + beta*gamma)"
