@@ -16,10 +16,10 @@ extension \((k_Q[x_1, x_2])_P[y_1, y_2; \sigma]\): a quantum plane
 
 ## The 26 families A–Z
 
-These families predate the present work. The four-dimensional AS-regular
-*domains* of the form \((k_Q[x_1, x_2])_P[y_1, y_2; \sigma]\) were classified up
-to isomorphism by [Zhang–Zhang](/references/#ref-MR2529094) (*Double extension
-regular algebras of type (14641)*), who found **26** of them, labelled A–Z.
+The four-dimensional AS-regular *domains* of the form
+\((k_Q[x_1, x_2])_P[y_1, y_2; \sigma]\) were classified up to isomorphism by
+[Zhang–Zhang](/references/#ref-MR2529094) (*Double extension regular algebras of
+type (14641)*), who found **26** of them, labelled A–Z.
 
 The count of 26 comes from reducing the possible presentations using a
 *\(\Sigma\)-\(M\)-duality* (based on twist equivalence): exchanging the roles of

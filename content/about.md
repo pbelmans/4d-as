@@ -23,3 +23,31 @@ The source code lives at
 Comments, corrections, and suggestions are welcome there: please open an
 [issue](https://github.com/pbelmans/4d-as/issues), or
 [send me an email](mailto:p.belmans@uu.nl).
+
+## How to cite
+
+If you use `biblatex`:
+
+```bibtex
+@online{4d-as,
+  author = {Belmans, Pieter},
+  title  = {4d-AS-regular --- the classification of 4-dimensional Artin--Schelter regular algebras},
+  url    = {https://pbelmans.github.io/4d-as},
+  year   = {2026},
+}
+```
+
+If you still use `bibtex`:
+
+```bibtex
+@misc{4d-as,
+  author       = {Belmans, Pieter},
+  title        = {4d-AS-regular --- the classification of 4-dimensional Artin--Schelter regular algebras},
+  howpublished = {\url{https://pbelmans.github.io/4d-as}},
+  year         = {2026},
+}
+```
+
+## Acknowledgements
+
+I would like to thank Colin Ingalls. All remaining mistakes are my own.
