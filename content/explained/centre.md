@@ -10,48 +10,43 @@ subalgebra of elements commuting with everything. For a generic noncommutative
 central elements signal extra geometry. The classic case is a pencil of
 **central quadrics**, as for the [Sklyanin](/families/sklyanin/) algebra.
 
-## Hilbert series of the centre
+## Families with non-trivial centre
 
-Writing
-\(\operatorname{h}_{\operatorname{Z}(A)}(t) = \sum_n \dim_k \operatorname{Z}(A)_n \, t^n\),
-the following were computed over the generic point — i.e. with the rational
-function field \(\mathbb{Q}(\text{params})\) as base field — for the families
-with small parameter sets:
+The dimensions \(\dim \operatorname{Z}(A)_n\) through degree 6, with the centre's
+Hilbert series \(\operatorname{h}_{\operatorname{Z}(A)}(t) = \sum_n \dim_k \operatorname{Z}(A)_n \, t^n\):
 
-| family | \(\operatorname{h}_{\operatorname{Z}(A)}(t)\) |
-|---|---|
-| generic double Ore | \(1\) (trivial centre) |
-| [Sklyanin](/families/sklyanin/), [Sklyanin twist](/families/sklyanin-twist/) | \(1/(1-t^2)^2\), \(\;\operatorname{Z}(A) = k[\Omega_1, \Omega_2]\) |
-| [\(S_\infty\) twist](/families/s-infinity-twist/) | \(1 + t^2 + 2t^4 + 2t^6 + \cdots\) (no closed form) |
-| [Clifford](/families/clifford/) | \(1/(1-t^2)^4\), \(\;\operatorname{Z}(A) = k[x_1^2, x_2^2, x_3^2, x_4^2]\) |
-| [central extension of Sklyanin](/families/lebruyn/) | no closed form (a central degree-1 variable and higher central elements) |
+| family | \(Z_1\) | \(Z_2\) | \(Z_3\) | \(Z_4\) | \(Z_5\) | \(Z_6\) | \(\operatorname{h}_{\operatorname{Z}(A)}(t)\) |
+|---|---|---|---|---|---|---|---|
+| [Sklyanin](/families/sklyanin/), [Sklyanin twist](/families/sklyanin-twist/) | 0 | 2 | 0 | 3 | 0 | 4 | \(1/(1-t^2)^2 = k[\Omega_1, \Omega_2]\) |
+| [Clifford](/families/clifford/) | 0 | 4 | 0 | 10 | 0 | 20 | \(1/(1-t^2)^4 = k[x_1^2, \dots, x_4^2]\) |
+| [Cassidy–Vancliff 2](/families/cassidy-vancliff-2/) | 0 | 2 | 0 | 5 | 0 | 8 | \(1 + 2t^2 + 5t^4 + 8t^6 + \cdots\) |
+| [\(\mathrm{S}_\infty\) twist](/families/s-infinity-twist/) | 0 | 1 | 0 | 2 | 0 | 2 | \(1 + t^2 + 2t^4 + 2t^6 + \cdots\) |
+| [central extension of Sklyanin](/families/lebruyn/) | 1 | 1 | 2 | 2 | 2 | 3 | \(1 + t + t^2 + 2t^3 + 2t^4 + 2t^5 + 3t^6 + \cdots\) |
 
-Among the other small-parameter families, only the graded (skew-)Clifford ones
-carry extra centre: [Cassidy–Vancliff 2](/families/cassidy-vancliff-2/) has two
-central quadrics, while [Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) and
-[Shelton–Tingey](/families/shelton-tingey/) acquire central elements first in
-degree 4. ([Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) is regular only at
-special parameters, where its centre depends on the chosen point.) All the rest —
-[\(S_\infty\)](/families/s-infinity/),
-[Vancliff](/families/vancliff/), [Ore extension of polynomials](/families/ore-extension-of-polynomials/),
-[Jordan](/families/jordan/), [Cassidy–Goetz–Shelton](/families/cassidy-goetz-shelton/) and the
-deformed skew polynomials — have trivial centre in low degrees.
+For Sklyanin and Clifford the centre is an honest polynomial ring — a pencil of
+central quadrics, respectively the four central squares. The
+[Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) and
+[Shelton–Tingey](/families/shelton-tingey/) algebras have trivial centre in
+degree 2 but acquire central elements first in **degree 4**.
+([Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) is regular only at special
+parameters, where its centre depends on the chosen point.) Every other family has
+trivial centre in low degrees — the sole exception being the
+[commutative](/families/commutative/) ring, which is its own centre.
 
-## Overview
+## Every family
 
 The number of independent central quadrics and cubics
 (\(\dim \operatorname{Z}(A)_2\), \(\dim \operatorname{Z}(A)_3\)) for every family:
 
 {{< family-table "centre" >}}
 
-## Status of the computation
+## How it was computed
 
-This is **not yet done for every family**. The dimensions
-\(\dim \operatorname{Z}(A)_1, \operatorname{Z}(A)_2, \operatorname{Z}(A)_3\) were
-computed genuinely over \(\mathbb{Q}(\text{params})\) for the small-parameter
-families above; for the others the values are obtained over a finite field
-\(\mathrm{GF}(p)\) at a generic point, which gives the generic dimension with
-high probability. Computing over \(\mathbb{Q}(\text{params})\) for the families
-with many parameters (Clifford has 24, the Le Bruyn extension 12) is infeasible —
-a Gröbner basis over a function field falls back to a slow algorithm and does
-not terminate.
+The degree-by-degree dimensions above were computed with Macaulay2 over a
+generic point of a finite field \(\mathrm{GF}(p)\) (\(p \equiv 1 \bmod 12\)),
+confirmed at two primes to pin down the generic value; an explicit
+noncommutative Gröbner basis to degree 8 ensures degree-\(\le 6\) central
+elements are not truncated. For the small-parameter families these agree with a
+computation over the function field \(\mathbb{Q}(\text{params})\); with many
+parameters (Clifford has 24, the central extension 12) a function-field Gröbner
+basis does not terminate, which is why the finite-field computation is used.
