@@ -1,0 +1,3 @@
+{{- /* The full invariant table, optionally filtered to one family kind.
+       Usage: {{< big-table >}} or {{< big-table "double-Ore" >}} */ -}}
+{{ partial "big-table.html" (dict "kind" (.Get 0 | default "")) }}

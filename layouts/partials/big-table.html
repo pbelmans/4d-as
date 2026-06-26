@@ -1,0 +1,48 @@
+{{- /* The full invariant table. Context: dict "kind" (optional family-kind filter). */ -}}
+{{- $kind := .kind -}}
+<div class="table-controls">
+  <input type="search" class="fam-search" placeholder="search families…" aria-label="search families">
+  {{ if not $kind }}<label><input type="checkbox" class="hide-ore"> hide double Ore</label>{{ end }}
+</div>
+<div class="table-responsive">
+<table class="sortable">
+  <thead>
+    <tr>
+      <th rowspan="2" data-col="0">family</th>
+      <th rowspan="2" data-col="1">defined</th>
+      <th rowspan="2" data-col="2">parameters</th>
+      <th rowspan="2" data-col="3">dimension point scheme</th>
+      <th class="wide" colspan="3">\(\mathrm{HH}^i_0\)</th>
+      <th class="wide" colspan="3">\(\mathrm{HH}^i(\mathrm{qgr}\,A)\)</th>
+      <th class="wide" rowspan="2" data-col="10">K–S rank</th>
+    </tr>
+    <tr>
+      <th class="wide" data-col="4">1</th><th class="wide" data-col="5">2</th><th class="wide" data-col="6">3</th>
+      <th class="wide" data-col="7">1</th><th class="wide" data-col="8">2</th><th class="wide" data-col="9">3</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{- range sort hugo.Data.families "sortkey" "asc" }}
+  {{- if or (not $kind) (eq .kind $kind) }}
+    <tr data-kind="{{ .kind }}">
+      <td><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a></td>
+      <td>{{ .year }}</td>
+      <td>{{ .num_parameters }}</td>
+      <td>{{ if isset . "point_scheme_dim" }}{{ .point_scheme_dim }}{{ else }}?{{ end }}</td>
+      {{ if isset . "hh0" }}
+      <td class="wide">{{ index .hh0 0 }}</td><td class="wide">{{ index .hh0 1 }}</td><td class="wide">{{ index .hh0 2 }}</td>
+      {{ else }}
+      <td class="wide">?</td><td class="wide">?</td><td class="wide">?</td>
+      {{ end }}
+      {{ with .hh_qgr }}
+      <td class="wide">{{ index . 1 }}</td><td class="wide">{{ index . 2 }}</td><td class="wide">{{ index . 3 }}</td>
+      {{ else }}
+      <td class="wide">—</td><td class="wide">—</td><td class="wide">—</td>
+      {{ end }}
+      <td class="wide">{{ .ks_rank }}</td>
+    </tr>
+  {{- end }}
+  {{- end }}
+  </tbody>
+</table>
+</div>

@@ -21,8 +21,21 @@ The four-dimensional AS-regular *domains* of the form
 [Zhang–Zhang](/references/#ref-MR2529094) (*Double extension regular algebras of
 type (14641)*), who found **26** of them, labelled A–Z.
 
-The count of 26 comes from reducing the possible presentations using a
-*\(\Sigma\)-\(M\)-duality* (based on twist equivalence): exchanging the roles of
-the \(x_i\) and \(y_i\) identifies the **dual pairs**
-\((E, J), (F, I), (N, P), (T, U), (W, Z)\), while \(B, C, M, O, R, S\) are
-**self-dual**. The remaining families complete the list to 26.
+### \(\Sigma\)-\(M\)-duality
+
+The count of 26 comes from a *\(\Sigma\)-\(M\)-duality*. A double Ore extension
+\((k_Q[x_1, x_2])_P[y_1, y_2; \sigma]\) is built from the quantum-plane data
+\(\Sigma = (k_Q, P)\) and the twisting data \(M = \sigma\); swapping the two
+pairs of variables \(x_i \leftrightarrow y_i\) sends a presentation to a dual one
+with the roles of \(\Sigma\) and \(M\) interchanged. Up to this duality (and the
+underlying twist equivalence) there are only 26 algebras. The duality pairs up
+\((E, J), (F, I), (N, P), (T, U), (W, Z)\) — isomorphic via the exchange — while
+\(B, C, M, O, R, S\) are **self-dual**.
+
+The 26 families:
+
+{{< ore-list >}}
+
+Their invariants:
+
+{{< big-table "double-Ore" >}}

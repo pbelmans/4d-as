@@ -1,0 +1,6 @@
+{{- /* The 26 double Ore families, as a list of links. */ -}}
+<ul class="ore-list">
+  {{- range $k, $f := hugo.Data.families }}{{ if eq $f.kind "double-Ore" }}
+  <li><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></li>
+  {{- end }}{{ end }}
+</ul>

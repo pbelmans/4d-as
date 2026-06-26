@@ -25,6 +25,10 @@
   </dd>
   {{ end }}
 
+  {{ if isset $f "ks_rank" }}
+  <dt><a href="{{ "explained/kodaira-spencer-map/" | relURL }}">Kodaira–Spencer</a></dt>
+  <dd>rank \({{ $f.ks_rank }}\); injective: {{ if $f.ks_inj }}yes{{ else }}no{{ end }}; surjective: {{ if $f.ks_surj }}yes{{ else }}no{{ end }}.</dd>
+  {{ end }}
   {{ with $f.notes }}<dt>Notes</dt><dd>{{ . }}</dd>{{ end }}
 
   <dt>Introduced</dt>

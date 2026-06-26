@@ -13,7 +13,7 @@ central elements signal extra geometry. The classic case is a pencil of
 ## Hilbert series of the centre
 
 Writing
-\(\operatorname{h}_{\operatorname{Z}(A)}(t) = \sum_n \bigl(\dim_k \operatorname{Z}(A)_n\bigr)\, t^n\),
+\(\operatorname{h}_{\operatorname{Z}(A)}(t) = \sum_n \dim_k \operatorname{Z}(A)_n \, t^n\),
 the following were computed over the generic point — i.e. with the rational
 function field \(\mathbb{Q}(\text{params})\) as base field — for the families
 with small parameter sets:
@@ -21,10 +21,18 @@ with small parameter sets:
 | family | \(\operatorname{h}_{\operatorname{Z}(A)}(t)\) |
 |---|---|
 | generic double Ore | \(1\) (trivial centre) |
-| Sklyanin, Sklyanin twist | \(1/(1-t^2)^2\), \(\;\operatorname{Z}(A) = k[\Omega_1, \Omega_2]\) |
-| \(S_\infty\) twist | \(1/(1-t^2)\) |
-| Clifford | \(1/(1-t^2)^4\), \(\;\operatorname{Z}(A) = k[x_1^2, x_2^2, x_3^2, x_4^2]\) |
-| Le Bruyn central extension | no closed form (a central degree-1 variable and higher central elements) |
+| [Sklyanin](/families/sklyanin/), [Sklyanin twist](/families/sklyanin-twist/) | \(1/(1-t^2)^2\), \(\;\operatorname{Z}(A) = k[\Omega_1, \Omega_2]\) |
+| [\(S_\infty\) twist](/families/s-infinity-twist/) | \(1/(1-t^2)\) |
+| [Clifford](/families/clifford/) | \(1/(1-t^2)^4\), \(\;\operatorname{Z}(A) = k[x_1^2, x_2^2, x_3^2, x_4^2]\) |
+| [central extension of Sklyanin](/families/lebruyn/) | no closed form (a central degree-1 variable and higher central elements) |
+
+Among the other small-parameter families, only the graded (skew-)Clifford ones
+carry extra centre: [Cassidy–Vancliff 2](/families/cassidy-vancliff-2/) has two
+central quadrics and [Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) a
+central cubic, while [Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) and
+[Shelton–Tingey](/families/shelton-tingey/) acquire central elements first in
+degree 4. All the rest — \(S_\infty\), Vancliff, Pym, R(3, a), L(1,1,2)σ and the
+deformed skew polynomials — have trivial centre in low degrees.
 
 ## Status of the computation
 

@@ -12,7 +12,7 @@ Koszul AS-regular algebras at the point \([A]\).
 
 Given a flat family of such algebras over a base scheme \(S\), with fibre
 \(A_p\) at a point \(p\), the **Kodaira–Spencer map** sends a tangent vector
-\(v \in T_p S\) to the class in \(\mathrm{HH}^2_0(A_p)\) of the first-order
+\(v \in \mathrm{T}_pS\) to the class in \(\mathrm{HH}^2_0(A_p)\) of the first-order
 deformation that \(v\) induces. It measures how moving in the base deforms the
 fibre.
 

@@ -32,7 +32,7 @@ If you use `biblatex`:
 @online{4d-as,
   author = {Belmans, Pieter},
   title  = {4d-AS-regular --- the classification of 4-dimensional Artin--Schelter regular algebras},
-  url    = {https://pbelmans.github.io/4d-as},
+  url    = {https://4d-as.ncag.info},
   year   = {2026},
 }
 ```
@@ -43,7 +43,7 @@ If you still use `bibtex`:
 @misc{4d-as,
   author       = {Belmans, Pieter},
   title        = {4d-AS-regular --- the classification of 4-dimensional Artin--Schelter regular algebras},
-  howpublished = {\url{https://pbelmans.github.io/4d-as}},
+  howpublished = {\url{https://4d-as.ncag.info}},
   year         = {2026},
 }
 ```

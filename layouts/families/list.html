@@ -13,6 +13,7 @@
   </tbody>
 </table>
 <h2>Double Ore families</h2>
+<p>The 26 double Ore extensions of Zhang–Zhang, labelled A–Z.</p>
 <ul class="ore-list">
   {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "double-Ore" }}
   <li><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></li>
