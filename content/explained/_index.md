@@ -72,8 +72,10 @@ were largely classified by
 [Lu–Palmieri–Wu–Zhang](/references/#ref-MR2309153) through the \(A_\infty\)-structure
 on their Ext-algebra (with the underlying machinery developed in a
 [companion paper](/references/#ref-MR2430869)). Unlike the quadratic case, these
-two types carry no classical geometric interpretation — there is no point scheme
-that parametrises their point modules — as discussed in
+two types have no classical geometric interpretation: the
+[noncommutative projective scheme](/explained/noncommutative-projective-schemes/)
+\(\operatorname{qgr} A\) is not \(\operatorname{coh} X\) for a smooth projective
+3-fold \(X\), as discussed in
 [Belmans, *On non-quadratic 4-dimensional Artin–Schelter regular algebras and 3-folds*](https://pbelmans.ncag.info/assets/non-quad-4-dim-as-regular.pdf).
 
 Describing the known families of the quadratic type \((1,4,6,4,1)\) is the
