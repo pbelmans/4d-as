@@ -1,0 +1,14 @@
+{
+  "name": "4d-as",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bib": "node scripts/build-bib.mjs",
+    "build": "npm run bib && hugo --gc --minify"
+  },
+  "devDependencies": {
+    "@citation-js/core": "^0.7.14",
+    "@citation-js/plugin-bibtex": "^0.7.14",
+    "@citation-js/plugin-csl": "^0.7.14"
+  }
+}
