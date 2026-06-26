@@ -22,3 +22,10 @@ This is in general different from the
 they agree for \(\mathbb{P}^3\) and the Sklyanin algebra but differ for the skew,
 twisted and Clifford families, so the qgr cohomology is computed in its own
 right.
+
+## Overview
+
+\(\dim \mathrm{HH}^i(\operatorname{qgr} A)\) for \(i = 1, 2, 3\), where computed
+(\(\mathrm{HH}^0 = k\) always):
+
+{{< family-table "hhqgr" >}}

@@ -27,3 +27,11 @@ criterion for recognising components of the moduli stack:
 Computing \(\mathrm{HH}^2_0\) and this map for each known family is how the paper
 identifies which families sweep out components of \(\mathcal{A}_4\). The columns
 \(\mathrm{HH}^i_0\) in the [table](/) are exactly these Hochschild dimensions.
+
+## Overview
+
+The rank of the Kodaira–Spencer map and whether it is injective / surjective,
+for every family (surjective ⇒ the family is a component; bijective ⇒
+generically finite):
+
+{{< family-table "ks" >}}

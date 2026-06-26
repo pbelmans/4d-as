@@ -28,3 +28,10 @@ deformations, and is identified with the tangent space to the moduli stack at
 This is the deformation theory of the *ring* \(A\). The deformation theory of
 the associated *variety* is captured instead by the
 [Hochschild cohomology of qgr](/explained/hochschild-cohomology-of-qgr/).
+
+## Overview
+
+\(\dim \mathrm{HH}^i_0(A)\) for \(i = 1, 2, 3\), for every family
+(\(\mathrm{HH}^0_0 = 1\) always):
+
+{{< family-table "hh0" >}}

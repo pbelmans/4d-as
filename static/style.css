@@ -69,6 +69,11 @@ th, td { text-align: center; }
 table.sortable th:first-child, table.sortable td:first-child { text-align: left; }
 tbody tr:hover { background: #fafafa; }
 
+/* narrow viewport: show only family, defined, parameters, dim point scheme */
+@media (max-width: 720px) {
+  table.sortable .wide { display: none; }
+}
+
 /* family detail */
 .lead { font-size: 1.05rem; color: #333; }
 dl.family-data {
@@ -99,6 +104,19 @@ table.family-table td:first-child { white-space: nowrap; font-family: "Poppins",
 table.family-table td:last-child { color: #444; }
 table.overview td { text-align: left; }
 table.overview td:nth-child(2) { text-align: center; }
+
+/* code tabs */
+.nav-tabs { margin-top: 0.75rem; }
+.tab-content pre {
+  margin: 0;
+  padding: 0.75rem;
+  background: #f7f7f7;
+  border: 1px solid #dee2e6;
+  border-top: none;
+  overflow-x: auto;
+  font-size: 13px;
+}
+.tab-content code { color: inherit; background: none; white-space: pre; }
 
 /* bibliography */
 .bibliography .reference { margin-bottom: 0.6rem; padding-left: 1.6rem; text-indent: -1.6rem; }

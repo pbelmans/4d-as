@@ -28,4 +28,4 @@ geometric invariant distinguishing the families:
 
 The point scheme of every family on this site:
 
-{{< point-scheme-table >}}
+{{< family-table "point-scheme" >}}

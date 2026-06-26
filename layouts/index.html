@@ -6,8 +6,8 @@
 Click a column heading to sort.</p>
 
 <div class="table-controls">
-  <input type="search" id="fam-search" placeholder="search families…" aria-label="search families">
-  <label><input type="checkbox" id="hide-ore"> hide double Ore</label>
+  <input type="search" class="fam-search" placeholder="search families…" aria-label="search families">
+  <label><input type="checkbox" class="hide-ore"> hide double Ore</label>
 </div>
 
 <div class="table-responsive">
@@ -18,12 +18,13 @@ Click a column heading to sort.</p>
       <th rowspan="2" data-col="1">defined</th>
       <th rowspan="2" data-col="2">parameters</th>
       <th rowspan="2" data-col="3">dimension point scheme</th>
-      <th colspan="3">\(\mathrm{HH}^i_0\)</th>
-      <th colspan="3">\(\mathrm{HH}^i(\mathrm{qgr}\,A)\)</th>
+      <th class="wide" colspan="3">\(\mathrm{HH}^i_0\)</th>
+      <th class="wide" colspan="3">\(\mathrm{HH}^i(\mathrm{qgr}\,A)\)</th>
+      <th class="wide" rowspan="2" data-col="10">K–S rank</th>
     </tr>
     <tr>
-      <th data-col="4">1</th><th data-col="5">2</th><th data-col="6">3</th>
-      <th data-col="7">1</th><th data-col="8">2</th><th data-col="9">3</th>
+      <th class="wide" data-col="4">1</th><th class="wide" data-col="5">2</th><th class="wide" data-col="6">3</th>
+      <th class="wide" data-col="7">1</th><th class="wide" data-col="8">2</th><th class="wide" data-col="9">3</th>
     </tr>
   </thead>
   <tbody>
@@ -34,15 +35,16 @@ Click a column heading to sort.</p>
       <td>{{ .num_parameters }}</td>
       <td>{{ if isset . "point_scheme_dim" }}{{ .point_scheme_dim }}{{ else }}?{{ end }}</td>
       {{ if isset . "hh0" }}
-      <td>{{ index .hh0 0 }}</td><td>{{ index .hh0 1 }}</td><td>{{ index .hh0 2 }}</td>
+      <td class="wide">{{ index .hh0 0 }}</td><td class="wide">{{ index .hh0 1 }}</td><td class="wide">{{ index .hh0 2 }}</td>
       {{ else }}
-      <td>?</td><td>?</td><td>?</td>
+      <td class="wide">?</td><td class="wide">?</td><td class="wide">?</td>
       {{ end }}
       {{ with .hh_qgr }}
-      <td>{{ index . 1 }}</td><td>{{ index . 2 }}</td><td>{{ index . 3 }}</td>
+      <td class="wide">{{ index . 1 }}</td><td class="wide">{{ index . 2 }}</td><td class="wide">{{ index . 3 }}</td>
       {{ else }}
-      <td>—</td><td>—</td><td>—</td>
+      <td class="wide">—</td><td class="wide">—</td><td class="wide">—</td>
       {{ end }}
+      <td class="wide">{{ .ks_rank }}</td>
     </tr>
   {{ end }}
   </tbody>
