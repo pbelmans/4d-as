@@ -11,6 +11,8 @@ sortkey: "2024 kirkman-r"
 ks_rank: 0
 ks_inj: true
 ks_surj: false
+centre_z2: 2
+centre_z3: 0
 centre_z4: 6
 parameters: []
 introduced:
