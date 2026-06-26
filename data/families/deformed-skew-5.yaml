@@ -4,6 +4,7 @@ generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 4
 hh0: [2, 2, 2]
+hh_qgr: [1, 1, 8, 12]
 year: "?"
 point_scheme_dim: 1
 point_scheme: 'a line and a conic'
