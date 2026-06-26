@@ -93,24 +93,43 @@ def relations(path):
     return [mul(norm_ids(r)) for r in rels]
 
 
-def params(rels):
+def derives(path):
+    """Read `code_derive:` — params determined by a constraint, as 'name = expr'
+    (code form), e.g. alpha = -(beta + gamma)/(1 + beta*gamma)."""
+    out, on = [], False
+    for ln in open(path):
+        if re.match(r"^code_derive:", ln):
+            on = True
+            continue
+        if on:
+            m = re.match(r'^\s*-\s*"(.*)"\s*$', ln)
+            if m and "=" in m.group(1):
+                n, e = m.group(1).split("=", 1)
+                out.append((n.strip(), e.strip()))
+            elif ln.strip() and not ln.startswith(" "):
+                break
+    return out
+
+
+def params(rels, derived):
     ids = set()
     for r in rels:
         ids |= set(re.findall(r"[A-Za-z][A-Za-z0-9]*", r))
-    return sorted(ids - {"x1", "x2", "x3", "x4"})
+    return sorted(ids - {"x1", "x2", "x3", "x4"} - set(derived))
 
 
-def m2(rels, ps):
+def m2(rels, ps, ds):
     K = "frac(QQ[%s])" % ", ".join(ps) if ps else "QQ"
     body = ",\n  ".join(rels)
+    der = "".join(f"{n} = {e};\n" for n, e in ds)
     return ('needsPackage "AssociativeAlgebras"\n'
-            f"K = {K};\n"
+            f"K = {K};\n{der}"
             "A = K<|x1,x2,x3,x4|>;\n"
             f"I = ideal {{\n  {body}\n}};\n"
             "B = A/I;")
 
 
-def gap(rels, ps):
+def gap(rels, ps, ds):
     body = ",\n  ".join(rels)
     if ps:
         decl = ('PolyRing := FunctionField(Rationals, [%s]);;\n'
@@ -119,6 +138,7 @@ def gap(rels, ps):
         decl += "".join(f"{p} := indets[{i + 1}];;\n" for i, p in enumerate(ps))
     else:
         decl = "PolyRing := Rationals;;\n"
+    decl += "".join(f"{n} := {e};;\n" for n, e in ds)
     return (decl
             + 'kQ := FreeKAlgebra(PolyRing, 4, "x");;\n'
             + "x1 := kQ.x1;; x2 := kQ.x2;; x3 := kQ.x3;; x4 := kQ.x4;;\n"
@@ -126,13 +146,14 @@ def gap(rels, ps):
             + "A := kQ / rels;;")
 
 
-def magma(rels, ps):
+def magma(rels, ps, ds):
     body = ",\n  ".join(rels)
     if ps:
         K = "K<%s> := RationalFunctionField(Rationals(), %d);" % (", ".join(ps), len(ps))
     else:
         K = "K := Rationals();"
-    return (f"// untested (Magma not available here)\n{K}\n"
+    der = "".join(f"{n} := {e};\n" for n, e in ds)
+    return (f"// untested (Magma not available here)\n{K}\n{der}"
             "F<x1,x2,x3,x4> := FreeAlgebra(K, 4);\n"
             f"rels := [\n  {body}\n];\n"
             "A := quo< F | rels >;")
@@ -142,8 +163,9 @@ snippets = {}
 for f in glob.glob("data/families/*.yaml"):
     key = os.path.basename(f)[:-5]
     rels = relations(f)
-    ps = params(rels)
-    snippets[key] = {"m2": m2(rels, ps), "gap": gap(rels, ps), "magma": magma(rels, ps)}
+    ds = derives(f)
+    ps = params(rels, [n for n, _ in ds])
+    snippets[key] = {"m2": m2(rels, ps, ds), "gap": gap(rels, ps, ds), "magma": magma(rels, ps, ds)}
 
 os.makedirs("data", exist_ok=True)
 json.dump(snippets, open("data/snippets.json", "w"), indent=1, ensure_ascii=False)
