@@ -8,7 +8,7 @@ notitle: true
 
 Let \(k\) be a field and let
 \(A = \bigoplus_{i \geq 0} A_i\) be a connected graded \(k\)-algebra,
-that is, \(A_0 = k\) and \(A\) is finitely generated in degree \(1\).
+that is, \(A_0 = k\), and assume \(A\) is finitely generated.
 Write \(k = A/A_{\geq 1}\) for the trivial module.
 
 The algebra \(A\) is **Artin–Schelter regular** (or *AS-regular*) of
@@ -52,5 +52,20 @@ In low dimensions the AS-regular algebras are completely understood.
   with a line bundle and an automorphism; the quadratic case has three
   generators, the cubic case two.
 
-In dimension \(d = 4\) no full classification is known. Describing the known
-families is the subject of this website.
+In dimension \(d = 4\) no full classification is known. Restricting to algebras
+**generated in degree \(1\)**, the minimal free resolution of the trivial module
+\(k\) takes one of three shapes, labelled by the ranks of its terms:
+
+- **\((1,4,6,4,1)\)** — \(4\) generators and \(6\) relations of degree \(2\), with
+  Hilbert series \(\operatorname{h}_A(t) = \dfrac{1}{(1-t)^4}\). These are exactly
+  the **quadratic** algebras (automatically Koszul): the noncommutative
+  \(\mathbb{P}^3\)'s, and the families catalogued on this site.
+- **\((1,3,4,3,1)\)** — \(3\) generators and \(4\) relations, two of degree \(2\)
+  and two of degree \(3\), with
+  \(\operatorname{h}_A(t) = \dfrac{1}{(1-t)^3(1-t^2)}\).
+- **\((1,2,2,2,1)\)** — \(2\) generators and \(2\) relations, one of degree \(3\)
+  and one of degree \(4\), with
+  \(\operatorname{h}_A(t) = \dfrac{1}{(1-t)^2(1-t^2)(1-t^3)}\).
+
+Describing the known families of the quadratic type \((1,4,6,4,1)\) is the
+subject of this website.
