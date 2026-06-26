@@ -1,4 +1,4 @@
-name: "S∞"
+name: '\(S_\infty\)'
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -9,18 +9,20 @@ point_scheme_dim: 1
 parameters:
   - symbol: "β, γ"
     description: >
-      With α = −(β + γ)/(1 + βγ); α, β, γ nonzero and not ±1.
+      With \(α = -(β + γ)/(1 + βγ)\); \(α, β, γ\) nonzero and not \(\pm 1\).
 introduced:
   reference: "MR3490085"
   note: >
-    One of the degenerate "limit" algebras S∞ arising in Davies' study of
-    cocycle twists of the 4-dimensional Sklyanin algebra; an exotic elliptic
+    One of the degenerate "limit" algebras \(S_\infty\) arising in Davies' study
+    of cocycle twists of the 4-dimensional Sklyanin algebra; an exotic elliptic
     algebra in the sense of Chirvasitu–Smith.
 construction: >
-  S∞ keeps the first four (commutator/anticommutator) Sklyanin relations but
-  replaces the last two by the two quadrics Ω_1 = −x_1² + x_2² + x_3² + x_4²
-  and Ω_2 = x_2² + ((1+α)/(1−β)) x_3² + ((1−α)/(1+γ)) x_4², imposed as relations.
-  This kills the central quadrics yet keeps the elliptic quartic as point scheme.
+  \(S_\infty\) keeps the first four (commutator/anticommutator) Sklyanin
+  relations but replaces the last two by the quadrics
+  \(Ω_1 = -x_1^2 + x_2^2 + x_3^2 + x_4^2\) and
+  \(Ω_2 = x_2^2 + \tfrac{1+α}{1-β} x_3^2 + \tfrac{1-α}{1+γ} x_4^2\), imposed as
+  relations. This kills the central quadrics yet keeps the elliptic quartic as
+  point scheme.
 relations:
   - "(x_1 x_2 - x_2 x_1) - α (x_3 x_4 + x_4 x_3)"
   - "(x_1 x_2 + x_2 x_1) - (x_3 x_4 - x_4 x_3)"
@@ -33,5 +35,6 @@ references:
   - "MR3885145"
   - "2511.08390"
 notes: >
-  Point scheme: quartic elliptic curve E + 4 points (same curve as Sklyanin),
-  although dim Z_2 = 0 (the two quadrics are now relations, not central).
+  Point scheme: a quartic elliptic curve \(E\) and four points (the same curve
+  as Sklyanin), although \(\dim Z_2 = 0\) (the two quadrics are now relations,
+  not central).

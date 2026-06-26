@@ -14,7 +14,7 @@ introduced:
   note: "Family V in the classification of Koszul AS-regular algebras of dimension 4 (arXiv:2511.08390)."
 construction: >
   An iterated Ore extension giving a quadratic Koszul AS-regular algebra of
-  global dimension 4 (a noncommutative projective 3-space). Family V is one of
+  global dimension 4 (a noncommutative \(\mathbb{P}^3\)). Family V is one of
   the components A–Z of the classification.
 relations:
   - "x_2 x_1 - x_1 x_2"

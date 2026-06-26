@@ -1,4 +1,4 @@
-name: "Le Bruyn central extension"
+name: "central extension of 3d Sklyanin"
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -9,25 +9,27 @@ point_scheme_dim: 1
 parameters:
   - symbol: "a, b, c"
     description: "Coefficients of the three base relations."
-  - symbol: "α_1, α_2, α_3 and l_{ij}"
+  - symbol: "α_1, α_2, α_3, l_{ij}"
     description: >
-      The data of a central element: a symmetric 3 × 3 matrix (l_{ij}) and a
-      vector (α_i), describing how the central generator x_4 enters.
+      The data of a central element: a symmetric \(3 \times 3\) matrix
+      \((l_{ij})\) and a vector \((α_i)\), describing how the central generator
+      \(x_4\) enters.
 introduced:
   reference: "MR1429334"
   note: >
     A central extension of a 3-dimensional Artin–Schelter regular algebra, in
     the sense of Le Bruyn–Smith–Van den Bergh.
 construction: >
-  Start from a 3-dimensional regular algebra on x_1, x_2, x_3 (here of
-  Sklyanin/elliptic type) and adjoin a central generator x_4 = z, deforming the
-  three defining relations by terms linear in z plus a multiple of z². The
-  extension is again regular, of dimension 4, and is the generic way to build a
-  noncommutative P^3 with a central hyperplane variable.
+  Start from a 3-dimensional regular algebra on \(x_1, x_2, x_3\) (here of
+  Sklyanin/elliptic type) and adjoin a central generator \(x_4 = z\), deforming
+  the three defining relations by terms linear in \(z\) plus a multiple of
+  \(z^2\). The extension is again regular, of dimension 4, and is the generic
+  way to build a noncommutative \(\mathbb{P}^3\) with a central hyperplane
+  variable.
 relations:
-  - "c x_1^2 + a x_2 x_3 + b x_3 x_2 + l11 x_1 x_4 + l12 x_2 x_4 + l13 x_3 x_4 + α_1 x_4^2"
-  - "c x_2^2 + a x_3 x_1 + b x_1 x_3 + l12 x_1 x_4 + l22 x_2 x_4 + l23 x_3 x_4 + α_2 x_4^2"
-  - "c x_3^2 + a x_1 x_2 + b x_2 x_1 + l13 x_1 x_4 + l23 x_2 x_4 + l33 x_3 x_4 + α_3 x_4^2"
+  - "c x_1^2 + a x_2 x_3 + b x_3 x_2 + l_{11} x_1 x_4 + l_{12} x_2 x_4 + l_{13} x_3 x_4 + α_1 x_4^2"
+  - "c x_2^2 + a x_3 x_1 + b x_1 x_3 + l_{12} x_1 x_4 + l_{22} x_2 x_4 + l_{23} x_3 x_4 + α_2 x_4^2"
+  - "c x_3^2 + a x_1 x_2 + b x_2 x_1 + l_{13} x_1 x_4 + l_{23} x_2 x_4 + l_{33} x_3 x_4 + α_3 x_4^2"
   - "x_1 x_4 - x_4 x_1"
   - "x_2 x_4 - x_4 x_2"
   - "x_3 x_4 - x_4 x_3"
@@ -35,5 +37,6 @@ references:
   - "MR1429334"
   - "2511.08390"
 notes: >
-  x_4 is central. Point scheme: twisted cubic + 8 points. dim Z_2 = 1,
-  dim Z_3 = 2 (a central quadric and central cubics by construction).
+  \(x_4\) is central. Point scheme: a twisted cubic and 8 points.
+  \(\dim Z_2 = 1\), \(\dim Z_3 = 2\) (a central quadric and central cubics by
+  construction).

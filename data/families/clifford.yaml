@@ -7,11 +7,11 @@ hh0: [1, 9, 19]
 hh_qgr: [1, 0, 15, 20]
 point_scheme_dim: 0
 parameters:
-  - symbol: "a_{ij,l} (24 scalars)"
+  - symbol: "a_{ijℓ}"
     description: >
-      For each pair i < j, the four coefficients of x_1², x_2², x_3², x_4² in
-      the corresponding relation — equivalently four symmetric matrices of
-      quadrics.
+      For each pair \(i < j\), the four coefficients of \(x_1^2, x_2^2, x_3^2,
+      x_4^2\) in the corresponding relation — equivalently four symmetric
+      matrices of quadrics (24 scalars).
 introduced:
   reference: "MR2580455"
   note: >
@@ -19,19 +19,19 @@ introduced:
     studied by Cassidy–Vancliff.
 construction: >
   Each pair of generators anticommutes up to a quadratic correction that is a
-  linear combination of the squares x_l². Equivalently the algebra is
-  determined by a symmetric 4 × 4 matrix of quadratic forms; it is
+  linear combination of the squares \(x_ℓ^2\). Equivalently the algebra is
+  determined by a symmetric \(4 \times 4\) matrix of quadratic forms; it is
   Artin–Schelter regular exactly when the associated system of quadrics is
-  base-point free. The four squares span a 4-dimensional space of central
+  base-point free. The four squares span a \(4\)-dimensional space of central
   quadrics.
 relations:
-  - "x_1 x_2 + x_2 x_1 + a121 x_1^2 + a122 x_2^2 + a123 x_3^2 + a124 x_4^2"
-  - "x_1 x_3 + x_3 x_1 + a131 x_1^2 + a132 x_2^2 + a133 x_3^2 + a134 x_4^2"
-  - "x_1 x_4 + x_4 x_1 + a141 x_1^2 + a142 x_2^2 + a143 x_3^2 + a144 x_4^2"
-  - "x_2 x_3 + x_3 x_2 + a231 x_1^2 + a232 x_2^2 + a233 x_3^2 + a234 x_4^2"
-  - "x_2 x_4 + x_4 x_2 + a241 x_1^2 + a242 x_2^2 + a243 x_3^2 + a244 x_4^2"
-  - "x_3 x_4 + x_4 x_3 + a341 x_1^2 + a342 x_2^2 + a343 x_3^2 + a344 x_4^2"
+  - "x_1 x_2 + x_2 x_1 + a_{121} x_1^2 + a_{122} x_2^2 + a_{123} x_3^2 + a_{124} x_4^2"
+  - "x_1 x_3 + x_3 x_1 + a_{131} x_1^2 + a_{132} x_2^2 + a_{133} x_3^2 + a_{134} x_4^2"
+  - "x_1 x_4 + x_4 x_1 + a_{141} x_1^2 + a_{142} x_2^2 + a_{143} x_3^2 + a_{144} x_4^2"
+  - "x_2 x_3 + x_3 x_2 + a_{231} x_1^2 + a_{232} x_2^2 + a_{233} x_3^2 + a_{234} x_4^2"
+  - "x_2 x_4 + x_4 x_2 + a_{241} x_1^2 + a_{242} x_2^2 + a_{243} x_3^2 + a_{244} x_4^2"
+  - "x_3 x_4 + x_4 x_3 + a_{341} x_1^2 + a_{342} x_2^2 + a_{343} x_3^2 + a_{344} x_4^2"
 references:
   - "MR2580455"
   - "2511.08390"
-notes: "Point scheme: 20 points. dim Z_2 = 4 (the four squares are central)."
+notes: 'Point scheme: 20 points. \(\dim Z_2 = 4\) (the four squares are central).'

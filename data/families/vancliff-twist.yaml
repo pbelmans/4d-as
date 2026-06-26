@@ -8,7 +8,7 @@ hh_qgr: [1, 2, 4, 7]
 point_scheme_dim: 1
 parameters:
   - symbol: "α, β, λ"
-    description: "Scalars with λ ≠ αβ."
+    description: 'Scalars with \(λ \neq αβ\).'
 introduced:
   reference: "MR1272579"
   note: >
@@ -16,8 +16,8 @@ introduced:
     components classified in arXiv:2511.08390.
 construction: >
   Obtained from the Vancliff algebra by changing the sign in the relations
-  involving x_4 (so two q-commutators become q-anticommutators). The point
-  scheme degenerates to a configuration of five lines.
+  involving \(x_4\) (so two \(q\)-commutators become \(q\)-anticommutators). The
+  point scheme degenerates to a configuration of five lines.
 relations:
   - "x_2 x_1 - α x_1 x_2"
   - "x_3 x_1 - λ x_1 x_3"
@@ -28,4 +28,4 @@ relations:
 references:
   - "MR1272579"
   - "2511.08390"
-notes: "Point scheme: five lines (K_4 minus one edge)."
+notes: 'Point scheme: five lines (\(K_4\) minus one edge).'

@@ -10,13 +10,13 @@ parameters:
   - symbol: "h"
     description: "deformation parameter (generic scalar)"
   - symbol: "p"
-    description: "p is a primitive 4th root of unity (p^2 = -1)"
+    description: '\(p\) is a primitive 4th root of unity (\(p^2 = -1\))'
 introduced:
   reference: "2511.08390"
   note: "Family B in the classification of Koszul AS-regular algebras of dimension 4 (arXiv:2511.08390)."
 construction: >
   An iterated Ore extension giving a quadratic Koszul AS-regular algebra of
-  global dimension 4 (a noncommutative projective 3-space). Family B is one of
+  global dimension 4 (a noncommutative \(\mathbb{P}^3\)). Family B is one of
   the components A–Z of the classification.
 relations:
   - "x_2 x_1 - p x_1 x_2"
@@ -25,4 +25,4 @@ relations:
   - "x_3 x_2 + h (- x_1 x_4)"
   - "x_4 x_1 + h (x_2 x_3)"
   - "x_4 x_2 + h (- x_1 x_3)"
-notes: "Requires a primitive 4th root of unity p (p^2 = -1) in the base field."
+notes: 'Requires a primitive 4th root of unity \(p\) with \(p^2 = -1\) in the base field.'

@@ -9,18 +9,18 @@ point_scheme_dim: 0
 parameters:
   - symbol: "β, γ"
     description: >
-      As for the Sklyanin algebra, with α = −(β + γ)/(1 + βγ).
+      As for the Sklyanin algebra, with \(α = -(β + γ)/(1 + βγ)\).
 introduced:
   reference: "MR3490085"
   note: >
     The cocycle twist of the 4-dimensional Sklyanin algebra by the Klein
-    four-group G = (Z/2)^2, studied by Davies.
+    four-group \(G = (\mathbb{Z}/2)^2\), studied by Davies.
 construction: >
   A 2-cocycle (comodule) twist preserves Hilbert series and AS-regularity but
   changes the geometry: the elliptic point scheme of the Sklyanin algebra is
   replaced by exactly 20 point modules together with infinitely many fat-point
-  modules of multiplicity 2 (Davies). It is an "exotic elliptic algebra" in the
-  sense of Chirvasitu–Smith. The pencil of central quadrics is preserved.
+  modules of multiplicity \(2\) (Davies). It is an "exotic elliptic algebra" in
+  the sense of Chirvasitu–Smith. The pencil of central quadrics is preserved.
 relations:
   - "(x_1 x_2 - x_2 x_1) - α (x_3 x_4 - x_4 x_3)"
   - "(x_1 x_2 + x_2 x_1) - (x_3 x_4 + x_4 x_3)"
@@ -33,5 +33,5 @@ references:
   - "MR3885145"
   - "2511.08390"
 notes: >
-  Point scheme: 20 points (Davies' theorem). Centre still k[Ω_1, Ω_2]
-  (GK-dimension 2). The centre is not a cocycle-twist invariant.
+  Point scheme: 20 points (Davies' theorem). Centre still \(k[Ω_1, Ω_2]\)
+  (GK-dimension \(2\)). The centre is not a cocycle-twist invariant.

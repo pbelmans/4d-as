@@ -9,15 +9,16 @@ parameters:
   - symbol: "u_{13}, u_{14}, u_{24}, u_{34}"
     description: >
       Four scalars subject to a constraint variety for regularity
-      (u_{34}² = 1, u_{34} = u_{24}, u_{14}² = u_{13}²).
+      (\(u_{34}^2 = 1\), \(u_{34} = u_{24}\), \(u_{14}^2 = u_{13}^2\)).
 introduced:
   reference: "MR2580455"
   note: >
     A graded skew Clifford / complete-intersection example of Cassidy–Vancliff.
 construction: >
-  A graded skew Clifford algebra in which three pairs q-commute and the
-  remaining relations couple the squares x_1², x_4² to the products x_2 x_3,
-  x_2 x_4. Regularity holds only on a constraint subvariety of the parameters.
+  A graded skew Clifford algebra in which three pairs \(q\)-commute and the
+  remaining relations couple the squares \(x_1^2, x_4^2\) to the products
+  \(x_2 x_3, x_2 x_4\). Regularity holds only on a constraint subvariety of the
+  parameters.
 relations:
   - "x_1 x_3 + u_{13} x_3 x_1"
   - "x_1 x_4 + u_{14} x_4 x_1"

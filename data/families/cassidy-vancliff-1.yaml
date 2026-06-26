@@ -8,7 +8,7 @@ hh_qgr: [1, 0, 16, 21]
 point_scheme_dim: 0
 parameters:
   - symbol: "α, β"
-    description: "Primitive 4th roots of unity (α² = β² = −1)."
+    description: 'Primitive 4th roots of unity (\(α^2 = β^2 = -1\)).'
   - symbol: "γ"
     description: "A nonzero scalar."
 introduced:
@@ -17,9 +17,9 @@ introduced:
     An example of a graded skew Clifford algebra of Cassidy–Vancliff.
 construction: >
   A graded skew Clifford algebra: the symmetric Clifford relations are twisted
-  by roots of unity, so x_4, x_1 and x_3, x_2 skew-commute while the remaining
-  relations carry quadratic corrections. Such algebras are regular when the
-  defining quadrics are normalizing and base-point free.
+  by roots of unity, so \(x_4, x_1\) and \(x_3, x_2\) skew-commute while the
+  remaining relations carry quadratic corrections. Such algebras are regular
+  when the defining quadrics are normalizing and base-point free.
 relations:
   - "x_4 x_1 - α x_1 x_4"
   - "x_3 x_2 - β x_2 x_3"

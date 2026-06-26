@@ -9,20 +9,20 @@ point_scheme_dim: 1
 parameters:
   - symbol: "β, γ"
     description: >
-      Two scalar parameters; the third is α = −(β + γ)/(1 + βγ), so that
-      α + β + γ + αβγ = 0. Generic (β, γ) with α, β, γ ∉ {0, ±1}.
+      Two scalar parameters; the third is \(α = -(β + γ)/(1 + βγ)\), so that
+      \(α + β + γ + αβγ = 0\). Generic \((β, γ)\) with \(α, β, γ \notin \{0, \pm 1\}\).
 introduced:
   reference: "MR684124"
   note: >
     The 4-dimensional Sklyanin algebra, introduced by Sklyanin (1982/1983) in
-    connection with the quantum Yang–Baxter equation and elliptic R-matrices.
+    connection with the quantum Yang–Baxter equation and elliptic \(R\)-matrices.
     Its Artin–Schelter regularity was established by Smith–Stafford.
 construction: >
-  The "elliptic" noncommutative P^3. The algebra is built from an elliptic
-  curve E together with a translation automorphism σ: the six quadratic
-  relations encode theta-function identities on E, and the point scheme is
-  E itself (a quartic) together with four σ-fixed points. It carries a pencil
-  of central quadrics k[Ω_1, Ω_2].
+  The "elliptic" noncommutative \(\mathbb{P}^3\). The algebra is built from an
+  elliptic curve \(E\) together with a translation automorphism \(σ\): the six
+  quadratic relations encode theta-function identities on \(E\), and the point
+  scheme is \(E\) itself (a quartic) together with four \(σ\)-fixed points. It
+  carries a pencil of central quadrics \(k[Ω_1, Ω_2]\).
 relations:
   - "(x_1 x_2 - x_2 x_1) - α (x_3 x_4 + x_4 x_3)"
   - "(x_1 x_2 + x_2 x_1) - (x_3 x_4 - x_4 x_3)"
@@ -35,6 +35,6 @@ references:
   - "MR1175941"
   - "2511.08390"
 notes: >
-  Point scheme: quartic elliptic curve E + 4 points. Centre: k[Ω_1, Ω_2]
-  (GK-dimension 2), so the algebra is not module-finite over its centre for
-  σ of infinite order.
+  Point scheme: a quartic elliptic curve \(E\) and four points. Centre
+  \(k[Ω_1, Ω_2]\) (GK-dimension \(2\)), so the algebra is not module-finite over
+  its centre when \(σ\) has infinite order.

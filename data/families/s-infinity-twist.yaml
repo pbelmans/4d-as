@@ -1,4 +1,4 @@
-name: "S∞ twist"
+name: '\(S_\infty\) twist'
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -9,17 +9,18 @@ point_scheme_dim: 0
 parameters:
   - symbol: "β, γ"
     description: >
-      With α = −(β + γ)/(1 + βγ); α, β, γ nonzero and not ±1.
+      With \(α = -(β + γ)/(1 + βγ)\); \(α, β, γ\) nonzero and not \(\pm 1\).
 introduced:
   reference: "MR3490085"
   note: >
-    The cocycle twist of S∞ by the Klein four-group, in the same family of
-    exotic elliptic algebras studied by Davies and by Chirvasitu–Smith.
+    The cocycle twist of \(S_\infty\) by the Klein four-group, in the same family
+    of exotic elliptic algebras studied by Davies and by Chirvasitu–Smith.
 construction: >
-  As for S∞, but the surviving Sklyanin relations are twisted (commutators
-  exchanged with anticommutators) and the signs in the two quadrics change.
-  The twist trades the elliptic point scheme for 20 points and produces a
-  single central quadric whose symbol is the smooth hyperbolic form P^1 × P^1.
+  As for \(S_\infty\), but the surviving Sklyanin relations are twisted
+  (commutators exchanged with anticommutators) and the signs in the two quadrics
+  change. The twist trades the elliptic point scheme for 20 points and produces
+  a single central quadric whose symbol is the smooth hyperbolic form
+  \(\mathbb{P}^1 \times \mathbb{P}^1\).
 relations:
   - "(x_1 x_2 - x_2 x_1) - α (x_3 x_4 - x_4 x_3)"
   - "(x_1 x_2 + x_2 x_1) - (x_3 x_4 + x_4 x_3)"
@@ -32,5 +33,5 @@ references:
   - "MR3885145"
   - "2511.08390"
 notes: >
-  Point scheme: 20 points. dim Z_2 = 1; the central quadric is a smooth
-  P^1 × P^1.
+  Point scheme: 20 points. \(\dim Z_2 = 1\); the central quadric is a smooth
+  \(\mathbb{P}^1 \times \mathbb{P}^1\).

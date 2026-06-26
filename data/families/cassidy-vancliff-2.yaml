@@ -16,7 +16,8 @@ introduced:
 construction: >
   Another graded skew Clifford algebra, presented through symmetric and
   skew-symmetric relations whose quadratic corrections are multiples of the
-  squares x_2², x_3². It carries a 2-dimensional space of central quadrics.
+  squares \(x_2^2, x_3^2\). It carries a \(2\)-dimensional space of central
+  quadrics.
 relations:
   - "x_3 x_1 + x_1 x_3 - β_2 x_2^2"
   - "x_4 x_1 + x_1 x_4 - α_2 x_3^2"
@@ -27,4 +28,4 @@ relations:
 references:
   - "MR2580455"
   - "2511.08390"
-notes: "Point scheme: 20 points. dim Z_2 = 2."
+notes: 'Point scheme: 20 points. \(\dim Z_2 = 2\).'
