@@ -9,7 +9,8 @@ generators with quadratic relations — the noncommutative analogues of
 \(\mathbb{P}^3\). The non-quadratic cases are outside its present scope.
 
 The families and their invariants follow
-{{< arxiv "2511.08390" >}}.
+{{< arxiv "2511.08390" >}}. The works cited throughout are collected in the
+[bibliography](/references/).
 
 All of the family data — generators, relations, invariants and references — is
 also available as a single machine-readable file: [data.yaml](/data.yaml),
