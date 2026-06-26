@@ -3,22 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}4d-AS-regular{{ else }}{{ .Title }} · 4d-AS-regular{{ end }}</title>
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
   {{ if .Params.math }}
   <script>MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] } };</script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
   {{ end }}
 </head>
 <body>
-  <nav>
-    <a href="{{ "/" | relURL }}">Home</a> ·
-    <a href="{{ "/families/" | relURL }}">Families</a> ·
-    <a href="{{ "/explained/" | relURL }}">Explained</a> ·
-    <a href="{{ "/references/" | relURL }}">References</a> ·
-    <a href="{{ "/about/" | relURL }}">About</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0" id="menu">
+    <div class="container-fluid">
+      <button class="navbar-toggler ms-2 my-1" type="button" data-bs-toggle="collapse" data-bs-target="#menu-items" aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu-items">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link py-2" href="{{ "/families/" | relURL }}">families</a></li>
+          <li class="nav-item"><a class="nav-link py-2" href="{{ "/explained/" | relURL }}">explained</a></li>
+          <li class="nav-item"><a class="nav-link py-2" href="{{ "/references/" | relURL }}">references</a></li>
+          <li class="nav-item"><a class="nav-link py-2" href="{{ "/posts/" | relURL }}">updates</a></li>
+          <li class="nav-item"><a class="nav-link py-2" href="{{ "/about/" | relURL }}">about</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <main>
+  <div id="title" class="border-bottom text-center py-2">
+    <h1 class="mb-0"><a href="{{ "/" | relURL }}">4<span class="d">d</span>-<span class="as">AS</span>-regular</a></h1>
+    <p id="slogan" class="mb-1">the classification of 4-dimensional Artin&ndash;Schelter regular algebras</p>
+  </div>
+  <main class="container py-3">
     {{ block "main" . }}{{ end }}
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="{{ "sort.js" | relURL }}"></script>
 </body>
 </html>
