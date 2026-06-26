@@ -21,21 +21,37 @@ generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 2          # number of scalar parameters
 hh0: [1, 2, 9]             # graded HH^*_0 in degrees 1, 2, 3 (arXiv:2511.08390)
-hh_qgr: [1, 0, 2, 7]       # directly computed HH^*(qgr A), where known (optional)
+hh_qgr: [1, 0, 2, 7]       # directly computed HH^*(qgr A) in degrees 0–3 (optional)
 point_scheme_dim: 1        # dimension of the point scheme
+point_scheme: "..."        # succinct description of the point scheme
 year: 1982                 # year of first definition (the introducing work)
 slug: "sklyanin"           # URL slug under /families/ (ore-a, ore-b, … for A–Z)
+sortkey: "1982 sklyanin"   # "<year> <slug>"; drives the default table order
+ks_rank: 2                 # rank of the Kodaira–Spencer map
+ks_inj: true               # is it injective?
+ks_surj: true              # is it surjective?
+centre_z2: 2               # dim Z(A)_2 (central quadrics)
+centre_z3: 0               # dim Z(A)_3 (central cubics)
+normal_1: -1               # proj. dim of the normal locus in degree 1 (-1 = none)
+normal_2: 1                # proj. dim of the normal locus in degree 2
 parameters:                # symbols + constraints
   - symbol: "β, γ"
     description: "..."
 introduced:                # where the family was first constructed
-  reference: "..."
+  reference: "..."         # citation key (MRxxxxxxx or arXiv id)
   note: "..."
 construction: >            # the idea behind the construction
   ...
 relations:                 # each expression = 0
   - "..."
-references:                # further literature
+code_derive:               # parameters fixed by a constraint, in code form (optional)
+  - "alpha = -(beta + gamma)/(1 + beta*gamma)"
+references:                # further literature (citation keys)
   - "..."
-notes: "..."               # geometry: point scheme, centre, ... (optional)
+notes: "..."               # other remarks, e.g. a parameter constraint (optional)
 ```
+
+Computed invariants (`hh0`, `hh_qgr`, `point_scheme_dim`, `centre_z*`,
+`normal_*`, the `ks_*` fields) come from arXiv:2511.08390 and from the
+reproduction scripts in `code/`. Fields that are absent (e.g. an un-computed
+`point_scheme_dim`) render as `?`.
