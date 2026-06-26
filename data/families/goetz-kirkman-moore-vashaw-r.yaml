@@ -1,4 +1,4 @@
-name: "Kirkman R"
+name: "Goetz–Kirkman–Moore–Vashaw R"
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -6,8 +6,8 @@ num_parameters: 0
 hh0: [2, 12, 22]
 hh_qgr: [1, 3, 21, 23]
 year: 2024
-slug: "kirkman-r"
-sortkey: "2024 kirkman-r"
+slug: "goetz-kirkman-moore-vashaw-r"
+sortkey: "2024 goetz-kirkman-moore-vashaw-r"
 ks_rank: 0
 ks_inj: true
 ks_surj: false
@@ -18,10 +18,9 @@ parameters: []
 introduced:
   reference: "2410.08959"
   note: >
-    The algebra "R" of Goetz–Kirkman–Moore–Vashaw, one of a trio of rigid
-    (parameter-free) regular algebras arising from dual reflection groups. It is
-    listed in Table 8 of arXiv:2511.08390 with relations taken from
-    [arXiv:2410.08959, page 10].
+    The algebra "R" of Goetz–Kirkman–Moore–Vashaw, one of three dimension-four
+    Artin–Schelter regular algebras they construct from a dual reflection group
+    of order 16. It is a rigid (parameter-free) example.
 construction: >
   A monomial-type quadratic algebra with no scalar parameters, built from the
   combinatorics of a dual reflection group. Each relation pairs two distinct

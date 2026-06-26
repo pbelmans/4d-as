@@ -1,4 +1,4 @@
-name: "Kirkman T"
+name: "Goetz–Kirkman–Moore–Vashaw T"
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -6,8 +6,8 @@ num_parameters: 0
 hh0: [1, 4, 9]
 hh_qgr: [1, 0, 15, 20]
 year: 2024
-slug: "kirkman-t"
-sortkey: "2024 kirkman-t"
+slug: "goetz-kirkman-moore-vashaw-t"
+sortkey: "2024 goetz-kirkman-moore-vashaw-t"
 ks_rank: 0
 ks_inj: true
 ks_surj: false
@@ -18,14 +18,13 @@ parameters: []
 introduced:
   reference: "2410.08959"
   note: >
-    The algebra "T" of Goetz–Kirkman–Moore–Vashaw, one of a trio of rigid
-    (parameter-free) regular algebras arising from dual reflection groups. It is
-    listed in Table 8 of arXiv:2511.08390 with relations taken from
-    [arXiv:2410.08959, page 10]. It differs from Kirkman S only in two signs but
-    shares its graded Hochschild cohomology.
+    The algebra "T" of Goetz–Kirkman–Moore–Vashaw, one of three dimension-four
+    Artin–Schelter regular algebras they construct from a dual reflection group
+    of order 16. It is a rigid (parameter-free) example, differing from their
+    algebra "S" in two signs but sharing its graded Hochschild cohomology.
 construction: >
   A quadratic algebra with no scalar parameters coming from a dual reflection
-  group, a sign variant of Kirkman S. The Kodaira–Spencer map vanishes, so the
+  group, a sign variant of the algebra "S" above. The Kodaira–Spencer map vanishes, so the
   family is a rigid point of the moduli space.
 relations:
   - "x_1 x_2 - x_3 x_3"
