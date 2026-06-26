@@ -14,6 +14,7 @@ ks_inj: true
 ks_surj: true
 centre_z2: 0
 centre_z3: 0
+centre: 'trivial in low degrees (\(\dim \operatorname{Z}(A)_2 = \dim \operatorname{Z}(A)_3 = 0\)), as for a generic noncommutative \(\mathbb{P}^3\)'
 normal_1: 0
 normal_2: 0
 parameters:
