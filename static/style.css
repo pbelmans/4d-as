@@ -69,6 +69,11 @@ dl.family-data ul.relations li { padding: 0.05rem 0; }
   dl.family-data dt { text-align: left; margin-top: 0.6rem; }
 }
 
+/* families list page */
+dl.family-list dt { font-family: "Poppins", Georgia, serif; margin-top: 0.6rem; }
+dl.family-list dd { margin: 0 0 0 1rem; color: #444; }
+ul.ore-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; }
+
 /* bibliography */
 .bibliography .reference { margin-bottom: 0.6rem; padding-left: 1.6rem; text-indent: -1.6rem; }
 .bibliography .csl-bib-body, .bibliography .csl-entry { display: inline; }

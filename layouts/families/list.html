@@ -2,13 +2,14 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 <h2>Named families</h2>
-<ul>
+<dl class="family-list">
   {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "named" }}
-  <li><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></li>
+  <dt><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></dt>
+  <dd>{{ with $f.construction }}{{ . }}{{ end }}</dd>
   {{ end }}{{ end }}
-</ul>
+</dl>
 <h2>Double Ore families</h2>
-<ul>
+<ul class="ore-list">
   {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "double-Ore" }}
   <li><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></li>
   {{ end }}{{ end }}
