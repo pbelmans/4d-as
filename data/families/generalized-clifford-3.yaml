@@ -1,4 +1,4 @@
-name: "Cassidy–Vancliff 3"
+name: "Generalized Clifford 3"
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -6,8 +6,8 @@ num_parameters: 4
 hh0: [1, 9, 7]
 point_scheme_dim: 0
 year: 2010
-slug: "cassidy-vancliff-3"
-sortkey: "2010 cassidy-vancliff-3"
+slug: "generalized-clifford-3"
+sortkey: "2010 generalized-clifford-3"
 ks_rank: 4
 ks_inj: true
 ks_surj: false

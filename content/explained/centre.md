@@ -19,16 +19,16 @@ Hilbert series \(\operatorname{h}_{\operatorname{Z}(A)}(t) = \sum_n \dim_k \oper
 |---|---|---|---|---|---|---|---|
 | [Sklyanin](/families/sklyanin/), [Sklyanin twist](/families/sklyanin-twist/) | 0 | 2 | 0 | 3 | 0 | 4 | \(1/(1-t^2)^2 = k[\Omega_1, \Omega_2]\) |
 | [Clifford](/families/clifford/) | 0 | 4 | 0 | 10 | 0 | 20 | \(1/(1-t^2)^4 = k[x_1^2, \dots, x_4^2]\) |
-| [Cassidy–Vancliff 2](/families/cassidy-vancliff-2/) | 0 | 2 | 0 | 5 | 0 | 8 | \(1 + 2t^2 + 5t^4 + 8t^6 + \cdots\) |
+| [Generalized Clifford 2](/families/generalized-clifford-2/) | 0 | 2 | 0 | 5 | 0 | 8 | \(1 + 2t^2 + 5t^4 + 8t^6 + \cdots\) |
 | [\(\mathrm{S}_\infty\) twist](/families/s-infinity-twist/) | 0 | 1 | 0 | 2 | 0 | 2 | \(1 + t^2 + 2t^4 + 2t^6 + \cdots\) |
 | [central extension of Sklyanin](/families/lebruyn/) | 1 | 1 | 2 | 2 | 2 | 3 | \(1 + t + t^2 + 2t^3 + 2t^4 + 2t^5 + 3t^6 + \cdots\) |
 
 For Sklyanin and Clifford the centre is an honest polynomial ring — a pencil of
 central quadrics, respectively the four central squares. The
-[Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) and
+[Generalized Clifford 1](/families/generalized-clifford-1/) and
 [Shelton–Tingey](/families/shelton-tingey/) algebras have trivial centre in
 degree 2 but acquire central elements first in **degree 4**.
-([Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) is regular only at special
+([Generalized Clifford 3](/families/generalized-clifford-3/) is regular only at special
 parameters, where its centre depends on the chosen point.) Every other family has
 trivial centre in low degrees — the sole exception being the
 [commutative](/families/commutative/) ring, which is its own centre.

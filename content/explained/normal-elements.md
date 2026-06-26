@@ -33,5 +33,5 @@ for [Clifford](/families/clifford/) it is the \(\mathbb{P}^3\) of central square
 Computed at generic parameters over \(\mathrm{GF}(p)\) (\(p \equiv 1 \bmod 12\)),
 confirmed at two primes. The validation \(\dim_{\mathbb{P}}(\text{normal}_2) \ge
 \dim \operatorname{Z}(A)_2 - 1\) (central ⊆ normal) holds throughout.
-[Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) is omitted: it is regular
+[Generalized Clifford 3](/families/generalized-clifford-3/) is omitted: it is regular
 only on its constraint variety, where a generic parameter point does not land.
