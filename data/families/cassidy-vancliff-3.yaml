@@ -11,8 +11,6 @@ sortkey: "2010 cassidy-vancliff-3"
 ks_rank: 4
 ks_inj: true
 ks_surj: false
-centre_z2: 0
-centre_z3: 1
 parameters:
   - symbol: "u_{13}, u_{14}, u_{24}, u_{34}"
     description: >
@@ -38,4 +36,7 @@ references:
   - "MR2580455"
   - "2511.08390"
 point_scheme: '20 points'
-centre: '\(\dim \operatorname{Z}(A)_3 = 1\): a central cubic'
+notes: >
+  Artin–Schelter regular only at special (root-of-unity) values of the
+  parameters; the invariants above are for such a point and depend on the choice
+  (in particular the centre is not generic), so they should be read with care.

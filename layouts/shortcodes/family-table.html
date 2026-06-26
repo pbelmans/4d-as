@@ -23,7 +23,7 @@
       {{- else if eq $mode "hh0" }}{{ if isset . "hh0" }}<td>{{ index .hh0 0 }}</td><td>{{ index .hh0 1 }}</td><td>{{ index .hh0 2 }}</td>{{ else }}<td>?</td><td>?</td><td>?</td>{{ end }}
       {{- else if eq $mode "hhqgr" }}{{ with .hh_qgr }}<td>{{ index . 1 }}</td><td>{{ index . 2 }}</td><td>{{ index . 3 }}</td>{{ else }}<td>—</td><td>—</td><td>—</td>{{ end }}
       {{- else if eq $mode "ks" }}{{ if isset . "hh0" }}<td>{{ index .hh0 0 }}</td><td>{{ index .hh0 1 }}</td><td>{{ index .hh0 2 }}</td>{{ else }}<td>?</td><td>?</td><td>?</td>{{ end }}<td>{{ .ks_rank }}</td><td>{{ if .ks_inj }}yes{{ else }}no{{ end }}</td><td>{{ if .ks_surj }}yes{{ else }}no{{ end }}</td>
-      {{- else if eq $mode "centre" }}<td>{{ .centre_z2 }}</td><td>{{ .centre_z3 }}</td>
+      {{- else if eq $mode "centre" }}<td>{{ if isset . "centre_z2" }}{{ .centre_z2 }}{{ else }}?{{ end }}</td><td>{{ if isset . "centre_z3" }}{{ .centre_z3 }}{{ else }}?{{ end }}</td>
       {{- else if eq $mode "normal" }}<td>{{ if isset . "normal_1" }}{{ .normal_1 }}{{ else }}?{{ end }}</td><td>{{ if isset . "normal_2" }}{{ .normal_2 }}{{ else }}?{{ end }}</td>{{ end }}
     </tr>
   {{- end }}

@@ -28,10 +28,11 @@ with small parameter sets:
 
 Among the other small-parameter families, only the graded (skew-)Clifford ones
 carry extra centre: [Cassidy–Vancliff 2](/families/cassidy-vancliff-2/) has two
-central quadrics and [Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) a
-central cubic, while [Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) and
+central quadrics, while [Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) and
 [Shelton–Tingey](/families/shelton-tingey/) acquire central elements first in
-degree 4. All the rest — [\(S_\infty\)](/families/s-infinity/),
+degree 4. ([Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) is regular only at
+special parameters, where its centre depends on the chosen point.) All the rest —
+[\(S_\infty\)](/families/s-infinity/),
 [Vancliff](/families/vancliff/), [Pym](/families/pym/),
 [R(3, a)](/families/r3a/), [L(1,1,2)σ](/families/l112sigma/) and the deformed
 skew polynomials — have trivial centre in low degrees.
