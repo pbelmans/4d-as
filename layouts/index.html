@@ -11,24 +11,24 @@ See <a href="{{ "explained/" | relURL }}">Explained</a> for the definitions and
     <tr>
       <th>family</th>
       <th>#params</th>
-      <th>dim point scheme</th>
+      <th>\(\dim\) point scheme</th>
       <th>\(\mathrm{HH}^{1,2,3}_0\)</th>
       <th>\(\mathrm{HH}^\bullet(\mathrm{qgr}\,A)\)</th>
     </tr>
   </thead>
   <tbody>
-  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
+  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "named" }}
     <tr>
-      <td><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
+      <td><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
       <td>{{ $f.num_parameters }}</td>
       <td>{{ $f.point_scheme_dim }}</td>
       <td>{{ delimit $f.hh0 ", " }}</td>
       <td>{{ with $f.hh_qgr }}({{ delimit . ", " }}){{ else }}—{{ end }}</td>
     </tr>
   {{ end }}{{ end }}
-  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "named" }}
+  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
     <tr>
-      <td><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
+      <td><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
       <td>{{ $f.num_parameters }}</td>
       <td>{{ $f.point_scheme_dim }}</td>
       <td>{{ delimit $f.hh0 ", " }}</td>
