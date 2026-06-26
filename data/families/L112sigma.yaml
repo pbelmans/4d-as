@@ -9,6 +9,9 @@ point_scheme_dim: 1
 year: 2015
 slug: "l112sigma"
 sortkey: "2015 l112sigma"
+ks_rank: 4
+ks_inj: false
+ks_surj: true
 parameters:
   - symbol: "p_0, p_1, λ, α, β"
     description: >

@@ -7,6 +7,9 @@ hh0: [2, 2, 2]
 year: "?"
 slug: "deformed-skew-5"
 sortkey: "9999 deformed-skew-5"
+ks_rank: 2
+ks_inj: false
+ks_surj: true
 parameters:
   - symbol: "q_{12}, q_{24}"
     description: "skew-commutation parameters."

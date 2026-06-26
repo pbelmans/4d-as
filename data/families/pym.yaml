@@ -9,6 +9,9 @@ point_scheme_dim: 1
 year: 2015
 slug: "pym"
 sortkey: "2015 pym"
+ks_rank: 9
+ks_inj: false
+ks_surj: true
 parameters:
   - symbol: "c_1, c_2, c_3, d_1, d_2, d_3"
     description: 'Six scalars; \(b_i = -c_{i-1} - 2\) are determined by the \(c_i\).'

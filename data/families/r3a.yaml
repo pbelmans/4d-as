@@ -9,6 +9,9 @@ point_scheme_dim: 1
 year: 2016
 slug: "r3a"
 sortkey: "2016 r3a"
+ks_rank: 1
+ks_inj: true
+ks_surj: true
 parameters:
   - symbol: "a"
     description: "A single scalar parameter."

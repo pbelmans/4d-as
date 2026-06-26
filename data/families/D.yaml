@@ -6,9 +6,13 @@ num_parameters: 2
 hh0: [2, 2, 2]
 hh_qgr: [1, 1, 8, 12]
 point_scheme_dim: 1
+point_scheme: 'a union of 4 lines'
 year: 2009
 slug: "ore-d"
 sortkey: "2009 ore-d"
+ks_rank: 2
+ks_inj: true
+ks_surj: true
 parameters:
   - symbol: "p"
     description: "scalar parameter"

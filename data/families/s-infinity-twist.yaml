@@ -9,6 +9,9 @@ point_scheme_dim: 0
 year: 2016
 slug: "s-infinity-twist"
 sortkey: "2016 s-infinity-twist"
+ks_rank: 2
+ks_inj: true
+ks_surj: false
 parameters:
   - symbol: "β, γ"
     description: >

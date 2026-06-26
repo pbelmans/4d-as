@@ -6,9 +6,13 @@ num_parameters: 1
 hh0: [2, 1, 0]
 hh_qgr: [1, 2, 3, 6]
 point_scheme_dim: 1
+point_scheme: 'a union of 6 lines'
 year: 2009
 slug: "ore-j"
 sortkey: "2009 ore-j"
+ks_rank: 1
+ks_inj: true
+ks_surj: true
 parameters:
   - symbol: "h"
     description: "deformation parameter (generic scalar)"

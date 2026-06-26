@@ -9,6 +9,9 @@ point_scheme_dim: 1
 year: 1982
 slug: "sklyanin"
 sortkey: "1982 sklyanin"
+ks_rank: 2
+ks_inj: true
+ks_surj: true
 parameters:
   - symbol: "β, γ"
     description: >

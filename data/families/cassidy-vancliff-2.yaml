@@ -9,6 +9,9 @@ point_scheme_dim: 0
 year: 2010
 slug: "cassidy-vancliff-2"
 sortkey: "2010 cassidy-vancliff-2"
+ks_rank: 3
+ks_inj: false
+ks_surj: false
 parameters:
   - symbol: "α_1, α_2, β_1, β_2"
     description: "Four scalars."

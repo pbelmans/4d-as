@@ -8,6 +8,9 @@ point_scheme_dim: 0
 year: 2010
 slug: "cassidy-vancliff-3"
 sortkey: "2010 cassidy-vancliff-3"
+ks_rank: 4
+ks_inj: true
+ks_surj: false
 parameters:
   - symbol: "u_{13}, u_{14}, u_{24}, u_{34}"
     description: >

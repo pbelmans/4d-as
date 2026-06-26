@@ -9,6 +9,9 @@ point_scheme_dim: 0
 year: 1995
 slug: "clifford"
 sortkey: "1995 clifford"
+ks_rank: 9
+ks_inj: false
+ks_surj: true
 parameters:
   - symbol: "a_{ijℓ}"
     description: >

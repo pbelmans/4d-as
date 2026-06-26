@@ -9,6 +9,9 @@ point_scheme_dim: 1
 year: 1996
 slug: "lebruyn"
 sortkey: "1996 lebruyn"
+ks_rank: 7
+ks_inj: false
+ks_surj: true
 parameters:
   - symbol: "a, b, c"
     description: "Coefficients of the three base relations."

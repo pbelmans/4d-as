@@ -9,6 +9,9 @@ point_scheme_dim: 1
 year: 2016
 slug: "s-infinity"
 sortkey: "2016 s-infinity"
+ks_rank: 2
+ks_inj: true
+ks_surj: true
 parameters:
   - symbol: "β, γ"
     description: >

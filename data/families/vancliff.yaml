@@ -9,6 +9,9 @@ point_scheme_dim: 2
 year: 1994
 slug: "vancliff"
 sortkey: "1994 vancliff"
+ks_rank: 3
+ks_inj: true
+ks_surj: false
 parameters:
   - symbol: "α, β, λ"
     description: 'Scalars with \(λ \neq αβ\).'

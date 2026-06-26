@@ -7,6 +7,9 @@ hh0: [1, 1, 7]
 year: 2001
 slug: "shelton-tingey"
 sortkey: "2001 shelton-tingey"
+ks_rank: 0
+ks_inj: true
+ks_surj: false
 parameters:
   - symbol: "i"
     description: "a primitive 4th root of unity (\\(i^2 = -1\\)) in the base field; no free parameters."

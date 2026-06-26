@@ -6,9 +6,13 @@ num_parameters: 1
 hh0: [2, 1, 0]
 hh_qgr: [1, 2, 6, 9]
 point_scheme_dim: 2
+point_scheme: 'a quadric surface'
 year: 2009
 slug: "ore-r"
 sortkey: "2009 ore-r"
+ks_rank: 1
+ks_inj: true
+ks_surj: true
 parameters:
   - symbol: "h"
     description: "deformation parameter (generic scalar)"

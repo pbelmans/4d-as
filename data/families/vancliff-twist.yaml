@@ -9,6 +9,9 @@ point_scheme_dim: 1
 year: 1994
 slug: "vancliff-twist"
 sortkey: "1994 vancliff-twist"
+ks_rank: 3
+ks_inj: true
+ks_surj: false
 parameters:
   - symbol: "α, β, λ"
     description: 'Scalars with \(λ \neq αβ\).'

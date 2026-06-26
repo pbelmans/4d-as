@@ -9,6 +9,9 @@ point_scheme_dim: 1
 year: 1990
 slug: "skew"
 sortkey: "1990 skew"
+ks_rank: 6
+ks_inj: true
+ks_surj: true
 parameters:
   - symbol: "q_{ij}"
     description: 'one nonzero scalar for each pair \(i < j\) (six in total).'
