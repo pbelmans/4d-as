@@ -19,7 +19,10 @@
 
   {{ if isset $f "hh0" }}
   <dt>Hochschild cohomology</dt>
-  <dd><a href="{{ "explained/hochschild-cohomology/" | relURL }}">\(\mathrm{HH}^\bullet_0(A)\)</a> \(= (1, {{ index $f.hh0 0 }}, {{ index $f.hh0 1 }}, {{ index $f.hh0 2 }})\){{ with $f.hh_qgr }}; <a href="{{ "explained/hochschild-cohomology-of-qgr/" | relURL }}">\(\mathrm{HH}^\bullet(\operatorname{qgr} A)\)</a> \(= ({{ delimit . ", " }})\){{ end }}.</dd>
+  <dd>
+    <a href="{{ "explained/hochschild-cohomology/" | relURL }}">\(\mathrm{HH}^\bullet_0(A)\)</a> \(= (1, {{ index $f.hh0 0 }}, {{ index $f.hh0 1 }}, {{ index $f.hh0 2 }})\){{ with $f.hh_qgr }}<br>
+    <a href="{{ "explained/hochschild-cohomology-of-qgr/" | relURL }}">\(\mathrm{HH}^\bullet(\operatorname{qgr} A)\)</a> \(= ({{ delimit . ", " }})\){{ end }}
+  </dd>
   {{ end }}
 
   {{ with $f.notes }}<dt>Notes</dt><dd>{{ . }}</dd>{{ end }}
