@@ -26,7 +26,12 @@ for (const entry of cite.data) {
   const first = entry.author && entry.author[0]
   const author = ((first && (first.family || first.literal)) || entry.title || '')
     .toLowerCase()
-  refs[entry.id] = { key: entry.id, html: html.trim(), DOI: entry.DOI || null, author }
+  // citation.js leaves a few TeX bits in titles (e.g. $\mathbb{P}^3$); tidy them.
+  const tidy = html
+    .replace(/\$?\\(?:mathbb|mathbf|bold|bf)\s*\{?P\}?(?:\^?\{?3\}?|<sup>3<\/sup>)\$?/g, "ℙ³")
+    .replace(/\$([^$]*)\$/g, "$1")
+    .trim()
+  refs[entry.id] = { key: entry.id, html: tidy, DOI: entry.DOI || null, author }
 }
 
 writeFileSync('data/refs.json', JSON.stringify(refs, null, 2) + '\n')
