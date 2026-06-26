@@ -19,7 +19,7 @@ studied by [Davies](/references/#ref-MR3490085) and placed in the framework of
 
 Several families on this site arise this way: the
 [Sklyanin twist](/families/sklyanin-twist/), the
-[\(S_\infty\) twist](/families/s-infinity-twist/), and the
+[\(\mathrm{S}_\infty\) twist](/families/s-infinity-twist/), and the
 [Vancliff twist](/families/vancliff-twist/) are all cocycle twists of their
 untwisted counterparts. Comparing a family with its twist shows that neither the
 point scheme nor the centre is a twist invariant.

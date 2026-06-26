@@ -1,4 +1,4 @@
-name: '\(S_\infty\) twist'
+name: '\(\mathrm{S}_\infty\) twist'
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -23,10 +23,10 @@ parameters:
 introduced:
   reference: "MR3490085"
   note: >
-    The cocycle twist of \(S_\infty\) by the Klein four-group, in the same family
+    The cocycle twist of \(\mathrm{S}_\infty\) by the Klein four-group, in the same family
     of exotic elliptic algebras studied by Davies and by Chirvasitu–Smith.
 construction: >
-  As for \(S_\infty\), but the surviving Sklyanin relations are twisted
+  As for \(\mathrm{S}_\infty\), but the surviving Sklyanin relations are twisted
   (commutators exchanged with anticommutators) and the signs in the two quadrics
   change. The twist trades the elliptic point scheme for 20 points and produces
   a single central quadric whose symbol is the smooth hyperbolic form

@@ -1,4 +1,4 @@
-name: '\(S_\infty\)'
+name: '\(\mathrm{S}_\infty\)'
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -23,11 +23,14 @@ parameters:
 introduced:
   reference: "MR3490085"
   note: >
-    One of the degenerate "limit" algebras \(S_\infty\) arising in Davies' study
-    of cocycle twists of the 4-dimensional Sklyanin algebra; an exotic elliptic
-    algebra in the sense of Chirvasitu–Smith.
+    One of the algebras \(\mathrm{S}_\infty\) arising in Davies' study of cocycle
+    twists of the 4-dimensional Sklyanin algebra; an exotic elliptic algebra in
+    the sense of Chirvasitu–Smith. The subscript \(\infty\) marks it as the
+    degenerate limit of Davies' one-parameter family \(\mathrm{S}_d\) of twisted
+    Sklyanin algebras (the \(d \to \infty\) member), where the two central
+    quadrics of the Sklyanin algebra are instead imposed as defining relations.
 construction: >
-  \(S_\infty\) keeps the first four (commutator/anticommutator) Sklyanin
+  \(\mathrm{S}_\infty\) keeps the first four (commutator/anticommutator) Sklyanin
   relations but replaces the last two by the quadrics
   \(\Omega_1 = -x_1^2 + x_2^2 + x_3^2 + x_4^2\) and
   \(\Omega_2 = x_2^2 + \tfrac{1+α}{1-β} x_3^2 + \tfrac{1-α}{1+γ} x_4^2\), imposed as
