@@ -17,6 +17,11 @@
 
   {{ with $f.centre }}<dt><a href="{{ "explained/centre/" | relURL }}">Centre</a></dt><dd>{{ . }}.</dd>{{ end }}
 
+  {{ if isset $f "normal_1" }}
+  <dt><a href="{{ "explained/normal-elements/" | relURL }}">Normal elements</a></dt>
+  <dd>normal locus dimension \({{ $f.normal_1 }}\) (degree 1), \({{ $f.normal_2 }}\) (degree 2).</dd>
+  {{ end }}
+
   {{ if isset $f "hh0" }}
   <dt>Hochschild cohomology</dt>
   <dd>

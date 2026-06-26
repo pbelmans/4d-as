@@ -11,4 +11,5 @@ Per-invariant overview tables:
 [\(\mathrm{HH}^i_0(A)\)](/explained/hochschild-cohomology/),
 [\(\mathrm{HH}^i(\operatorname{qgr} A)\)](/explained/hochschild-cohomology-of-qgr/),
 the [centre](/explained/centre/),
+[normal elements](/explained/normal-elements/),
 and the [Kodaira–Spencer map](/explained/kodaira-spencer-map/).
