@@ -1,0 +1,25 @@
+{{- $k := .key -}}
+{{- $f := .f -}}
+<section id="{{ $k }}" class="family">
+  <h3>{{ $f.name }}</h3>
+  <p>Generators \({{ delimit $f.generators ",\\ " }}\).
+  {{ if $f.quadratic }}Quadratic.{{ end }}
+  {{ $f.num_parameters }} parameter{{ if ne $f.num_parameters 1 }}s{{ end }}.</p>
+  {{ with $f.construction }}<p>{{ . }}</p>{{ end }}
+  <p>Relations (each \(= 0\)):</p>
+  <ul class="relations">
+    {{ range $f.relations }}<li>\({{ . }}\)</li>{{ end }}
+  </ul>
+  {{ with $f.parameters }}
+  <p>Parameters:</p>
+  <ul>
+    {{ range . }}<li>\({{ .symbol }}\) — {{ .description }}</li>{{ end }}
+  </ul>
+  {{ end }}
+  {{ with $f.notes }}<p>{{ . }}</p>{{ end }}
+  <p>Introduced: {{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</p>
+  {{ with $f.references }}
+  <p>References: {{ range $i, $r := . }}{{ if $i }}, {{ end }}{{ partial "reflink.html" $r }}{{ end }}.</p>
+  {{ end }}
+</section>
+{{- /* trailing newline */ -}}

@@ -1,0 +1,3 @@
+{{- /* Short inline reference link by citation key -> references page anchor. */ -}}
+{{- $key := . -}}
+<a href="{{ "references/" | relURL }}#ref-{{ $key }}">{{ if hasPrefix $key "MR" }}{{ $key }}{{ else }}arXiv:{{ $key }}{{ end }}</a>

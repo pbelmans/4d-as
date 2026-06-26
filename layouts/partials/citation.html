@@ -1,0 +1,16 @@
+{{- /* Render one reference by citation key. Context: the key string. */ -}}
+{{- $key := . -}}
+{{- $ref := index site.Data.refs $key -}}
+{{- with $ref -}}
+<span class="citation" id="ref-{{ $key }}">
+  {{ .html | safeHTML }}
+  {{- if hasPrefix $key "MR" }}
+  <a href="https://mathscinet.ams.org/mathscinet-getitem?mr={{ strings.TrimPrefix "MR" $key }}">{{ $key }}</a>
+  {{- else }}
+  <a href="https://arxiv.org/abs/{{ $key }}">arXiv:{{ $key }}</a>
+  {{- end }}
+  {{- with .DOI }} · <a href="https://doi.org/{{ . }}">doi</a>{{ end -}}
+</span>
+{{- else -}}
+<span class="citation">{{ $key }}</span>
+{{- end -}}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<h2>Iterated Ore families (A–Z)</h2>
+{{ range $k, $f := site.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
+  {{ partial "family.html" (dict "key" $k "f" $f) }}
+{{ end }}{{ end }}
+
+<h2>Named families</h2>
+{{ range $k, $f := site.Data.families }}{{ if eq $f.kind "named" }}
+  {{ partial "family.html" (dict "key" $k "f" $f) }}
+{{ end }}{{ end }}
+{{ end }}

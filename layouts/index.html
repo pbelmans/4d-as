@@ -1,5 +1,47 @@
 {{ define "main" }}
 <h1>{{ .Site.Title }}</h1>
 {{ .Content }}
-<p><a href="{{ "/posts/" | relURL }}">Updates</a></p>
+
+<p>The classification concerns mostly the <strong>quadratic</strong> (Koszul) case.
+See <a href="{{ "explained/" | relURL }}">Explained</a> for the definitions and
+<a href="{{ "families/" | relURL }}">Families</a> for the full presentations.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>family</th>
+      <th>#params</th>
+      <th>\(\mathrm{HH}^{1,2,3}_0\)</th>
+      <th>\(\mathrm{HH}^\bullet(\mathrm{qgr}\,A)\)</th>
+      <th>dim point scheme</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{ range $k, $f := site.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
+    <tr>
+      <td><a href="{{ "families/" | relURL }}#{{ $k }}">{{ $f.name }}</a></td>
+      <td>{{ $f.num_parameters }}</td>
+      <td>{{ delimit $f.hh0 ", " }}</td>
+      <td>{{ with $f.hh_qgr }}({{ delimit . ", " }}){{ else }}—{{ end }}</td>
+      <td>{{ $f.point_scheme_dim }}</td>
+    </tr>
+  {{ end }}{{ end }}
+  {{ range $k, $f := site.Data.families }}{{ if eq $f.kind "named" }}
+    <tr>
+      <td><a href="{{ "families/" | relURL }}#{{ $k }}">{{ $f.name }}</a></td>
+      <td>{{ $f.num_parameters }}</td>
+      <td>{{ delimit $f.hh0 ", " }}</td>
+      <td>{{ with $f.hh_qgr }}({{ delimit . ", " }}){{ else }}—{{ end }}</td>
+      <td>{{ $f.point_scheme_dim }}</td>
+    </tr>
+  {{ end }}{{ end }}
+  </tbody>
+</table>
+
+<p><small>\(\mathrm{HH}^{1,2,3}_0\): graded Hochschild cohomology in cohomological
+degrees 1, 2, 3 (degree 0 is always 1), from arXiv:2511.08390.
+\(\mathrm{HH}^\bullet(\mathrm{qgr}\,A)\): directly computed where known, “—”
+otherwise — the alternating-sum trick relating the two is not general.</small></p>
+
+<p><a href="{{ "posts/" | relURL }}">Updates</a></p>
 {{ end }}

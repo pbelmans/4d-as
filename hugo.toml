@@ -2,6 +2,13 @@ baseURL = "/"
 locale = "en-us"
 title = "4-dimensional Artin–Schelter regular algebras"
 disableKinds = ["taxonomy", "term", "RSS"]
+ignoreFiles = ['/data/references\.bib$', '/data/README\.md$']
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]
