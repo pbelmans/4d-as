@@ -16,7 +16,7 @@ parameters:
     description: '\(q\) is a primitive 4th root of unity (\(q^2 = -1\))'
 introduced:
   reference: "MR2529094"
-  note: "Family I among the double extension regular algebras of type (14641) classified by Zhang–Zhang; its Hochschild cohomology is computed in arXiv:2511.08390."
+  note: "Family I among the double extension regular algebras of type (14641) classified by Zhang–Zhang."
 relations:
   - "x_2 x_1 - q x_1 x_2"
   - "x_4 x_3 + x_3 x_4"
@@ -24,4 +24,3 @@ relations:
   - "x_3 x_2 + h (- x_1 x_3 - x_2 x_3 - x_1 x_4 + q x_2 x_4)"
   - "x_4 x_1 + h (- x_1 x_3 - q x_2 x_3 - q x_1 x_4 + q x_2 x_4)"
   - "x_4 x_2 + h (x_1 x_3 + q x_2 x_3 - x_1 x_4 + x_2 x_4)"
-notes: 'Requires a primitive 4th root of unity \(q\) with \(q^2 = -1\) in the base field.'

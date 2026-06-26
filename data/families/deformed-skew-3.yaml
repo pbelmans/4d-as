@@ -15,8 +15,7 @@ parameters:
 introduced:
   reference: "2511.08390"
   note: >
-    One of the deformed skew polynomial (\(\mathcal{F}\)) families of
-    arXiv:2511.08390; its earlier origin is not pinned down here.
+    One of the deformed skew polynomial (\(\mathcal{F}\)) families; its earlier origin is not pinned down here.
 construction: >
   A quantum (skew) polynomial ring with two quadratic terms added to one
   relation: \(x_3 x_2\) acquires \(-t\,x_4^2 - s\,x_1^2\).

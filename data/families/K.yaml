@@ -18,7 +18,7 @@ parameters:
     description: "deformation parameter (generic scalar)"
 introduced:
   reference: "MR2529094"
-  note: "Family K among the double extension regular algebras of type (14641) classified by Zhang–Zhang; its Hochschild cohomology is computed in arXiv:2511.08390."
+  note: "Family K among the double extension regular algebras of type (14641) classified by Zhang–Zhang."
 relations:
   - "x_2 x_1 - q x_1 x_2"
   - "x_4 x_3 + x_3 x_4"
@@ -26,4 +26,3 @@ relations:
   - "x_3 x_2 + h (- x_2 x_4)"
   - "x_4 x_1 + h (- x_1 x_4)"
   - "x_4 x_2 + h (- f x_2 x_3)"
-notes: ""
