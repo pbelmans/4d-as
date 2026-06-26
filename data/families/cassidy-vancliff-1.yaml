@@ -24,7 +24,10 @@ parameters:
 introduced:
   reference: "MR2580455"
   note: >
-    An example of a graded skew Clifford algebra of Cassidy–Vancliff.
+    Example 1 of Cassidy–Vancliff. Of the three, it is a genuinely *skew* graded
+    Clifford algebra: the generators \(q\)-commute by primitive 4th roots of
+    unity. Its centre is trivial in degree 2 (central elements first appear in
+    degree 4).
 construction: >
   A graded skew Clifford algebra: the symmetric Clifford relations are twisted
   by roots of unity, so \(x_4, x_1\) and \(x_3, x_2\) skew-commute while the

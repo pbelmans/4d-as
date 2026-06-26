@@ -22,7 +22,10 @@ parameters:
 introduced:
   reference: "MR2580455"
   note: >
-    A graded skew Clifford / complete-intersection example of Cassidy–Vancliff.
+    Example 2 of Cassidy–Vancliff. It is the example that is an ordinary
+    (non-skew) graded Clifford algebra and a complete intersection, and so has by
+    far the largest centre of the three — a \(2\)-dimensional space of central
+    quadrics, with centre Hilbert series \(1 + 2t^2 + 5t^4 + 8t^6 + \cdots\).
 construction: >
   Another graded skew Clifford algebra, presented through symmetric and
   skew-symmetric relations whose quadratic corrections are multiples of the

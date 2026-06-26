@@ -19,7 +19,9 @@ parameters:
 introduced:
   reference: "MR2580455"
   note: >
-    A graded skew Clifford / complete-intersection example of Cassidy–Vancliff.
+    Example 3 of Cassidy–Vancliff. Like Example 1 it is a *skew* graded Clifford
+    algebra, but it is Artin–Schelter regular only on a constraint subvariety of
+    its parameter space; off that variety it fails to be regular.
 construction: >
   A graded skew Clifford algebra in which three pairs \(q\)-commute and the
   remaining relations couple the squares \(x_1^2, x_4^2\) to the products
