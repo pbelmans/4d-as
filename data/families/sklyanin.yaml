@@ -32,7 +32,7 @@ construction: >
   elliptic curve \(E\) together with a translation automorphism \(σ\): the six
   quadratic relations encode theta-function identities on \(E\), and the point
   scheme is \(E\) itself (a quartic) together with four \(σ\)-fixed points. It
-  carries a pencil of central quadrics \(k[Ω_1, Ω_2]\).
+  carries a pencil of central quadrics \(k[\Omega_1, \Omega_2]\).
 relations:
   - "(x_1 x_2 - x_2 x_1) - α (x_3 x_4 + x_4 x_3)"
   - "(x_1 x_2 + x_2 x_1) - (x_3 x_4 - x_4 x_3)"
@@ -45,6 +45,6 @@ references:
   - "MR1175941"
   - "2511.08390"
 point_scheme: 'a quartic elliptic curve \(E\) and four points'
-centre: '\(k[Ω_1, Ω_2]\) (GK-dimension \(2\)); not module-finite over the centre when \(σ\) has infinite order'
+centre: '\(k[\Omega_1, \Omega_2]\) (GK-dimension \(2\)); not module-finite over the centre when \(σ\) has infinite order'
 code_derive:
   - "alpha = -(beta + gamma)/(1 + beta*gamma)"

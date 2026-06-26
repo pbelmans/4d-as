@@ -29,8 +29,8 @@ introduced:
 construction: >
   \(S_\infty\) keeps the first four (commutator/anticommutator) Sklyanin
   relations but replaces the last two by the quadrics
-  \(Ω_1 = -x_1^2 + x_2^2 + x_3^2 + x_4^2\) and
-  \(Ω_2 = x_2^2 + \tfrac{1+α}{1-β} x_3^2 + \tfrac{1-α}{1+γ} x_4^2\), imposed as
+  \(\Omega_1 = -x_1^2 + x_2^2 + x_3^2 + x_4^2\) and
+  \(\Omega_2 = x_2^2 + \tfrac{1+α}{1-β} x_3^2 + \tfrac{1-α}{1+γ} x_4^2\), imposed as
   relations. This kills the central quadrics yet keeps the elliptic quartic as
   point scheme.
 relations:

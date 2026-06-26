@@ -43,6 +43,6 @@ references:
   - "MR3885145"
   - "2511.08390"
 point_scheme: '20 points'
-centre: 'still \(k[Ω_1, Ω_2]\) (GK-dimension \(2\)); not a cocycle-twist invariant'
+centre: 'still \(k[\Omega_1, \Omega_2]\) (GK-dimension \(2\)); not a cocycle-twist invariant'
 code_derive:
   - "alpha = -(beta + gamma)/(1 + beta*gamma)"
