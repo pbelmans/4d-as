@@ -1,0 +1,5 @@
+{{ define "main" }}
+<h1>{{ .Site.Title }}</h1>
+{{ .Content }}
+<p><a href="{{ "/posts/" | relURL }}">Updates</a></p>
+{{ end }}

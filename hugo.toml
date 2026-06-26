@@ -1,0 +1,7 @@
+baseURL = "/"
+locale = "en-us"
+title = "4-dimensional Artin–Schelter regular algebras"
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[markup.goldmark.renderer]
+unsafe = true
