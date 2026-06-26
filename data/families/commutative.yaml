@@ -1,0 +1,38 @@
+name: "commutative"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 0
+hh0: [16, 60, 80]
+hh_qgr: [1, 15, 45, 35]
+point_scheme_dim: 3
+point_scheme: 'all of \(\mathbb{P}^3\)'
+year: "?"
+slug: "commutative"
+sortkey: "0000 commutative"
+ks_rank: 0
+ks_inj: true
+ks_surj: false
+centre_z2: 10
+centre_z3: 20
+normal_1: 3
+normal_2: 9
+introduced:
+  reference: "MR917738"
+  note: >
+    The ordinary commutative polynomial ring \(k[x_1, x_2, x_3, x_4]\) — the
+    basic Artin–Schelter regular algebra of dimension 4, included for comparison.
+construction: >
+  The commutative polynomial ring in four variables: the generators commute. Its
+  point scheme is all of \(\mathbb{P}^3\), its centre is the whole ring, and
+  every element is normal — the commutative reference point against which the
+  noncommutative families are measured.
+relations:
+  - "x_1 x_2 - x_2 x_1"
+  - "x_1 x_3 - x_3 x_1"
+  - "x_1 x_4 - x_4 x_1"
+  - "x_2 x_3 - x_3 x_2"
+  - "x_2 x_4 - x_4 x_2"
+  - "x_3 x_4 - x_4 x_3"
+references:
+  - "MR917738"

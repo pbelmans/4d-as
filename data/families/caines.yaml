@@ -1,0 +1,40 @@
+name: "Caines"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 4
+hh0: [1, 8, 21]
+hh_qgr: [1, 0, 14, 19]
+point_scheme_dim: 0
+point_scheme: '13 points'
+year: "?"
+slug: "caines"
+sortkey: "9999 caines"
+ks_rank: 1
+ks_inj: false
+ks_surj: false
+centre_z2: 2
+centre_z3: 0
+parameters:
+  - symbol: "a, b, c, d"
+    description: "Four scalars (\\(c \\neq 0\\))."
+introduced:
+  reference: "caines-thesis"
+  note: >
+    Introduced in Ian Caines's PhD thesis, "New examples of four-dimensional
+    Artin–Schelter regular algebras"; it appears as the Caines algebra in the
+    dimension-4 classification.
+construction: >
+  A Koszul AS-regular algebra on four generators in which \(x_1, x_2\)
+  anticommute and \(x_4\) acts on \(x_1, x_2, x_3\) through relations mixing the
+  squares \(x_3^2\) with the products \(x_i x_4\). Its point scheme is a finite
+  set of 13 points and it carries a pencil of central quadrics.
+relations:
+  - "x_4 x_3 - x_3 x_4 - a x_1 x_2"
+  - "x_4 x_2 - b x_3^2 + x_2 x_4"
+  - "x_4 x_1 - c x_3^2 + x_1 x_4"
+  - "x_3 x_2 - x_2 x_3 + (b d / c) x_2 x_4 - (b^2 d / c^2) x_1 x_4"
+  - "x_3 x_1 - x_1 x_3 + (b d / c) x_1 x_4 - d x_2 x_4"
+  - "x_2 x_1 + x_1 x_2"
+references:
+  - "caines-thesis"
