@@ -1,0 +1,54 @@
+name: '\(\mathrm{S}_{d,i}\) twist'
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 3
+hh0: [1, 8, 17]
+year: 2016
+slug: "s-d-i-twist"
+sortkey: "2016 s-d-i-twist"
+ks_rank: 3
+ks_inj: true
+ks_surj: false
+parameters:
+  - symbol: "β, γ"
+    description: >
+      With \(α = -(β + γ)/(1 + βγ)\); \(α, β, γ\) nonzero and not \(\pm 1\).
+  - symbol: "d = (d_1, d_2)"
+    description: >
+      A point of \(\mathbb{P}^1\); the coefficients of the two twisted quadrics
+      \(\Omega'_1, \Omega'_2\) in the replaced relation.
+introduced:
+  reference: "MR3490085"
+  note: >
+    The cocycle twist of Davies' \(\mathrm{S}_{d,i}\) (equation 6.1.8 / 6.1.4
+    twisted) by the Klein four-group; a finite member of the family of which the
+    \(\mathrm{S}_\infty\) twist is the \(d \to \infty\) limit.
+construction: >
+  As for \(\mathrm{S}_{d,i}\), but starting from the twisted Sklyanin relations
+  \(f'_1, \dots, f'_6\) (commutators exchanged with anticommutators): for one
+  chosen index \(i \in \{1, \dots, 6\}\), replace \(f'_i\) by the single twisted
+  quadric \(d_1 \Omega'_1 + d_2 \Omega'_2\), keeping the five remaining \(f'_j\)
+  (\(j \neq i\)). The signs in the quadrics change as for the
+  \(\mathrm{S}_\infty\) twist.
+relations:
+  - "(x_1 x_2 - x_2 x_1) - α (x_3 x_4 - x_4 x_3)"
+  - "(x_1 x_2 + x_2 x_1) - (x_3 x_4 + x_4 x_3)"
+  - "(x_1 x_3 - x_3 x_1) - β (x_4 x_2 - x_2 x_4)"
+  - "(x_1 x_3 + x_3 x_1) - (x_4 x_2 + x_2 x_4)"
+  - "(x_1 x_4 - x_4 x_1) + γ (x_2 x_3 - x_3 x_2)"
+  - "(x_1 x_4 + x_4 x_1) + (x_2 x_3 + x_3 x_2)"
+  - "d_1 (-x_1^2 + x_2^2 + x_3^2 - x_4^2) + d_2 (x_2^2 + ((1+α)/(1-β)) x_3^2 - ((1-α)/(1+γ)) x_4^2)"
+references:
+  - "MR3490085"
+  - "MR3885145"
+notes: >
+  This page represents the general construction. For a chosen index
+  \(i \in \{1, \dots, 6\}\), the algebra has the six twisted Sklyanin relations
+  \(f'_1, \dots, f'_6\) (the first six above) with \(f'_i\) deleted and the
+  twisted quadric \(d_1 \Omega'_1 + d_2 \Omega'_2\) (the last relation above)
+  imposed in its place — so exactly six relations in total. For AS-regularity one
+  excludes the degenerate \((d_1, d_2)\) noted in the source (e.g. for \(i = 1\),
+  \((d_1, d_2) \neq (1, 0), (1, -1 - βγ)\)).
+code_derive:
+  - "alpha = -(beta + gamma)/(1 + beta*gamma)"

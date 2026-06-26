@@ -1,0 +1,53 @@
+name: '\(\mathrm{S}_{d,i}\)'
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 3
+hh0: [1, 3, 9]
+year: 2016
+slug: "s-d-i"
+sortkey: "2016 s-d-i"
+ks_rank: 3
+ks_inj: true
+ks_surj: true
+parameters:
+  - symbol: "β, γ"
+    description: >
+      With \(α = -(β + γ)/(1 + βγ)\); \(α, β, γ\) nonzero and not \(\pm 1\).
+  - symbol: "d = (d_1, d_2)"
+    description: >
+      A point of \(\mathbb{P}^1\); these are the coefficients of the two central
+      quadrics \(\Omega_1, \Omega_2\) in the replaced relation.
+introduced:
+  reference: "MR3490085"
+  note: >
+    One of Davies' algebras \(\mathrm{S}_{d,i}\) (equation 6.1.4), a finite member
+    of the one-parameter family of twisted Sklyanin algebras of which
+    \(\mathrm{S}_\infty\) is the \(d \to \infty\) limit.
+construction: >
+  Take the six defining relations \(f_1, \dots, f_6\) of the Sklyanin algebra and,
+  for one chosen index \(i \in \{1, \dots, 6\}\), replace \(f_i\) by the single
+  quadric \(d_1 \Omega_1 + d_2 \Omega_2\), where \(\Omega_1, \Omega_2\) are the
+  two central quadrics of the Sklyanin algebra and \((d_1 : d_2) \in \mathbb{P}^1\).
+  The five remaining Sklyanin relations \(f_j\) (\(j \neq i\)) are kept verbatim.
+  As \(d \to \infty\) (only the quadrics surviving) one recovers
+  \(\mathrm{S}_\infty\).
+relations:
+  - "(x_1 x_2 - x_2 x_1) - α (x_3 x_4 + x_4 x_3)"
+  - "(x_1 x_2 + x_2 x_1) - (x_3 x_4 - x_4 x_3)"
+  - "(x_1 x_3 - x_3 x_1) - β (x_4 x_2 + x_2 x_4)"
+  - "(x_1 x_3 + x_3 x_1) - (x_4 x_2 - x_2 x_4)"
+  - "(x_1 x_4 - x_4 x_1) - γ (x_2 x_3 + x_3 x_2)"
+  - "(x_1 x_4 + x_4 x_1) - (x_2 x_3 - x_3 x_2)"
+  - "d_1 (-x_1^2 + x_2^2 + x_3^2 + x_4^2) + d_2 (x_2^2 + ((1+α)/(1-β)) x_3^2 + ((1-α)/(1+γ)) x_4^2)"
+references:
+  - "MR3490085"
+  - "MR3885145"
+notes: >
+  This page represents the general construction. For a chosen index
+  \(i \in \{1, \dots, 6\}\), the algebra \(\mathrm{S}_{d,i}\) has the six relations
+  \(f_1, \dots, f_6\) of the Sklyanin algebra (the first six relations above) with
+  \(f_i\) deleted and the quadric \(d_1 \Omega_1 + d_2 \Omega_2\) (the last
+  relation above) imposed in its place — so exactly six relations in total.
+code_derive:
+  - "alpha = -(beta + gamma)/(1 + beta*gamma)"

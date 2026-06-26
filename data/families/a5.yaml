@@ -1,0 +1,43 @@
+name: '\(\mathrm{A}_5\)'
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 4
+hh0: [2, 1, 0]
+year: 2025
+slug: "a5"
+sortkey: "2025 a5"
+ks_rank: 1
+ks_inj: false
+ks_surj: true
+parameters:
+  - symbol: "d, a_1, a_4, a_7"
+    description: >
+      Four scalars in the base field. The relations also involve the primitive
+      fourth root of unity \(i\) (with \(i^2 = -1\)).
+introduced:
+  reference: "2511.08390"
+  note: >
+    \(\mathrm{A}_5\) appears among the families mapping densely onto irreducible
+    components of the moduli space of regular algebras (its Kodaira–Spencer map
+    is surjective of rank 1). No earlier bibliographic source is identified for
+    it.
+construction: >
+  A four-parameter quadratic algebra defined over a field containing
+  \(\sqrt{-1}\). Three relations make \(x_4\) skew/normalize against
+  \(x_1, x_2, x_3\) (with the coefficient \(i\) appearing in the \(x_3, x_4\)
+  relation), and two further relations impose quadratic identities among the
+  squares \(x_1^2, x_2^2, x_3^2\).
+relations:
+  - "d x_1 x_4 + x_4 x_1"
+  - "d x_2 x_4 - x_4 x_2"
+  - "a_1 x_1^2 + a_4 d^2 x_2^2"
+  - "d x_3 x_4 - i x_4 x_3"
+  - "a_4 x_1 x_2 + a_4 x_2 x_1 - a_7 x_3^2"
+  - "x_2 x_3 + x_3 x_2"
+references:
+  - "2511.08390"
+notes: >
+  \(\mathrm{A}_5\) is defined over a field containing \(\sqrt{-1}\) (here
+  \(\mathbb{Q}(i)\), with \(i\) the primitive fourth root of unity appearing in
+  the relations); its invariants are computed over that field.

@@ -1,0 +1,39 @@
+name: "central extension of Sklyanin twist"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 5
+hh0: [1, 4, 9]
+year: 2025
+slug: "central-extension-twist"
+sortkey: "2025 central-extension-twist"
+ks_rank: 4
+ks_inj: false
+ks_surj: true
+parameters:
+  - symbol: "q, b, c_0, c_1, c_2"
+    description: "Five scalar parameters of the twisted central extension."
+introduced:
+  reference: "MR1429334"
+  note: >
+    A cocycle twist of the central extension of a 3-dimensional Sklyanin-type
+    Artin–Schelter regular algebra (Le Bruyn–Smith–Van den Bergh). It appears as
+    "Central Extensions twist" in Tables 7 and 8 of arXiv:2511.08390, attributed
+    there to Remark 5.13, and is the cocycle twist of the central-extension
+    family in the same spirit that the Sklyanin twist relates to the Sklyanin
+    algebra.
+construction: >
+  Obtained by applying a 2-cocycle (Klein four-group) twist to a central
+  extension of a 3-dimensional regular algebra. The variable \(x_3\) plays the
+  role of the adjoined central-type generator: it commutes with each of
+  \(x_1, x_2, x_4\), while the first three relations \(q\)-commute the remaining
+  pairs and absorb quadratic corrections \(b x_\bullet^2 + c_\bullet x_3^2\).
+relations:
+  - "x_2 x_1 + q x_1 x_2 + b x_4^2 + c_0 x_3^2"
+  - "x_4 x_2 + q x_2 x_4 + b x_1^2 + c_1 x_3^2"
+  - "x_1 x_4 + q x_4 x_1 + b x_2^2 + c_2 x_3^2"
+  - "x_4 x_3 + x_3 x_4"
+  - "x_1 x_3 + x_3 x_1"
+  - "x_2 x_3 + x_3 x_2"
+references:
+  - "MR1429334"
