@@ -31,6 +31,7 @@ jobs:
       - run: npm ci
       - run: npm run bib
       - run: npm run data
+      - run: npm run snippets
       - uses: actions/configure-pages@v5
         id: pages
       - run: hugo --gc --minify

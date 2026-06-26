@@ -5,7 +5,8 @@
   "scripts": {
     "bib": "node scripts/build-bib.mjs",
     "data": "python3 scripts/build-data.py",
-    "build": "npm run bib && npm run data && hugo --gc --minify"
+    "snippets": "python3 scripts/build-snippets.py",
+    "build": "npm run bib && npm run data && npm run snippets && hugo --gc --minify"
   },
   "devDependencies": {
     "@citation-js/core": "^0.7.14",

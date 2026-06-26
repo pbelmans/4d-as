@@ -3,4 +3,9 @@
 <p><a href="{{ "families/" | relURL }}">← all families</a></p>
 <h1>{{ .Title }}</h1>
 {{ partial "family.html" (dict "f" $f) }}
+{{ if index hugo.Data.snippets .Params.famkey }}
+<h2>Code</h2>
+<p>The presentation, ready to paste into a computer algebra system:</p>
+{{ partial "code-tabs.html" .Params.famkey }}
+{{ end }}
 {{ end }}
