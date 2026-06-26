@@ -15,7 +15,7 @@
 </ul>
 {{ end }}
 {{ with $f.notes }}<p>{{ . }}</p>{{ end }}
-<p>Introduced: {{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</p>
+<p>Introduced in {{ $f.year }}: {{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</p>
 {{ with $f.references }}
 <p>References: {{ range $i, $r := . }}{{ if $i }}, {{ end }}{{ partial "reflink.html" $r }}{{ end }}.</p>
 {{ end }}

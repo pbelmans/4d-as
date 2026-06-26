@@ -1,6 +1,6 @@
 # `data/` — the families of 4-dimensional AS-regular algebras
 
-Each YAML file describes one family of (mostly quadratic, Koszul) Artin–Schelter
+Each YAML file describes one family of quadratic (Koszul) Artin–Schelter
 regular algebras of global dimension 4 — i.e. a "noncommutative `P^3`".
 
 ## Conventions
@@ -23,6 +23,8 @@ num_parameters: 2          # number of scalar parameters
 hh0: [1, 2, 9]             # graded HH^*_0 in degrees 1, 2, 3 (arXiv:2511.08390)
 hh_qgr: [1, 0, 2, 7]       # directly computed HH^*(qgr A), where known (optional)
 point_scheme_dim: 1        # dimension of the point scheme
+year: 1982                 # year of first definition (the introducing work)
+slug: "sklyanin"           # URL slug under /families/ (ore-a, ore-b, … for A–Z)
 parameters:                # symbols + constraints
   - symbol: "β, γ"
     description: "..."

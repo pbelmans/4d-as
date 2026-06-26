@@ -2,7 +2,7 @@
 <h1>{{ .Site.Title }}</h1>
 {{ .Content }}
 
-<p>The classification concerns mostly the <strong>quadratic</strong> (Koszul) case.
+<p>For now every family here is <strong>quadratic</strong> (Koszul).
 See <a href="{{ "explained/" | relURL }}">Explained</a> for the definitions and
 <a href="{{ "families/" | relURL }}">Families</a> for the full presentations.</p>
 
@@ -10,6 +10,7 @@ See <a href="{{ "explained/" | relURL }}">Explained</a> for the definitions and
   <thead>
     <tr>
       <th>family</th>
+      <th>defined</th>
       <th>#params</th>
       <th>\(\dim\) point scheme</th>
       <th>\(\mathrm{HH}^{1,2,3}_0\)</th>
@@ -17,24 +18,16 @@ See <a href="{{ "explained/" | relURL }}">Explained</a> for the definitions and
     </tr>
   </thead>
   <tbody>
-  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "named" }}
+  {{ range sort hugo.Data.families "sortkey" "asc" }}
     <tr>
-      <td><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
-      <td>{{ $f.num_parameters }}</td>
-      <td>{{ $f.point_scheme_dim }}</td>
-      <td>{{ delimit $f.hh0 ", " }}</td>
-      <td>{{ with $f.hh_qgr }}({{ delimit . ", " }}){{ else }}—{{ end }}</td>
+      <td><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a></td>
+      <td>{{ .year }}</td>
+      <td>{{ .num_parameters }}</td>
+      <td>{{ .point_scheme_dim }}</td>
+      <td>{{ delimit .hh0 ", " }}</td>
+      <td>{{ with .hh_qgr }}({{ delimit . ", " }}){{ else }}—{{ end }}</td>
     </tr>
-  {{ end }}{{ end }}
-  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
-    <tr>
-      <td><a href="{{ printf "families/ore-%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
-      <td>{{ $f.num_parameters }}</td>
-      <td>{{ $f.point_scheme_dim }}</td>
-      <td>{{ delimit $f.hh0 ", " }}</td>
-      <td>{{ with $f.hh_qgr }}({{ delimit . ", " }}){{ else }}—{{ end }}</td>
-    </tr>
-  {{ end }}{{ end }}
+  {{ end }}
   </tbody>
 </table>
 
