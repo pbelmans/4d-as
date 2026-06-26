@@ -1,8 +1,5 @@
 {{- /* Render one family's details. Context: dict with "f" (family data). */ -}}
 {{- $f := .f -}}
-<p>Generators \({{ delimit $f.generators ",\\ " }}\).
-{{ if $f.quadratic }}Quadratic.{{ end }}
-{{ $f.num_parameters }} parameter{{ if ne $f.num_parameters 1 }}s{{ end }}.</p>
 {{ with $f.construction }}<p>{{ . }}</p>{{ end }}
 <p>Relations:</p>
 <ul class="relations">
@@ -14,7 +11,12 @@
   {{ range . }}<li>\({{ .symbol }}\) — {{ .description }}</li>{{ end }}
 </ul>
 {{ end }}
-{{ with $f.notes }}<p>{{ . }}</p>{{ end }}
+<dl class="family-data">
+  <dt>Point scheme</dt>
+  <dd>{{ with $f.point_scheme }}{{ . }} (dimension \({{ $f.point_scheme_dim }}\)){{ else }}dimension \({{ $f.point_scheme_dim }}\){{ end }}.</dd>
+  {{ with $f.centre }}<dt>Centre</dt><dd>{{ . }}.</dd>{{ end }}
+  {{ with $f.notes }}<dt>Notes</dt><dd>{{ . }}</dd>{{ end }}
+</dl>
 <p>Introduced in {{ $f.year }}: {{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</p>
 {{ with $f.references }}
 <p>References: {{ range $i, $r := . }}{{ if $i }}, {{ end }}{{ partial "reflink.html" $r }}{{ end }}.</p>

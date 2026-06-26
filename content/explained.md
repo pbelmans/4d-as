@@ -1,9 +1,8 @@
 ---
 title: "Explained"
 math: true
+notitle: true
 ---
-
-Background notions, explained.
 
 ## Artin–Schelter regular algebras
 
@@ -23,7 +22,20 @@ dimension \(d\) if:
    \begin{cases} k(\ell) & i = d, \\ 0 & i \neq d. \end{cases}
    \]
 
-For \(d = 1\) and \(d = 2\) these algebras are completely understood,
-and the \(d = 3\) case was classified by Artin, Schelter, Tate, and
-Van den Bergh. The classification in dimension \(d = 4\) is the subject
-of this website.
+## Classification
+
+In low dimensions the AS-regular algebras are completely understood.
+
+- **\(d = 1\).** The only AS-regular algebra is the polynomial ring \(k[x]\).
+- **\(d = 2\).** There are exactly two quadratic families on two generators:
+  the *quantum plane* \(k\langle x, y\rangle/(yx - q\,xy)\) for \(q \in k^\times\),
+  and the *Jordan plane* \(k\langle x, y\rangle/(yx - xy - x^2)\).
+- **\(d = 3\).** The classification was begun by Artin–Schelter and completed,
+  using the geometry of point schemes, by
+  [Artin–Tate–Van den Bergh](/references/#ref-MR1086882). The generic algebras
+  are governed by a triple \((E, \mathcal{L}, \sigma)\) of an elliptic curve
+  with a line bundle and an automorphism; the quadratic case has three
+  generators, the cubic case two.
+
+In dimension \(d = 4\) no full classification is known. Describing the known
+families is the subject of this website.

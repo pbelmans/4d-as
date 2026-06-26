@@ -1,8 +1,7 @@
 {{ define "main" }}
 {{ .Content }}
 
-<p>For now every family here is <strong>quadratic</strong> (Koszul).
-See <a href="{{ "explained/" | relURL }}">explained</a> for the definitions and
+<p>See <a href="{{ "explained/" | relURL }}">explained</a> for the definitions and
 <a href="{{ "families/" | relURL }}">families</a> for the full presentations.
 Click a column heading to sort.</p>
 
@@ -12,8 +11,8 @@ Click a column heading to sort.</p>
     <tr>
       <th rowspan="2" data-col="0">family</th>
       <th rowspan="2" data-col="1">defined</th>
-      <th rowspan="2" data-col="2">#params</th>
-      <th rowspan="2" data-col="3">\(\dim\) point scheme</th>
+      <th rowspan="2" data-col="2">parameters</th>
+      <th rowspan="2" data-col="3">dimension point scheme</th>
       <th colspan="3">\(\mathrm{HH}^i_0\)</th>
       <th colspan="3">\(\mathrm{HH}^i(\mathrm{qgr}\,A)\)</th>
     </tr>
@@ -42,8 +41,4 @@ Click a column heading to sort.</p>
   </tbody>
 </table>
 </div>
-
-<p><small>\(\mathrm{HH}^i_0\): graded Hochschild cohomology in cohomological
-degrees \(i = 1, 2, 3\). \(\mathrm{HH}^i(\mathrm{qgr}\,A)\): Hochschild
-cohomology of the associated noncommutative variety, in the same degrees.</small></p>
 {{ end }}

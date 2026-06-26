@@ -4,6 +4,7 @@
 :root {
   --accent: #b3122a;
   --accent-dark: #7d0c1d;
+  --accent2: #035096;
 }
 
 body {
@@ -17,15 +18,19 @@ h1, h2, h3, h4 {
 
 /* navigation */
 nav#menu { font-size: 14px; }
-nav#menu .nav-link { color: #e6a3aa; }
+nav#menu .nav-link { color: rgba(255, 255, 255, 0.85); }
 nav#menu .nav-link:hover { color: #fff; }
+
+/* source-link favicons */
+.srcicon { height: 14px; width: auto; vertical-align: -2px; margin-right: 2px; }
+.ghicon { vertical-align: -2px; margin-right: 3px; }
 
 /* title block */
 #title { background-color: #eee; }
 #title h1 { font-size: 2.4rem; }
 #title h1 a { color: #000; text-decoration: none; }
 #title h1 a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
-#title h1 .d { font-style: italic; }
+#title h1 .d { font-style: italic; color: var(--accent2); }
 #title h1 .as { color: var(--accent); }
 #title #slogan { font-style: italic; font-size: 0.95rem; color: #444; }
 
@@ -36,8 +41,19 @@ a:hover { color: var(--accent-dark); }
 /* tables */
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
 th, td { border: 1px solid #dee2e6; padding: 0.35rem 0.5rem; }
-thead th { background: #f6f6f6; text-align: center; }
+thead th { background: #f6f6f6; }
+th, td { text-align: center; }
 tbody tr:hover { background: #fafafa; }
+
+/* family detail */
+dl.family-data { display: grid; grid-template-columns: max-content 1fr; gap: 0.1rem 0.75rem; }
+dl.family-data dt { font-weight: 500; }
+dl.family-data dd { margin: 0; }
+
+/* bibliography */
+.bibliography .reference { margin-bottom: 0.6rem; padding-left: 1.6rem; text-indent: -1.6rem; }
+.bibliography .csl-bib-body, .bibliography .csl-entry { display: inline; }
+.bibliography .reference:target { background: #fffbcc; }
 
 /* sortable headers */
 table.sortable th[data-col] { cursor: pointer; user-select: none; }

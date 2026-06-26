@@ -3,9 +3,9 @@
 This is the repository for a website dedicated to the classification and
 properties of four-dimensional Artin–Schelter regular algebras.
 
-For now every family here is **quadratic** (Koszul): presented by four
-generators \(x_1, x_2, x_3, x_4\) and quadratic relations, i.e. noncommutative
-analogues of \(\mathbb{P}^3\). The families and their invariants follow
+The families are **quadratic** (Koszul): presented by four generators
+\(x_1, x_2, x_3, x_4\) and quadratic relations, i.e. noncommutative analogues of
+\(\mathbb{P}^3\). The families and their invariants follow
 [arXiv:2511.08390](https://arxiv.org/abs/2511.08390).
 
 ## Structure
