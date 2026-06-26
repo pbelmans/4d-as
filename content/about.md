@@ -6,8 +6,7 @@ math: true
 This website is dedicated to four-dimensional Artin–Schelter regular algebras.
 It is concerned with the **quadratic** (Koszul) case: algebras on four
 generators with quadratic relations — the noncommutative analogues of
-\(\mathbb{P}^3\). The non-quadratic (e.g. cubic Artin–Schelter) cases are
-outside its present scope.
+\(\mathbb{P}^3\). The non-quadratic cases are outside its present scope.
 
 The families and their invariants follow
 {{< arxiv "2511.08390" >}}.
