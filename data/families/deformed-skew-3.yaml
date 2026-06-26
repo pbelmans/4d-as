@@ -1,0 +1,31 @@
+name: 'deformed skew \((x_3x_2;\ x_4^2, x_1^2)\)'
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 5
+hh0: [2, 4, 8]
+year: "?"
+slug: "deformed-skew-3"
+sortkey: "9999 deformed-skew-3"
+parameters:
+  - symbol: "q_{13}, q_{23}, q_{34}"
+    description: "skew-commutation parameters."
+  - symbol: "t, s"
+    description: "coefficients of the two deforming terms."
+introduced:
+  reference: "2511.08390"
+  note: >
+    One of the deformed skew polynomial (\(\mathcal{F}\)) families of
+    arXiv:2511.08390; its earlier origin is not pinned down here.
+construction: >
+  A quantum (skew) polynomial ring with two quadratic terms added to one
+  relation: \(x_3 x_2\) acquires \(-t\,x_4^2 - s\,x_1^2\).
+relations:
+  - "x_2 x_1 - (1/q_{13}) x_1 x_2"
+  - "x_3 x_1 - q_{13} x_1 x_3"
+  - "x_4 x_1 - x_1 x_4"
+  - "x_3 x_2 - q_{23} x_2 x_3 - t x_4^2 - s x_1^2"
+  - "x_4 x_2 - (1/q_{34}) x_2 x_4"
+  - "x_4 x_3 - q_{34} x_3 x_4"
+references:
+  - "2511.08390"

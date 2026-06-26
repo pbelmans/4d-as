@@ -1,25 +1,25 @@
-name: "deformed skew polynomial"
+name: 'deformed skew \((x_3x_2;\ x_4^2)\)'
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 5
-year: 2025
-slug: "deformed-skew-polynomial"
-sortkey: "2025 deformed-skew-polynomial"
+hh0: [3, 4, 3]
+year: "?"
+slug: "deformed-skew-1"
+sortkey: "9999 deformed-skew-1"
 parameters:
   - symbol: "q_{13}, q_{14}, q_{23}, q_{24}"
     description: "skew-commutation parameters."
   - symbol: "t"
-    description: "the deformation parameter of the single non-skew relation."
+    description: "coefficient of the deforming term."
 introduced:
   reference: "2511.08390"
   note: >
-    One of the \(\mathcal{F}\) families appearing in the Hochschild computations
-    of arXiv:2511.08390.
+    One of the deformed skew polynomial (\(\mathcal{F}\)) families of
+    arXiv:2511.08390; its earlier origin is not pinned down here.
 construction: >
-  A quantum (skew) polynomial ring in which all but one pair of generators
-  \(q\)-commute; the remaining relation acquires a quadratic correction
-  \(t\,x_4^2\).
+  A quantum (skew) polynomial ring with a single quadratic term added: the
+  \(x_3 x_2\) relation acquires \(-t\,x_4^2\).
 relations:
   - "x_2 x_1 - (q_{14}^2/q_{13}) x_1 x_2"
   - "x_3 x_1 - q_{13} x_1 x_3"
