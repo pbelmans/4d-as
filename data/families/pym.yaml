@@ -1,5 +1,6 @@
-name: "Pym S(2,3)"
+name: "Ore extension of polynomials"
 kind: "named"
+poisson: true
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 6

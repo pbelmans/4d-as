@@ -1,6 +1,7 @@
 {{- /* Render one family's details. Context: dict with "f" (family data). */ -}}
 {{- $f := .f -}}
 {{ with $f.construction }}<p class="lead">{{ . }}</p>{{ end }}
+{{ if $f.poisson }}<p class="poisson-note">Arises as a quantization of a quadratic Poisson structure on \(\mathbb{P}^3\) (Pym's classification).</p>{{ end }}
 <dl class="family-data">
   <dt>Relations</dt>
   <dd><ul class="relations">{{ range $f.relations }}<li>\({{ . }}\)</li>{{ end }}</ul></dd>

@@ -1,14 +1,15 @@
-name: "L(1,1,2) σ"
+name: "Cassidy–Goetz–Shelton"
 kind: "named"
+poisson: true
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 5
 hh0: [2, 4, 8]
 hh_qgr: [1, 1, 3, 7]
 point_scheme_dim: 1
-year: 2015
+year: 2006
 slug: "l112sigma"
-sortkey: "2015 l112sigma"
+sortkey: "2006 l112sigma"
 ks_rank: 4
 ks_inj: false
 ks_surj: true
@@ -22,15 +23,16 @@ parameters:
       \(p_0, p_1\) nonzero scalars; \(λ, α, β\) scalars (\(α, β\) rescaling the
       \(σ\)-twist).
 introduced:
-  reference: "MR3366864"
+  reference: "MR2253666"
   note: >
-    The twisted version of Pym's \(L(1,1,2)\) algebra, a quantization of one of
-    the quadratic Poisson structures on \(\mathbb{P}^3\).
+    A generalized Laurent polynomial ring of Cassidy–Goetz–Shelton; in Pym's
+    classification of quadratic Poisson structures it is the type \(L(1,1,2)\).
 construction: >
-  A quantization of the Poisson structure of type \(L(1,1,2)\): \(x_1, x_2\)
-  commute, the pairs involving \(x_3, x_4\) \(q\)-commute, and the \(x_3 x_4\)
-  relation carries a quadratic correction in \(x_1, x_2\). The parameters
-  \(α, β\) implement a further diagonal (\(σ\)) twist.
+  The Cassidy–Goetz–Shelton algebra: \(x_1, x_2\) commute, the pairs involving
+  \(x_3, x_4\) \(q\)-commute, and the \(x_3 x_4\) relation carries a quadratic
+  correction in \(x_1, x_2\). The \(σ\) is a diagonal twist (the parameters
+  \(α, β\)), under which the family is closed; the \(σ\)-twisted form is the one
+  appearing in the dimension-four classification.
 relations:
   - "α (x_2 x_1 - x_1 x_2)"
   - "β x_3 x_1 - (1/p_0) α x_1 x_3"
@@ -39,6 +41,6 @@ relations:
   - "(α^2/β) x_4 x_2 - (1/p_1) α x_2 x_4"
   - "(α^2/β) x_4 x_3 - p_1 (1/p_0) β x_3 x_4 - α (p_1 - p_0)(x_1^2 + λ x_1 x_2 + x_2^2) - α (1 - p_0^2) x_1^2 - α (p_1^2 - 1) x_2^2"
 references:
+  - "MR2253666"
   - "MR3366864"
-  - "2511.08390"
 point_scheme: 'a line, two conics and two points'

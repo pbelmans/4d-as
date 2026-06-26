@@ -1,4 +1,4 @@
-name: "R(3,a)"
+name: "Jordan"
 kind: "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
@@ -22,14 +22,17 @@ parameters:
 introduced:
   reference: "MR3901632"
   note: >
-    A member of the additive (\(\mathbb{G}_a\)) family of regular algebras of
+    A member of the additive (\(\mathbb{G}_{\mathrm{a}}\)) family of regular algebras of
     Lecoutre–Sierra, obtained as a quantization of a Poisson structure.
 construction: >
   An "additive" deformation: the commutators of the generators are prescribed
   quadratic forms with coefficients polynomial in the single parameter \(a\),
   realising a quantization of a Poisson structure whose semiclassical limit has
-  a \(\mathbb{G}_a\)-symmetry. Its point modules are parametrised by a bouquet of
-  rational normal curves (a line, a conic and a twisted cubic).
+  a \(\mathbb{G}_{\mathrm{a}}\)-symmetry. Its point modules are parametrised by a
+  bouquet of rational normal curves (a line, a conic and a twisted cubic). It is
+  called *Jordan* because it is related to the Jordan plane
+  \(k\langle x, y\rangle/(yx - xy - x^2)\): quotienting repeatedly by the first
+  variable \(x_1\) recovers the Jordan plane.
 relations:
   - "(x_1 x_2 - x_2 x_1) + 4 a x_1^2"
   - "(x_2 x_3 - x_3 x_2) + 4 (a+1) x_2^2 - 8 (a+1)(a+2) x_1 x_2 - 4 (a+2) x_1 x_3"

@@ -34,8 +34,8 @@ degree 4. ([Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) is regular only
 special parameters, where its centre depends on the chosen point.) All the rest —
 [\(S_\infty\)](/families/s-infinity/),
 [Vancliff](/families/vancliff/), [Pym](/families/pym/),
-[R(3, a)](/families/r3a/), [L(1,1,2)σ](/families/l112sigma/) and the deformed
-skew polynomials — have trivial centre in low degrees.
+[Jordan](/families/r3a/), [Cassidy–Goetz–Shelton](/families/l112sigma/) and the
+deformed skew polynomials — have trivial centre in low degrees.
 
 ## Overview
 

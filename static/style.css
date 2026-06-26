@@ -76,6 +76,7 @@ tbody tr:hover { background: #fafafa; }
 
 /* family detail */
 .lead { font-size: 1.05rem; color: #333; }
+.poisson-note { font-style: italic; color: #555; border-left: 3px solid var(--accent2); padding-left: 0.6rem; }
 dl.family-data {
   display: grid;
   grid-template-columns: max-content 1fr;
