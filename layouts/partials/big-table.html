@@ -14,11 +14,12 @@
       <th rowspan="2" data-col="3">dimension point scheme</th>
       <th class="wide" colspan="3">\(\mathrm{HH}^i_0\)</th>
       <th class="wide" colspan="3">\(\mathrm{HH}^i(\mathrm{qgr}\,A)\)</th>
-      <th class="wide" rowspan="2" data-col="10">K–S rank</th>
+      <th class="wide" colspan="3">Kodaira–Spencer</th>
     </tr>
     <tr>
       <th class="wide" data-col="4">1</th><th class="wide" data-col="5">2</th><th class="wide" data-col="6">3</th>
       <th class="wide" data-col="7">1</th><th class="wide" data-col="8">2</th><th class="wide" data-col="9">3</th>
+      <th class="wide" data-col="10">rank</th><th class="wide" data-col="11">inj.</th><th class="wide" data-col="12">surj.</th>
     </tr>
   </thead>
   <tbody>
@@ -40,6 +41,8 @@
       <td class="wide">—</td><td class="wide">—</td><td class="wide">—</td>
       {{ end }}
       <td class="wide">{{ .ks_rank }}</td>
+      <td class="wide">{{ if .ks_inj }}yes{{ else }}no{{ end }}</td>
+      <td class="wide">{{ if .ks_surj }}yes{{ else }}no{{ end }}</td>
     </tr>
   {{- end }}
   {{- end }}
