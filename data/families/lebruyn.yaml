@@ -40,4 +40,4 @@ references:
   - "MR1429334"
   - "2511.08390"
 point_scheme: 'a twisted cubic and 8 points'
-centre: '\(\dim Z_2 = 1\), \(\dim Z_3 = 2\) (a central quadric and central cubics by construction); \(x_4\) is central'
+centre: '\(\dim \operatorname{Z}(A)_2 = 1\), \(\dim \operatorname{Z}(A)_3 = 2\) (a central quadric and central cubics by construction); \(x_4\) is central'

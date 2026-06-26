@@ -38,4 +38,4 @@ references:
   - "MR3885145"
   - "2511.08390"
 point_scheme: 'a quartic elliptic curve \(E\) and four points (the same curve as Sklyanin)'
-centre: '\(\dim Z_2 = 0\): the two quadrics are imposed as relations, not central'
+centre: '\(\dim \operatorname{Z}(A)_2 = 0\): the two quadrics are imposed as relations, not central'

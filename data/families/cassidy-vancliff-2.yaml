@@ -32,4 +32,4 @@ references:
   - "MR2580455"
   - "2511.08390"
 point_scheme: '20 points'
-centre: '\(\dim Z_2 = 2\)'
+centre: '\(\dim \operatorname{Z}(A)_2 = 2\)'

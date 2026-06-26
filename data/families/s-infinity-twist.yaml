@@ -36,4 +36,4 @@ references:
   - "MR3885145"
   - "2511.08390"
 point_scheme: '20 points'
-centre: '\(\dim Z_2 = 1\); the central quadric is a smooth \(\mathbb{P}^1 \times \mathbb{P}^1\)'
+centre: '\(\dim \operatorname{Z}(A)_2 = 1\); the central quadric is a smooth \(\mathbb{P}^1 \times \mathbb{P}^1\)'
