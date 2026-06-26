@@ -1,0 +1,32 @@
+name: "Pym S(2,3)"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 6
+hh0: [4, 9, 9]
+point_scheme_dim: 1
+parameters:
+  - symbol: "c_1, c_2, c_3, d_1, d_2, d_3"
+    description: "Six scalars; b_i = −c_{i-1} − 2 are determined by the c's."
+introduced:
+  reference: "MR3366864"
+  note: >
+    One of Pym's quantum deformations of projective 3-space, arising from a
+    quadratic Poisson structure (the type S(2,3)).
+construction: >
+  A quantization of a Poisson structure on P^3 whose degeneracy divisor is a
+  configuration of three planes and a cubic. The variables x_1, x_2, x_3
+  commute among themselves, while the fourth variable x_4 acts on them through
+  a derivation built from the cyclic data (c_i, d_i). The point scheme is a
+  union of three lines and a rational normal quartic.
+relations:
+  - "x_4 x_1 - x_1 x_4 - x_1^2 - x_1 ((-c_3 - 2) x_2 + c_1 x_3) - d_1 x_2 x_3"
+  - "x_4 x_2 - x_2 x_4 - x_2^2 - x_2 ((-c_1 - 2) x_3 + c_2 x_1) - d_2 x_3 x_1"
+  - "x_4 x_3 - x_3 x_4 - x_3^2 - x_3 ((-c_2 - 2) x_1 + c_3 x_2) - d_3 x_1 x_2"
+  - "x_2 x_3 - x_3 x_2"
+  - "x_3 x_1 - x_1 x_3"
+  - "x_1 x_2 - x_2 x_1"
+references:
+  - "MR3366864"
+  - "2511.08390"
+notes: "Point scheme: three lines ∪ a rational normal quartic."

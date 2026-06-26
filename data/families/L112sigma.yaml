@@ -1,0 +1,31 @@
+name: "L(1,1,2) σ"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 5
+hh0: [2, 4, 8]
+point_scheme_dim: 1
+parameters:
+  - symbol: "p_0, p_1, λ, α, β"
+    description: "p_0, p_1 nonzero scalars; λ, α, β scalars (α, β rescaling the σ-twist)."
+introduced:
+  reference: "MR3366864"
+  note: >
+    The twisted version of Pym's L(1,1,2) algebra, a quantization of one of the
+    quadratic Poisson structures on P^3.
+construction: >
+  A quantization of the Poisson structure of type L(1,1,2): x_1, x_2 commute,
+  the pairs involving x_3, x_4 q-commute, and the x_3 x_4 relation carries a
+  quadratic correction in x_1, x_2. The parameters α, β implement a further
+  diagonal (σ) twist.
+relations:
+  - "α (x_2 x_1 - x_1 x_2)"
+  - "β x_3 x_1 - (1/p_0) α x_1 x_3"
+  - "(α^2/β) x_4 x_1 - p_0 α x_1 x_4"
+  - "β x_3 x_2 - p_1 α x_2 x_3"
+  - "(α^2/β) x_4 x_2 - (1/p_1) α x_2 x_4"
+  - "(α^2/β) x_4 x_3 - p_1 (1/p_0) β x_3 x_4 - α (p_1 - p_0)(x_1^2 + λ x_1 x_2 + x_2^2) - α (1 - p_0^2) x_1^2 - α (p_1^2 - 1) x_2^2"
+references:
+  - "MR3366864"
+  - "2511.08390"
+notes: "Point scheme: line ∪ two conics + 2 points."

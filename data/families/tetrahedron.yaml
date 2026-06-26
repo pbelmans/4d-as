@@ -1,0 +1,35 @@
+name: "Tetrahedron (quantum P^3)"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 6
+hh0: [4, 6, 4]
+hh_qgr: [1, 3, 3, 5]
+point_scheme_dim: 1
+parameters:
+  - symbol: "q_{ij} (6 scalars)"
+    description: "One nonzero scalar for each pair i < j."
+introduced:
+  reference: "MR3527537"
+  note: >
+    The generic quantum (skew) polynomial ring; its point variety was
+    determined by Belmans–De Laet–Le Bruyn. It also occurs as the
+    4-generator graded skew Clifford algebra.
+construction: >
+  The quantum polynomial ring: each pair of generators q-commutes,
+  x_i x_j = q_{ij} x_j x_i. This is the most "abelian" noncommutative P^3, a
+  toric deformation of the polynomial ring. Its point scheme is the 1-skeleton
+  of the coordinate tetrahedron — the six edges (a copy of K_4), two edges
+  meeting iff they share a vertex.
+relations:
+  - "x_1 x_2 - q12 x_2 x_1"
+  - "x_1 x_3 - q13 x_3 x_1"
+  - "x_1 x_4 - q14 x_4 x_1"
+  - "x_2 x_3 - q23 x_3 x_2"
+  - "x_2 x_4 - q24 x_4 x_2"
+  - "x_3 x_4 - q34 x_4 x_3"
+references:
+  - "MR3527537"
+  - "MR1086882"
+  - "2511.08390"
+notes: "Point scheme: six lines, the tetrahedron skeleton K_4. Trivial centre in low degrees."

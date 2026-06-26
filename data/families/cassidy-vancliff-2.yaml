@@ -1,0 +1,29 @@
+name: "Cassidy–Vancliff 2"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 4
+hh0: [1, 9, 19]
+point_scheme_dim: 0
+parameters:
+  - symbol: "α_1, α_2, β_1, β_2"
+    description: "Four scalars."
+introduced:
+  reference: "MR2580455"
+  note: >
+    A graded skew Clifford / complete-intersection example of Cassidy–Vancliff.
+construction: >
+  Another graded skew Clifford algebra, presented through symmetric and
+  skew-symmetric relations whose quadratic corrections are multiples of the
+  squares x_2², x_3². It carries a 2-dimensional space of central quadrics.
+relations:
+  - "x_3 x_1 + x_1 x_3 - β_2 x_2^2"
+  - "x_4 x_1 + x_1 x_4 - α_2 x_3^2"
+  - "x_2 x_3 - x_3 x_2"
+  - "x_4^2 - x_2^2"
+  - "x_4 x_2 + x_2 x_4 - x_3^2"
+  - "α_1 x_3^2 + β_1 x_2^2 - x_1^2"
+references:
+  - "MR2580455"
+  - "2511.08390"
+notes: "Point scheme: 20 points. dim Z_2 = 2."

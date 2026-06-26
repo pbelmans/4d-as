@@ -1,0 +1,32 @@
+name: "Vancliff"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 3
+hh0: [3, 4, 3]
+hh_qgr: [1, 2, 4, 7]
+point_scheme_dim: 2
+parameters:
+  - symbol: "α, β, λ"
+    description: "Scalars with λ ≠ αβ."
+introduced:
+  reference: "MR1272579"
+  note: >
+    Vancliff's quadratic algebra associated with the union of a quadric and a
+    line in P^3.
+construction: >
+  Built so that its point scheme is the union of a quadric surface and a line
+  in P^3 — the first examples of regular algebras whose point scheme is
+  2-dimensional. Five of the six relations are skew-commutation (q-commuting)
+  relations; the last couples x_3 x_2 to x_1 x_4.
+relations:
+  - "x_2 x_1 - α x_1 x_2"
+  - "x_3 x_1 - λ x_1 x_3"
+  - "x_4 x_1 - α λ x_1 x_4"
+  - "x_4 x_3 - α x_3 x_4"
+  - "x_4 x_2 - λ x_2 x_4"
+  - "x_3 x_2 - β x_2 x_3 - (α β - λ) x_1 x_4"
+references:
+  - "MR1272579"
+  - "2511.08390"
+notes: "Point scheme: a line ∪ a quadric surface (dimension 2)."

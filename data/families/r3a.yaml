@@ -1,0 +1,33 @@
+name: "R(3,a)"
+kind: "named"
+generators: ["x_1", "x_2", "x_3", "x_4"]
+quadratic: true
+num_parameters: 1
+hh0: [2, 1, 1]
+hh_qgr: [1, 1, 0, 4]
+point_scheme_dim: 1
+parameters:
+  - symbol: "a"
+    description: "A single scalar parameter."
+introduced:
+  reference: "MR3901632"
+  note: >
+    A member of the additive (𝔾_a) family of regular algebras of Lecoutre–Sierra,
+    obtained as a quantization of a Poisson structure.
+construction: >
+  An "additive" deformation: the commutators of the generators are prescribed
+  quadratic forms with coefficients polynomial in the single parameter a,
+  realising a quantization of a Poisson structure whose semiclassical limit has
+  a 𝔾_a-symmetry. Its point modules are parametrised by a bouquet of rational
+  normal curves (a line, a conic and a twisted cubic).
+relations:
+  - "(x_1 x_2 - x_2 x_1) + 4 a x_1^2"
+  - "(x_2 x_3 - x_3 x_2) + 4 (a+1) x_2^2 - 8 (a+1)(a+2) x_1 x_2 - 4 (a+2) x_1 x_3"
+  - "(x_1 x_3 - x_3 x_1) + 4 a x_1 x_2 + 8 a^2 x_1^2 - 8 a x_1^2"
+  - "(x_2 x_4 - x_4 x_2) + 4 (a+1) x_2 x_3 + 8 a (a+1) x_2^2 - (64/3) a (a+1)(a+2) x_1 x_2 - 16 (a+1)(a+2) x_1 x_3 - 4 (a+3) x_1 x_4"
+  - "(x_1 x_4 - x_4 x_1) + 4 a x_1 x_3 - 8 (a - a^2) x_1 x_2 - (64/6)(-a^3 + 3 a^2 - 2 a) x_1^2"
+  - "(x_3 x_4 - x_4 x_3) + 4 (a+2) x_3^2 - 8 (a+2)(a+3) x_2 x_3 + (64/6)(a+2)(a+3)(a+4) x_1 x_3 - 4 (a+3) x_2 x_4 + 8 (a+3)(a+4) x_1 x_4"
+references:
+  - "MR3901632"
+  - "2511.08390"
+notes: "Point scheme: line ∪ conic ∪ twisted cubic (a bouquet of rational normal curves)."
