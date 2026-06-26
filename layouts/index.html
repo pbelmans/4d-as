@@ -27,10 +27,12 @@ Click a column heading to sort.</p>
       <td><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a></td>
       <td>{{ .year }}</td>
       <td>{{ .num_parameters }}</td>
-      <td>{{ .point_scheme_dim }}</td>
-      <td>{{ index .hh0 0 }}</td>
-      <td>{{ index .hh0 1 }}</td>
-      <td>{{ index .hh0 2 }}</td>
+      <td>{{ if isset . "point_scheme_dim" }}{{ .point_scheme_dim }}{{ else }}?{{ end }}</td>
+      {{ if isset . "hh0" }}
+      <td>{{ index .hh0 0 }}</td><td>{{ index .hh0 1 }}</td><td>{{ index .hh0 2 }}</td>
+      {{ else }}
+      <td>?</td><td>?</td><td>?</td>
+      {{ end }}
       {{ with .hh_qgr }}
       <td>{{ index . 1 }}</td><td>{{ index . 2 }}</td><td>{{ index . 3 }}</td>
       {{ else }}

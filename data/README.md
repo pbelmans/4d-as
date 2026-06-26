@@ -16,7 +16,7 @@ regular algebras of global dimension 4 — i.e. a "noncommutative `P^3`".
 
 ```yaml
 name: "Sklyanin"            # display name
-kind: "named"              # "iterated-Ore" (A–Z) or "named"
+kind: "named"              # "double-Ore" (A–Z) or "named"
 generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 2          # number of scalar parameters

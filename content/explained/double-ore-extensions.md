@@ -1,19 +1,18 @@
 ---
-title: "Iterated Ore extensions"
+title: "Double Ore extensions"
 summary: "the double Ore extensions of Zhang–Zhang, giving the 26 families A–Z"
 math: true
 ---
 
 An **Ore extension** \(B = A[x; \sigma, \delta]\) adjoins a variable \(x\) to a
 ring \(A\) with a twisted multiplication \(x a = \sigma(a) x + \delta(a)\), for
-an automorphism \(\sigma\) and a \(\sigma\)-derivation \(\delta\). Iterating
-this construction from \(k\) builds higher-dimensional algebras while keeping
-good homological behaviour; the quantum (skew) polynomial ring is the simplest
-example.
+an automorphism \(\sigma\) and a \(\sigma\)-derivation \(\delta\). Repeating the
+construction builds higher-dimensional algebras while keeping good homological
+behaviour; the quantum (skew) polynomial ring is the simplest example.
 
-The **double Ore extension** is a variant adjoining two variables at once,
-producing a rank-two extension \((k_Q[x_1, x_2])_P[y_1, y_2; \sigma]\): a
-quantum plane \(k_Q[x_1, x_2]\) extended by \(y_1, y_2\).
+A **double Ore extension** adjoins two variables at once, producing a rank-two
+extension \((k_Q[x_1, x_2])_P[y_1, y_2; \sigma]\): a quantum plane
+\(k_Q[x_1, x_2]\) extended by \(y_1, y_2\).
 
 ## The 26 families A–Z
 

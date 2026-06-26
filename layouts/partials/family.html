@@ -12,9 +12,15 @@
 </ul>
 {{ end }}
 <dl class="family-data">
+  {{ if or $f.point_scheme (isset $f "point_scheme_dim") }}
   <dt>Point scheme</dt>
-  <dd>{{ with $f.point_scheme }}{{ . }} (dimension \({{ $f.point_scheme_dim }}\)){{ else }}dimension \({{ $f.point_scheme_dim }}\){{ end }}.</dd>
+  <dd>{{ with $f.point_scheme }}{{ . }}{{ end }}{{ if isset $f "point_scheme_dim" }}{{ if $f.point_scheme }} (dimension \({{ $f.point_scheme_dim }}\)){{ else }}dimension \({{ $f.point_scheme_dim }}\){{ end }}{{ end }}.</dd>
+  {{ end }}
   {{ with $f.centre }}<dt>Centre</dt><dd>{{ . }}.</dd>{{ end }}
+  {{ if isset $f "hh0" }}
+  <dt><a href="{{ "explained/hochschild-cohomology/" | relURL }}">Hochschild cohomology</a></dt>
+  <dd>\(\mathrm{HH}^\bullet_0(A) = (1, {{ index $f.hh0 0 }}, {{ index $f.hh0 1 }}, {{ index $f.hh0 2 }})\){{ with $f.hh_qgr }}; \(\mathrm{HH}^\bullet(\operatorname{qgr} A) = ({{ delimit . ", " }})\){{ end }}.</dd>
+  {{ end }}
   {{ with $f.notes }}<dt>Notes</dt><dd>{{ . }}</dd>{{ end }}
 </dl>
 <p>Introduced in {{ $f.year }}: {{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</p>

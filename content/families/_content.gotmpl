@@ -1,8 +1,8 @@
 {{/* Generate one page per family from data/families/*.yaml */}}
 {{ range $k, $f := hugo.Data.families }}
   {{ $.AddPage (dict
-    "path" (cond (eq $f.kind "iterated-Ore") (printf "ore-%s" (lower $k)) (lower $k))
-    "title" (cond (eq $f.kind "iterated-Ore") (printf "iterated Ore %s" $f.name) $f.name)
+    "path" (cond (eq $f.kind "double-Ore") (printf "ore-%s" (lower $k)) (lower $k))
+    "title" (cond (eq $f.kind "double-Ore") (printf "double Ore %s" $f.name) $f.name)
     "params" (dict "famkey" $k "math" true)
     "content" (dict "mediaType" "text/markdown" "value" "")
   ) }}
