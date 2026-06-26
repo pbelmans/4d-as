@@ -4,5 +4,5 @@ math: true
 ---
 
 A website dedicated to the classification and properties of four-dimensional
-Artin–Schelter regular algebras (that are general in their family), organised
-around the known families and the data of {{< arxiv "2511.08390" >}}.
+*quadratic* Artin–Schelter regular algebras (that are general in their family),
+organised around the known families and the data of {{< arxiv "2511.08390" >}}.
