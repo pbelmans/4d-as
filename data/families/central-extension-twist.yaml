@@ -4,6 +4,7 @@ generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 5
 hh0: [1, 4, 9]
+hh_qgr: [1, 0, 7, 12]
 year: 2025
 slug: "central-extension-twist"
 sortkey: "2025 central-extension-twist"

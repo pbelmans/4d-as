@@ -4,6 +4,7 @@ generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 0
 hh0: [1, 4, 9]
+hh_qgr: [1, 0, 15, 20]
 year: 2024
 slug: "kirkman-t"
 sortkey: "2024 kirkman-t"

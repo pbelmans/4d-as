@@ -4,6 +4,7 @@ generators: ["x_1", "x_2", "x_3", "x_4"]
 quadratic: true
 num_parameters: 4
 hh0: [2, 1, 0]
+hh_qgr: [1, 1, 1, 5]
 year: 2025
 slug: "a5"
 sortkey: "2025 a5"
