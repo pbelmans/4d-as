@@ -39,5 +39,4 @@ relations:
   - "x_4 x_2 - x_2 x_4 + γ^2 x_1^2"
 references:
   - "MR2580455"
-  - "2511.08390"
 point_scheme: '20 points'

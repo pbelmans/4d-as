@@ -43,7 +43,6 @@ relations:
 references:
   - "MR684124"
   - "MR1175941"
-  - "2511.08390"
 point_scheme: 'a quartic elliptic curve \(E\) and four points'
 centre: '\(k[\Omega_1, \Omega_2]\) (GK-dimension \(2\)); not module-finite over the centre when \(σ\) has infinite order'
 code_derive:

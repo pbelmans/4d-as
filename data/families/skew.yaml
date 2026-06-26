@@ -41,6 +41,5 @@ relations:
 references:
   - "MR3527537"
   - "MR1086882"
-  - "2511.08390"
 point_scheme: 'six lines, the tetrahedron skeleton \(K_4\)'
 centre: 'trivial in low degrees'

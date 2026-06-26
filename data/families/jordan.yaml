@@ -7,8 +7,8 @@ hh0: [2, 1, 1]
 hh_qgr: [1, 1, 0, 4]
 point_scheme_dim: 1
 year: 2016
-slug: "r3a"
-sortkey: "2016 r3a"
+slug: "jordan"
+sortkey: "2016 jordan"
 ks_rank: 1
 ks_inj: true
 ks_surj: true
@@ -42,5 +42,4 @@ relations:
   - "(x_3 x_4 - x_4 x_3) + 4 (a+2) x_3^2 - 8 (a+2)(a+3) x_2 x_3 + (64/6)(a+2)(a+3)(a+4) x_1 x_3 - 4 (a+3) x_2 x_4 + 8 (a+3)(a+4) x_1 x_4"
 references:
   - "MR3901632"
-  - "2511.08390"
 point_scheme: 'a line, a conic and a twisted cubic (a bouquet of rational normal curves)'

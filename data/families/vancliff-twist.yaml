@@ -37,5 +37,4 @@ relations:
   - "x_3 x_2 + β x_2 x_3 - (α β - λ) x_1 x_4"
 references:
   - "MR1272579"
-  - "2511.08390"
 point_scheme: 'five lines (\(K_4\) minus one edge)'

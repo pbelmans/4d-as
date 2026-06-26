@@ -37,6 +37,5 @@ relations:
   - "α_1 x_3^2 + β_1 x_2^2 - x_1^2"
 references:
   - "MR2580455"
-  - "2511.08390"
 point_scheme: '20 points'
 centre: '\(\dim \operatorname{Z}(A)_2 = 2\)'

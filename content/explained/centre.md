@@ -33,8 +33,8 @@ central quadrics, while [Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) an
 degree 4. ([Cassidy–Vancliff 3](/families/cassidy-vancliff-3/) is regular only at
 special parameters, where its centre depends on the chosen point.) All the rest —
 [\(S_\infty\)](/families/s-infinity/),
-[Vancliff](/families/vancliff/), [Pym](/families/pym/),
-[Jordan](/families/r3a/), [Cassidy–Goetz–Shelton](/families/l112sigma/) and the
+[Vancliff](/families/vancliff/), [Ore extension of polynomials](/families/ore-extension-of-polynomials/),
+[Jordan](/families/jordan/), [Cassidy–Goetz–Shelton](/families/cassidy-goetz-shelton/) and the
 deformed skew polynomials — have trivial centre in low degrees.
 
 ## Overview

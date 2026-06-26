@@ -44,6 +44,5 @@ relations:
 references:
   - "MR1356364"
   - "MR2580455"
-  - "2511.08390"
 point_scheme: '20 points'
 centre: '\(\dim \operatorname{Z}(A)_2 = 4\) (the four squares are central)'

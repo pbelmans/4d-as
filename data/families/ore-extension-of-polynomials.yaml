@@ -8,8 +8,8 @@ hh0: [4, 9, 9]
 hh_qgr: [1, 3, 6, 8]
 point_scheme_dim: 1
 year: 2015
-slug: "pym"
-sortkey: "2015 pym"
+slug: "ore-extension-of-polynomials"
+sortkey: "2015 ore-extension-of-polynomials"
 ks_rank: 9
 ks_inj: false
 ks_surj: true
@@ -40,5 +40,4 @@ relations:
   - "x_1 x_2 - x_2 x_1"
 references:
   - "MR3366864"
-  - "2511.08390"
 point_scheme: 'three lines and a rational normal quartic'
