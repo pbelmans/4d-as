@@ -25,6 +25,11 @@ dimension \(d\) if:
 These conditions were introduced by
 [Artin–Schelter](/references/#ref-MR917738).
 
+The algebra is **quadratic** if it is generated in degree \(1\) with all
+defining relations in degree \(2\). Every family on this site is quadratic — in
+fact *Koszul*, a stronger homological condition — so each is presented by four
+generators and six quadratic relations.
+
 The basic example is the **commutative polynomial ring**
 \(k[x_1, \dots, x_d]\): it is AS-regular of dimension \(d\), and the
 noncommutative AS-regular algebras are exactly the noncommutative analogues of
