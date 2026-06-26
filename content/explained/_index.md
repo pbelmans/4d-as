@@ -67,5 +67,14 @@ In dimension \(d = 4\) no full classification is known. Restricting to algebras
   and one of degree \(4\), with
   \(\operatorname{h}_A(t) = \dfrac{1}{(1-t)^2(1-t^2)(1-t^3)}\).
 
+The two non-quadratic types are far less understood. The \((1,2,2,2,1)\) algebras
+were largely classified by
+[Lu–Palmieri–Wu–Zhang](/references/#ref-MR2309153) through the \(A_\infty\)-structure
+on their Ext-algebra (with the underlying machinery developed in a
+[companion paper](/references/#ref-MR2430869)). Unlike the quadratic case, these
+two types carry no classical geometric interpretation — there is no point scheme
+that parametrises their point modules — as discussed in
+[Belmans, *On non-quadratic 4-dimensional Artin–Schelter regular algebras and 3-folds*](https://pbelmans.ncag.info/assets/non-quad-4-dim-as-regular.pdf).
+
 Describing the known families of the quadratic type \((1,4,6,4,1)\) is the
 subject of this website.
