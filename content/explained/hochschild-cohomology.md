@@ -32,6 +32,6 @@ the associated *variety* is captured instead by the
 ## Overview
 
 \(\dim \mathrm{HH}^i_0(A)\) for \(i = 1, 2, 3\), for every family
-(\(\mathrm{HH}^0_0 = 1\) always):
+(\(\mathrm{HH}^0_0 = 1\) always), as computed in {{< arxiv "2511.08390" >}}:
 
 {{< family-table "hh0" >}}

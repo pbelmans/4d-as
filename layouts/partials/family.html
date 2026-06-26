@@ -38,13 +38,16 @@
   {{ with $f.notes }}<dt>Notes</dt><dd>{{ . }}</dd>{{ end }}
 
   <dt>Introduced</dt>
-  <dd>{{ if ne $f.year "?" }}{{ $f.year }}, {{ end }}{{ partial "reflink.html" $f.introduced.reference }}. {{ $f.introduced.note }}</dd>
+  <dd>{{ if ne $f.year "?" }}{{ $f.year }}, {{ end }}{{ with $f.introduced.reference }}{{ partial "reflink.html" . }}. {{ end }}{{ $f.introduced.note }}</dd>
 </dl>
 
-{{ $keys := slice $f.introduced.reference }}
+{{ $keys := slice }}
+{{ with $f.introduced.reference }}{{ $keys = $keys | append . }}{{ end }}
 {{ range $f.references }}{{ $keys = $keys | append . }}{{ end }}
 {{ $keys = $keys | uniq }}
+{{ with $keys }}
 <h2>References</h2>
 <div class="bibliography">
-  {{ range $keys }}{{ partial "bib-entry.html" . }}{{ end }}
+  {{ range . }}{{ partial "bib-entry.html" . }}{{ end }}
 </div>
+{{ end }}
