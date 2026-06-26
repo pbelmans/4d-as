@@ -103,6 +103,8 @@ dl.family-data ul.relations li { padding: 0.05rem 0; }
 table.family-table td { text-align: left; vertical-align: baseline; }
 table.family-table td:first-child { white-space: nowrap; font-family: "Poppins", Georgia, serif; }
 table.family-table td:last-child { color: #444; }
+/* the undeformed base case, set apart from its deformations */
+table.family-table tr.base-case td { background: #eef4fa; border-bottom: 2px solid var(--accent2); }
 table.overview td { text-align: left; }
 table.overview td:nth-child(2) { text-align: center; }
 
