@@ -11,37 +11,37 @@ See <a href="{{ "explained/" | relURL }}">Explained</a> for the definitions and
     <tr>
       <th>family</th>
       <th>#params</th>
+      <th>dim point scheme</th>
       <th>\(\mathrm{HH}^{1,2,3}_0\)</th>
       <th>\(\mathrm{HH}^\bullet(\mathrm{qgr}\,A)\)</th>
-      <th>dim point scheme</th>
     </tr>
   </thead>
   <tbody>
-  {{ range $k, $f := site.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
+  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "iterated-Ore" }}
     <tr>
-      <td><a href="{{ "families/" | relURL }}#{{ $k }}">{{ $f.name }}</a></td>
+      <td><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
       <td>{{ $f.num_parameters }}</td>
+      <td>{{ $f.point_scheme_dim }}</td>
       <td>{{ delimit $f.hh0 ", " }}</td>
       <td>{{ with $f.hh_qgr }}({{ delimit . ", " }}){{ else }}—{{ end }}</td>
-      <td>{{ $f.point_scheme_dim }}</td>
     </tr>
   {{ end }}{{ end }}
-  {{ range $k, $f := site.Data.families }}{{ if eq $f.kind "named" }}
+  {{ range $k, $f := hugo.Data.families }}{{ if eq $f.kind "named" }}
     <tr>
-      <td><a href="{{ "families/" | relURL }}#{{ $k }}">{{ $f.name }}</a></td>
+      <td><a href="{{ printf "families/%s/" (lower $k) | relURL }}">{{ partial "famlabel.html" $f }}</a></td>
       <td>{{ $f.num_parameters }}</td>
+      <td>{{ $f.point_scheme_dim }}</td>
       <td>{{ delimit $f.hh0 ", " }}</td>
       <td>{{ with $f.hh_qgr }}({{ delimit . ", " }}){{ else }}—{{ end }}</td>
-      <td>{{ $f.point_scheme_dim }}</td>
     </tr>
   {{ end }}{{ end }}
   </tbody>
 </table>
 
 <p><small>\(\mathrm{HH}^{1,2,3}_0\): graded Hochschild cohomology in cohomological
-degrees 1, 2, 3 (degree 0 is always 1), from arXiv:2511.08390.
-\(\mathrm{HH}^\bullet(\mathrm{qgr}\,A)\): directly computed where known, “—”
-otherwise — the alternating-sum trick relating the two is not general.</small></p>
+degrees 1, 2, 3 (degree 0 is always 1).
+\(\mathrm{HH}^\bullet(\mathrm{qgr}\,A)\): the Hochschild cohomology of the
+associated noncommutative variety.</small></p>
 
 <p><a href="{{ "posts/" | relURL }}">Updates</a></p>
 {{ end }}

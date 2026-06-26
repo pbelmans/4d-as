@@ -2,7 +2,7 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 <div class="references">
-  {{ range $k, $ref := site.Data.refs }}
+  {{ range $k, $ref := hugo.Data.refs }}
   {{ partial "citation.html" $k }}
   {{ end }}
 </div>

@@ -1,6 +1,6 @@
 {{- /* Render one reference by citation key. Context: the key string. */ -}}
 {{- $key := . -}}
-{{- $ref := index site.Data.refs $key -}}
+{{- $ref := index hugo.Data.refs $key -}}
 {{- with $ref -}}
 <span class="citation" id="ref-{{ $key }}">
   {{ .html | safeHTML }}

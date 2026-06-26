@@ -1,0 +1,6 @@
+{{ define "main" }}
+{{ $f := index hugo.Data.families .Params.famkey }}
+<p><a href="{{ "families/" | relURL }}">← all families</a></p>
+<h1>{{ .Title }}</h1>
+{{ partial "family.html" (dict "f" $f) }}
+{{ end }}
