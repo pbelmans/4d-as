@@ -6,17 +6,17 @@ num_parameters: 2
 hh0: [2, 3, 4]
 hh_qgr: [1, 1, 16, 20]
 point_scheme_dim: 1
-year: 2025
+year: 2009
 slug: "ore-y"
-sortkey: "2025 ore-y"
+sortkey: "2009 ore-y"
 parameters:
   - symbol: "f"
     description: "scalar parameter"
   - symbol: "h"
     description: "deformation parameter (generic scalar)"
 introduced:
-  reference: "2511.08390"
-  note: "Family Y in the classification of Koszul AS-regular algebras of dimension 4 (arXiv:2511.08390)."
+  reference: "MR2529094"
+  note: "Family Y among the double extension regular algebras of type (14641) classified by Zhang–Zhang; its Hochschild cohomology is computed in arXiv:2511.08390."
 relations:
   - "x_2 x_1 - x_1 x_2"
   - "x_4 x_3 + x_3 x_4"

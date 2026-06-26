@@ -18,9 +18,8 @@ parameters:
 introduced:
   reference: "MR1356364"
   note: >
-    A graded Clifford algebra. These were studied by Le Bruyn (whose
-    "Central singularities of quantum spaces" treats their centres); the graded
-    skew generalisation is due to Cassidy–Vancliff.
+    A graded Clifford algebra; the graded skew generalisation is due to
+    Cassidy–Vancliff.
 construction: >
   Each pair of generators anticommutes up to a quadratic correction that is a
   linear combination of the squares \(x_ℓ^2\). Equivalently the algebra is
