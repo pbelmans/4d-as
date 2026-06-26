@@ -34,6 +34,13 @@ central cubic, while [Cassidy–Vancliff 1](/families/cassidy-vancliff-1/) and
 degree 4. All the rest — \(S_\infty\), Vancliff, Pym, R(3, a), L(1,1,2)σ and the
 deformed skew polynomials — have trivial centre in low degrees.
 
+## Overview
+
+The number of independent central quadrics and cubics
+(\(\dim \operatorname{Z}(A)_2\), \(\dim \operatorname{Z}(A)_3\)) for every family:
+
+{{< family-table "centre" >}}
+
 ## Status of the computation
 
 This is **not yet done for every family**. The dimensions

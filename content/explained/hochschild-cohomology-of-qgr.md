@@ -19,9 +19,10 @@ on this site where they have been computed directly.
 
 This is in general different from the
 [Hochschild cohomology of the graded algebra](/explained/hochschild-cohomology/):
-they agree for \(\mathbb{P}^3\) and the Sklyanin algebra but differ for the skew,
-twisted and Clifford families, so the qgr cohomology is computed in its own
-right.
+they agree for \(\mathbb{P}^3\) and the [Sklyanin](/families/sklyanin/) algebra
+but differ for the [skew](/families/skew/), twisted and
+[Clifford](/families/clifford/) families, so the qgr cohomology is computed in
+its own right.
 
 ## Overview
 

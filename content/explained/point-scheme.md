@@ -18,11 +18,14 @@ For a commutative polynomial ring the point scheme is all of \(\mathbb{P}^{d-1}\
 In the noncommutative world it is typically much smaller, and it is the main
 geometric invariant distinguishing the families:
 
-- the four-dimensional **Sklyanin** algebra has a *quartic elliptic curve*
-  (plus four points);
-- the **skew** polynomial ring has the six edges of the coordinate tetrahedron;
-- the **cocycle twists** have a finite scheme of **20 points**;
-- **Vancliff**'s algebra has a *quadric surface* (dimension two).
+- the four-dimensional [Sklyanin](/families/sklyanin/) algebra has a *quartic
+  elliptic curve* (plus four points);
+- the [skew](/families/skew/) polynomial ring has the six edges of the
+  coordinate tetrahedron;
+- the [cocycle twists](/explained/cocycle-twists/) have a finite scheme of
+  **20 points**;
+- [Vancliff](/families/vancliff/)'s algebra has a *quadric surface*
+  (dimension two).
 
 ## Overview
 
