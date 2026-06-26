@@ -1,4 +1,5 @@
-{{- /* Inline reference link by citation key -> references page anchor, with source favicon. */ -}}
+{{- /* Inline reference link by citation key -> references page anchor. The source
+       favicon is attached by CSS via the ref-mr / ref-arxiv class. */ -}}
 {{- $key := . -}}
-{{- $icon := cond (hasPrefix $key "MR") "icons/mathscinet.png" "icons/arxiv.ico" -}}
-<a href="{{ "references/" | relURL }}#ref-{{ $key }}"><img class="srcicon" src="{{ $icon | relURL }}" alt="">{{ if hasPrefix $key "MR" }}{{ $key }}{{ else }}arXiv:{{ $key }}{{ end }}</a>
+{{- $cls := cond (hasPrefix $key "MR") "ref-mr" "ref-arxiv" -}}
+<a class="{{ $cls }}" href="{{ "references/" | relURL }}#ref-{{ $key }}">{{ if hasPrefix $key "MR" }}{{ $key }}{{ else }}arXiv:{{ $key }}{{ end }}</a>

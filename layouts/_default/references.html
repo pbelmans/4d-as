@@ -6,11 +6,11 @@
   <div class="reference" id="ref-{{ .key }}">
     {{ .html | safeHTML }}
     {{ if hasPrefix .key "MR" }}
-    <a href="https://mathscinet.ams.org/mathscinet-getitem?mr={{ strings.TrimPrefix "MR" .key }}"><img class="srcicon" src="{{ "icons/mathscinet.png" | relURL }}" alt="">{{ .key }}</a>
+    <a href="https://mathscinet.ams.org/mathscinet-getitem?mr={{ strings.TrimPrefix "MR" .key }}">{{ .key }}</a>
     {{ else }}
-    <a href="https://arxiv.org/abs/{{ .key }}"><img class="srcicon" src="{{ "icons/arxiv.ico" | relURL }}" alt="">arXiv:{{ .key }}</a>
+    <a href="https://arxiv.org/abs/{{ .key }}">arXiv:{{ .key }}</a>
     {{ end }}
-    {{ with .DOI }}<a href="https://doi.org/{{ . }}"><img class="srcicon" src="{{ "icons/doi.svg" | relURL }}" alt="">doi</a>{{ end }}
+    {{ with .DOI }}<a href="https://doi.org/{{ . }}">doi</a>{{ end }}
   </div>
   {{ end }}
 </div>

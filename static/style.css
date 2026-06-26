@@ -21,9 +21,32 @@ nav#menu { font-size: 14px; }
 nav#menu .nav-link { color: #81c3fc; }
 nav#menu .nav-link:hover { color: #d9edf7; }
 
-/* source-link favicons */
-.srcicon { height: 14px; width: auto; vertical-align: -2px; margin-right: 2px; }
-.ghicon { vertical-align: -2px; margin-right: 3px; }
+/* source-link favicons, attached automatically by URL (or by class for the
+   internal reference links). The icon stays glued to the link text (nowrap). */
+a[href*="arxiv.org"]::before,        a.ref-arxiv::before {
+  background-image: url("/icons/arxiv.ico");
+}
+a[href*="mathscinet.ams.org"]::before, a.ref-mr::before {
+  background-image: url("/icons/mathscinet.png");
+}
+a[href*="doi.org"]::before  { background-image: url("/icons/doi.svg"); }
+a[href*="github.com"]::before { background-image: url("/icons/github.svg"); }
+a[href*="arxiv.org"]::before, a.ref-arxiv::before,
+a[href*="mathscinet.ams.org"]::before, a.ref-mr::before,
+a[href*="doi.org"]::before, a[href*="github.com"]::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  vertical-align: -2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+a[href*="arxiv.org"], a.ref-arxiv,
+a[href*="mathscinet.ams.org"], a.ref-mr,
+a[href*="doi.org"], a[href*="github.com"] { white-space: nowrap; }
 
 /* title block */
 #title { background-color: #eee; }
@@ -43,6 +66,7 @@ table { width: 100%; border-collapse: collapse; font-size: 14px; }
 th, td { border: 1px solid #dee2e6; padding: 0.35rem 0.5rem; }
 thead th { background: #f6f6f6; }
 th, td { text-align: center; }
+table.sortable th:first-child, table.sortable td:first-child { text-align: left; }
 tbody tr:hover { background: #fafafa; }
 
 /* family detail */

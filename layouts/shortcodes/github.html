@@ -1,4 +1,4 @@
-{{- /* GitHub link with mark icon. Usage: {{< github "https://github.com/owner/repo" "label" >}} */ -}}
+{{- /* GitHub link; the mark is attached by CSS. Usage: {{< github "https://github.com/owner/repo" "label" >}} */ -}}
 {{- $url := .Get 0 -}}
 {{- $label := .Get 1 | default (replaceRE "^https?://" "" $url) -}}
-<a href="{{ $url }}">{{ partial "icon-github.html" . }}{{ $label }}</a>
+<a href="{{ $url }}">{{ $label }}</a>

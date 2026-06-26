@@ -7,6 +7,10 @@ ignoreFiles = ['/data/references\.bib$', '/data/README\.md$']
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.highlight]
+style = "github"
+noClasses = true
+
 [markup.goldmark.extensions.passthrough]
 enable = true
 [markup.goldmark.extensions.passthrough.delimiters]
