@@ -16,6 +16,11 @@
   <dd>{{ with $f.point_scheme }}{{ . }}{{ end }}{{ if isset $f "point_scheme_dim" }}{{ if $f.point_scheme }} (dimension \({{ $f.point_scheme_dim }}\)){{ else }}dimension \({{ $f.point_scheme_dim }}\){{ end }}{{ end }}.</dd>
   {{ end }}
 
+  {{ if or $f.line_scheme (isset $f "line_scheme_dim") }}
+  <dt><a href="{{ "explained/line-scheme/" | relURL }}">Line scheme</a></dt>
+  <dd>{{ with $f.line_scheme }}{{ . }}{{ end }}{{ if isset $f "line_scheme_dim" }}{{ if $f.line_scheme }} (dimension \({{ $f.line_scheme_dim }}\)){{ else }}dimension \({{ $f.line_scheme_dim }}\){{ end }}{{ end }}.</dd>
+  {{ end }}
+
   {{ if or $f.centre (isset $f "centre_z2") }}
   <dt><a href="{{ "explained/centre/" | relURL }}">Centre</a></dt>
   <dd>{{ with $f.centre }}{{ . }}{{ else }}\(\dim \operatorname{Z}(A)_2 = {{ $f.centre_z2 }}\), \(\dim \operatorname{Z}(A)_3 = {{ $f.centre_z3 }}\){{ if isset $f "centre_z4" }}, \(\dim \operatorname{Z}(A)_4 = {{ $f.centre_z4 }}\){{ end }}{{ end }}.</dd>

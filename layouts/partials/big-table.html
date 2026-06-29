@@ -11,15 +11,16 @@
       <th rowspan="2" data-col="0">family</th>
       <th rowspan="2" data-col="1">defined</th>
       <th rowspan="2" data-col="2">parameters</th>
-      <th rowspan="2" data-col="3">dimension point scheme</th>
+      <th rowspan="2" data-col="3">dimension<br>point scheme</th>
+      <th rowspan="2" data-col="4">dimension<br>line scheme</th>
       <th class="wide" colspan="3">\(\mathrm{HH}^i_0\)</th>
       <th class="wide" colspan="3">\(\mathrm{HH}^i(\mathrm{qgr}\,A)\)</th>
       <th class="wide" colspan="3">Kodaira–Spencer</th>
     </tr>
     <tr>
-      <th class="wide" data-col="4">1</th><th class="wide" data-col="5">2</th><th class="wide" data-col="6">3</th>
-      <th class="wide" data-col="7">1</th><th class="wide" data-col="8">2</th><th class="wide" data-col="9">3</th>
-      <th class="wide" data-col="10">rank</th><th class="wide" data-col="11">inj.</th><th class="wide" data-col="12">surj.</th>
+      <th class="wide" data-col="5">1</th><th class="wide" data-col="6">2</th><th class="wide" data-col="7">3</th>
+      <th class="wide" data-col="8">1</th><th class="wide" data-col="9">2</th><th class="wide" data-col="10">3</th>
+      <th class="wide" data-col="11">rank</th><th class="wide" data-col="12">inj.</th><th class="wide" data-col="13">surj.</th>
     </tr>
   </thead>
   <tbody>
@@ -30,6 +31,7 @@
       <td>{{ .year }}</td>
       <td>{{ .num_parameters }}</td>
       <td>{{ if isset . "point_scheme_dim" }}{{ .point_scheme_dim }}{{ else }}?{{ end }}</td>
+      <td>{{ if isset . "line_scheme_dim" }}{{ .line_scheme_dim }}{{ else }}?{{ end }}</td>
       {{ if isset . "hh0" }}
       <td class="wide">{{ index .hh0 0 }}</td><td class="wide">{{ index .hh0 1 }}</td><td class="wide">{{ index .hh0 2 }}</td>
       {{ else }}
