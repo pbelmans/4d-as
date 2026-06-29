@@ -6,6 +6,8 @@ num_parameters: 1
 hh0: [2, 1, 0]
 hh_qgr: [1, 1, 16, 20]
 point_scheme_dim: 1
+line_scheme_dim: 1
+line_scheme: 'a curve of degree 20'
 point_scheme: 'a union of 2 lines'
 year: 2009
 slug: "ore-i"

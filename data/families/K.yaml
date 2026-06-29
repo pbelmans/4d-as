@@ -6,6 +6,8 @@ num_parameters: 3
 hh0: [3, 3, 1]
 hh_qgr: [1, 2, 1, 4]
 point_scheme_dim: 1
+line_scheme_dim: 2
+line_scheme: 'a surface of degree 2 and a curve of degree 6'
 point_scheme: 'a union of 6 lines'
 year: 2009
 slug: "ore-k"

@@ -6,6 +6,8 @@ num_parameters: 1
 hh0: [2, 1, 0]
 hh_qgr: [1, 1, 1, 5]
 point_scheme_dim: 1
+line_scheme_dim: 2
+line_scheme: 'two quadric surfaces, a plane and a cubic curve'
 point_scheme: 'a union of 6 lines'
 year: 2009
 slug: "ore-v"

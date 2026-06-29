@@ -6,6 +6,8 @@ num_parameters: 2
 hh0: [1, 8, 17]
 hh_qgr: [1, 0, 14, 19]
 point_scheme_dim: 0
+line_scheme_dim: 1
+line_scheme: 'five quartic curves'
 year: 2016
 slug: "s-infinity-twist"
 sortkey: "2016 s-infinity-twist"

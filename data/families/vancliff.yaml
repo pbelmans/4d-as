@@ -6,6 +6,8 @@ num_parameters: 3
 hh0: [3, 4, 3]
 hh_qgr: [1, 2, 4, 7]
 point_scheme_dim: 2
+line_scheme_dim: 3
+line_scheme: 'a quadric threefold and two conics'
 year: 1994
 slug: "vancliff"
 sortkey: "1994 vancliff"

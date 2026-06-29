@@ -6,6 +6,8 @@ num_parameters: 4
 hh0: [1, 8, 21]
 hh_qgr: [1, 0, 14, 19]
 point_scheme_dim: 0
+line_scheme_dim: 1
+line_scheme: 'a degree-17 curve, a conic and a line'
 point_scheme: '13 points'
 year: 2005
 slug: "caines"

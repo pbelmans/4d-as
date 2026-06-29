@@ -7,6 +7,8 @@ hh0: [1, 1, 7]
 hh_qgr: [1, 0, 16, 21]
 year: 2001
 point_scheme_dim: 0
+line_scheme_dim: 1
+line_scheme: 'a quartic curve, four cubic curves and two conics'
 point_scheme: '20 points'
 slug: "shelton-tingey"
 sortkey: "2001 shelton-tingey"

@@ -6,6 +6,8 @@ num_parameters: 1
 hh0: [2, 1, 0]
 hh_qgr: [1, 2, 6, 9]
 point_scheme_dim: 2
+line_scheme_dim: 3
+line_scheme: 'a quadric threefold and two conics'
 point_scheme: 'a quadric surface'
 year: 2009
 slug: "ore-r"

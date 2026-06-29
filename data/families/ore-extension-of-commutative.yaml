@@ -8,6 +8,8 @@ num_parameters: 6
 hh0: [4, 9, 9]
 hh_qgr: [1, 3, 6, 8]
 point_scheme_dim: 1
+line_scheme_dim: 2
+line_scheme: 'a double plane (a plane with multiplicity two)'
 year: 2015
 slug: "ore-extension-of-commutative"
 sortkey: "2015 ore-extension-of-commutative"

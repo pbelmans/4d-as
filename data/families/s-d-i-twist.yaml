@@ -5,6 +5,8 @@ quadratic: true
 num_parameters: 3
 hh0: [1, 8, 17]
 hh_qgr: [1, 0, 14, 19]
+line_scheme_dim: 1
+line_scheme: 'a degree-12 curve, a quartic curve and two conics'
 year: 2016
 slug: "s-d-i-twist"
 sortkey: "2016 s-d-i-twist"

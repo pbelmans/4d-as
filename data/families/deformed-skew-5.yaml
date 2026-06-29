@@ -7,6 +7,8 @@ hh0: [2, 2, 2]
 hh_qgr: [1, 1, 8, 12]
 year: "?"
 point_scheme_dim: 1
+line_scheme_dim: 2
+line_scheme: 'a plane, a degree-5 curve, a conic and two lines'
 point_scheme: 'a line and a conic'
 slug: "deformed-skew-5"
 sortkey: "9999 deformed-skew-5"

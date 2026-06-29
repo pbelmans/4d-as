@@ -6,6 +6,8 @@ num_parameters: 0
 hh0: [16, 60, 80]
 hh_qgr: [1, 15, 45, 35]
 point_scheme_dim: 3
+line_scheme_dim: 4
+line_scheme: 'all of \(\operatorname{Gr}(2,4)\) — every line of \(\mathbb{P}^3\) is a line module (the Klein quadric)'
 point_scheme: 'all of \(\mathbb{P}^3\)'
 year: "?"
 slug: "commutative"

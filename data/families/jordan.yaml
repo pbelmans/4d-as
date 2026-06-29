@@ -7,6 +7,8 @@ num_parameters: 1
 hh0: [2, 1, 1]
 hh_qgr: [1, 1, 0, 4]
 point_scheme_dim: 1
+line_scheme_dim: 2
+line_scheme: 'a plane, two quartic curves, a cubic curve and a conic'
 year: 2016
 slug: "jordan"
 sortkey: "2016 jordan"

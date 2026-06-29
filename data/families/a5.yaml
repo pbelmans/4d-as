@@ -5,6 +5,8 @@ quadratic: true
 num_parameters: 4
 hh0: [2, 1, 0]
 hh_qgr: [1, 1, 1, 5]
+line_scheme_dim: 2
+line_scheme: 'a plane and a curve of degree 11'
 year: 2025
 slug: "a5"
 sortkey: "2025 a5"

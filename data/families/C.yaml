@@ -6,6 +6,8 @@ num_parameters: 1
 hh0: [2, 1, 0]
 hh_qgr: [1, 1, 0, 4]
 point_scheme_dim: 1
+line_scheme_dim: 2
+line_scheme: 'a quadric surface, a quartic curve, two conics and four lines'
 point_scheme: 'a regulus of 5 lines'
 year: 2009
 slug: "ore-c"

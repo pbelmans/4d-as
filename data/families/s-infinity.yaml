@@ -6,6 +6,8 @@ num_parameters: 2
 hh0: [1, 2, 5]
 hh_qgr: [1, 0, 2, 7]
 point_scheme_dim: 1
+line_scheme_dim: 2
+line_scheme: 'the surface of secant lines to the point-scheme quartic elliptic curve \(E\) (the same curve as Sklyanin) — an elliptic ruled surface of degree 8'
 year: 2016
 slug: "s-infinity"
 sortkey: "2016 s-infinity"
