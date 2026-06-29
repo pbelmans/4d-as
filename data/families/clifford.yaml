@@ -6,6 +6,8 @@ num_parameters: 24
 hh0: [1, 9, 19]
 hh_qgr: [1, 0, 15, 20]
 point_scheme_dim: 0
+line_scheme_dim: 2
+line_scheme: 'a surface of degree 10'
 year: 1995
 slug: "clifford"
 sortkey: "1995 clifford"

@@ -7,6 +7,8 @@ num_parameters: 12
 hh0: [1, 7, 19]
 hh_qgr: [1, 0, 7, 12]
 point_scheme_dim: 1
+line_scheme_dim: 2
+line_scheme: 'a plane and a curve of degree 15'
 year: 1996
 slug: "lebruyn"
 sortkey: "1996 lebruyn"
