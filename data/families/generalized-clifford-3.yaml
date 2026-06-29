@@ -6,7 +6,7 @@ num_parameters: 4
 hh0: [1, 9, 7]
 point_scheme_dim: 0
 line_scheme_dim: 2
-line_scheme: 'a plane, a degree-6 curve and two cubic curves'
+line_scheme: 'an irreducible surface of degree 10 (at the 20-point regular parameter; read with care)'
 year: 2010
 slug: "generalized-clifford-3"
 sortkey: "2010 generalized-clifford-3"
