@@ -57,3 +57,6 @@ notes: >
   relation above) imposed in its place — so exactly six relations in total.
 code_derive:
   - "alpha = -(beta + gamma)/(1 + beta*gamma)"
+
+point_scheme_dim: 1
+point_scheme: 'a quartic curve and 4 points'

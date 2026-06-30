@@ -55,3 +55,6 @@ notes: >
   \((d_1, d_2) \neq (1, 0), (1, -1 - βγ)\)).
 code_derive:
   - "alpha = -(beta + gamma)/(1 + beta*gamma)"
+
+point_scheme_dim: 0
+point_scheme: '20 points'

@@ -38,3 +38,6 @@ relations:
   - "x_2 x_1 - x_4 x_4"
 references:
   - "2410.08959"
+
+point_scheme_dim: 0
+point_scheme: '20 points'

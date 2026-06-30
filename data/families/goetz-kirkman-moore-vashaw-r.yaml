@@ -37,3 +37,6 @@ relations:
   - "x_3 x_4 + x_4 x_3"
 references:
   - "2410.08959"
+
+point_scheme_dim: 1
+point_scheme: 'six lines'

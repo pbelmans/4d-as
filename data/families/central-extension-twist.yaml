@@ -43,3 +43,6 @@ relations:
   - "x_2 x_3 + x_3 x_2"
 references:
   - "MR1429334"
+
+point_scheme_dim: 1
+point_scheme: 'a cubic curve and 8 points'

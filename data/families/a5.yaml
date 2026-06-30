@@ -47,3 +47,6 @@ notes: >
   \(\mathrm{A}_5\) is defined over a field containing \(\sqrt{-1}\) (here
   \(\mathbb{Q}(i)\), with \(i\) the primitive fourth root of unity appearing in
   the relations); its invariants are computed over that field.
+
+point_scheme_dim: 1
+point_scheme: 'a conic and a cubic curve (degree 5)'
