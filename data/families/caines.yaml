@@ -41,3 +41,11 @@ relations:
   - "x_2 x_1 + x_1 x_2"
 references:
   - "caines-thesis"
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: true
+nakayama: '\mathrm{id}'
+nakayama_type: 'identity'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'qq'

@@ -41,3 +41,10 @@ references:
 
 point_scheme_dim: 0
 point_scheme: '20 points'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '-\mathrm{id}'
+nakayama_type: 'scalar'
+homological_det: 1
+nakayama_field: 'qq'

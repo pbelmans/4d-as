@@ -41,3 +41,10 @@ relations:
   - "x_2^2 - x_4^2"
 references:
   - "MR1843325"
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: true
+nakayama: '\mathrm{id}'
+nakayama_type: 'identity'
+homological_det: 1
+nakayama_field: 'gf'

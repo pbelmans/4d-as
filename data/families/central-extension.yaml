@@ -51,3 +51,11 @@ references:
   - "MR1429334"
 point_scheme: 'a twisted cubic and 8 points'
 centre: '\(\dim \operatorname{Z}(A)_2 = 1\), \(\dim \operatorname{Z}(A)_3 = 2\) (a central quadric and central cubics by construction); \(x_4\) is central'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: true
+nakayama: '\mathrm{id}'
+nakayama_type: 'identity'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'gf-sample'

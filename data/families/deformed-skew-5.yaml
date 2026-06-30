@@ -40,3 +40,11 @@ relations:
   - "x_4 x_2 - q_{24} x_2 x_4"
   - "x_4 x_3 - (1/q_{24}) x_3 x_4"
 references:
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}(q_{24}^{9},q_{24}^{-7},q_{24},q_{24}^{-3})'
+nakayama_type: 'diagonal'
+nakayama_constant: false
+homological_det: 1
+nakayama_field: 'qq'

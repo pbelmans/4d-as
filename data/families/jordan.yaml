@@ -48,3 +48,11 @@ relations:
 references:
   - "MR3901632"
 point_scheme: 'a line, a conic and a twisted cubic (a bouquet of rational normal curves)'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: 'x_1\mapsto x_1,\ x_2\mapsto(16a+20)x_1+x_2,\ x_3\mapsto(128a^{2}+288a+160)x_1+(16a+20)x_2+x_3,\ x_4\mapsto\tfrac{2048a^{3}+6144a^{2}+6016a+1920}{3}x_1+(128a^{2}+288a+160)x_2+(16a+20)x_3+x_4'
+nakayama_type: 'unipotent'
+nakayama_constant: false
+homological_det: 1
+nakayama_field: 'qq'

@@ -45,3 +45,11 @@ relations:
 references:
   - "MR3366864"
 point_scheme: 'three lines and a rational normal quartic'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: true
+nakayama: '\mathrm{id}'
+nakayama_type: 'identity'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'gf-sample'

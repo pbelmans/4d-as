@@ -47,3 +47,11 @@ references:
   - "MR1086882"
 point_scheme: 'six lines, the tetrahedron skeleton \(K_4\)'
 centre: 'trivial in low degrees'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}\!\left(q_{12}q_{13}q_{14},\tfrac{q_{23}q_{24}}{q_{12}},\tfrac{q_{34}}{q_{13}q_{23}},\tfrac{1}{q_{14}q_{24}q_{34}}\right)'
+nakayama_type: 'diagonal'
+nakayama_constant: false
+homological_det: 1
+nakayama_field: 'qq'

@@ -34,6 +34,12 @@ centre_z2: 2               # dim Z(A)_2 (central quadrics)
 centre_z3: 0               # dim Z(A)_3 (central cubics)
 normal_1: -1               # proj. dim of the normal locus in degree 1 (-1 = none)
 normal_2: 1                # proj. dim of the normal locus in degree 2
+calabi_yau: true           # is A Calabi-Yau? (Nakayama automorphism nu = id)
+nakayama: "\\mathrm{id}"   # the Nakayama automorphism nu on A_1, as LaTeX
+nakayama_type: "identity"  # identity | scalar | diagonal | monomial | unipotent | general
+nakayama_constant: true    # is nu constant over the parameter space? (omit if no params)
+homological_det: 1         # det nu (the homological determinant): 1, -1, or "i"
+nakayama_field: "qq"       # provenance: qq | gf-params | gf | gf-sample
 parameters:                # symbols + constraints
   - symbol: "β, γ"
     description: "..."
@@ -53,5 +59,8 @@ notes: "..."               # other remarks, e.g. a parameter constraint (optiona
 
 Computed invariants (`hh0`, `hh_qgr`, `point_scheme_dim`, `centre_z*`,
 `normal_*`, the `ks_*` fields) come from arXiv:2511.08390 and from the
-reproduction scripts in `code/`. Fields that are absent (e.g. an un-computed
-`point_scheme_dim`) render as `?`.
+reproduction scripts in `code/`. The Nakayama fields (`calabi_yau`, `nakayama`,
+`nakayama_type`, `nakayama_constant`, `homological_det`, `nakayama_field`) come
+from `code/nakayama.m2`, and the point schemes of the seven families they were
+missing for from `code/point_scheme_extra.m2`. Fields that are absent (e.g. an
+un-computed `point_scheme_dim`) render as `?`.

@@ -35,3 +35,11 @@ relations:
   - "x_3 x_2 + h (- x_1 x_4)"
   - "x_4 x_1 + h (x_2 x_3)"
   - "x_4 x_2 + h (- x_1 x_3)"
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}(-h^{-2},-h^{-2},-h^{2},-h^{2})'
+nakayama_type: 'diagonal'
+nakayama_constant: false
+homological_det: 1
+nakayama_field: 'gf-params'

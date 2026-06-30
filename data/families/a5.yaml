@@ -50,3 +50,11 @@ notes: >
 
 point_scheme_dim: 1
 point_scheme: 'a conic and a cubic curve (degree 5)'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}(-d^{-1},d^{-1},i\,d^{-1},-d^{3})'
+nakayama_type: 'diagonal'
+nakayama_constant: false
+homological_det: "i"
+nakayama_field: 'gf-params'

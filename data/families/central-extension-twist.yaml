@@ -46,3 +46,11 @@ references:
 
 point_scheme_dim: 1
 point_scheme: 'a cubic curve and 8 points'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '-\mathrm{id}'
+nakayama_type: 'scalar'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'qq'

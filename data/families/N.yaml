@@ -38,3 +38,11 @@ relations:
   - "x_4 x_1 + h (- f x_2 x_3 + g x_2 x_4)"
   - "x_4 x_2 + h (- f x_1 x_3 - g x_1 x_4)"
 notes: 'Constraint: \(f^2 \neq g^2\).'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}\!\left(\tfrac{1}{(g^{2}-f^{2})h^{2}},\tfrac{1}{(g^{2}-f^{2})h^{2}},(g^{2}-f^{2})h^{2},(g^{2}-f^{2})h^{2}\right)'
+nakayama_type: 'diagonal'
+nakayama_constant: false
+homological_det: 1
+nakayama_field: 'qq'

@@ -41,3 +41,11 @@ relations:
 references:
   - "MR1272579"
 point_scheme: 'five lines (\(K_4\) minus one edge)'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}\!\left(\tfrac{1}{a^{2}l^{2}},\tfrac{a}{bl},\tfrac{bl}{a},a^{2}l^{2}\right)'
+nakayama_type: 'diagonal'
+nakayama_constant: false
+homological_det: 1
+nakayama_field: 'qq'

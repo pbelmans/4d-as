@@ -46,3 +46,11 @@ relations:
 references:
   - "MR2580455"
 point_scheme: '20 points'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: true
+nakayama: '\mathrm{id}'
+nakayama_type: 'identity'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'gf-params'

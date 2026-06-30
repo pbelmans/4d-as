@@ -60,3 +60,11 @@ code_derive:
 
 point_scheme_dim: 1
 point_scheme: 'a quartic curve and 4 points'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}(-1,-1,1,1)'
+nakayama_type: 'diagonal'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'qq'

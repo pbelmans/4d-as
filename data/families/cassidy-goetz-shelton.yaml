@@ -48,3 +48,11 @@ references:
   - "MR2253666"
   - "MR3366864"
 point_scheme: 'a line, two conics and two points'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}\!\left(1,1,\tfrac{a^{4}}{b^{4}},\tfrac{b^{4}}{a^{4}}\right)'
+nakayama_type: 'diagonal'
+nakayama_constant: false
+homological_det: 1
+nakayama_field: 'qq'

@@ -48,3 +48,11 @@ point_scheme: '20 points'
 centre: '\(\dim \operatorname{Z}(A)_2 = 1\); the central quadric is a smooth \(\mathbb{P}^1 \times \mathbb{P}^1\)'
 code_derive:
   - "alpha = -(beta + gamma)/(1 + beta*gamma)"
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '-\mathrm{id}'
+nakayama_type: 'scalar'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'qq'

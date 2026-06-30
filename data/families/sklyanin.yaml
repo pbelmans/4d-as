@@ -51,3 +51,11 @@ point_scheme: 'a quartic elliptic curve \(E\) and four points'
 centre: '\(k[\Omega_1, \Omega_2]\) (GK-dimension \(2\)); not module-finite over the centre when \(σ\) has infinite order'
 code_derive:
   - "alpha = -(beta + gamma)/(1 + beta*gamma)"
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: true
+nakayama: '\mathrm{id}'
+nakayama_type: 'identity'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'qq'

@@ -37,3 +37,11 @@ relations:
   - "x_3 x_2 + h (- x_2 x_4)"
   - "x_4 x_1 + h (- x_1 x_4)"
   - "x_4 x_2 + h (- f x_2 x_3)"
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: 'x_1\mapsto\tfrac{1}{qh^{2}}x_1,\ x_2\mapsto\tfrac{q}{fh^{2}}x_2,\ x_3\mapsto-h^{2}x_4,\ x_4\mapsto-fh^{2}x_3'
+nakayama_type: 'monomial'
+nakayama_constant: false
+homological_det: -1
+nakayama_field: 'qq'

@@ -36,3 +36,11 @@ relations:
   - "x_4 x_1 + h (- f x_2 x_3 + x_1 x_4)"
   - "x_4 x_2 + h (- f x_1 x_3 + x_2 x_4)"
 notes: 'Constraint: \(f(1+f) \neq 0\).'
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '\operatorname{diag}\!\left(\tfrac{1}{(f+1)h^{2}},\tfrac{1}{(f+1)h^{2}},(f+1)h^{2},(f+1)h^{2}\right)'
+nakayama_type: 'diagonal'
+nakayama_constant: false
+homological_det: 1
+nakayama_field: 'qq'

@@ -53,3 +53,11 @@ point_scheme: 'a quartic elliptic curve \(E\) and four points (the same curve as
 centre: '\(\dim \operatorname{Z}(A)_2 = 0\): the two quadrics are imposed as relations, not central'
 code_derive:
   - "alpha = -(beta + gamma)/(1 + beta*gamma)"
+
+# Nakayama automorphism (computed; see code/nakayama.m2)
+calabi_yau: false
+nakayama: '-\mathrm{id}'
+nakayama_type: 'scalar'
+nakayama_constant: true
+homological_det: 1
+nakayama_field: 'qq'
