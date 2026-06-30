@@ -10,8 +10,8 @@ point_scheme_dim: 1
 line_scheme_dim: 2
 line_scheme: 'a plane and a curve of degree 15'
 year: 1996
-slug: "lebruyn"
-sortkey: "1996 lebruyn"
+slug: "central-extension"
+sortkey: "1996 central-extension"
 ks_rank: 7
 ks_inj: false
 ks_surj: true
