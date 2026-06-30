@@ -7,7 +7,7 @@ hh0: [3, 3, 1]
 hh_qgr: [1, 3, 6, 8]
 point_scheme_dim: 1
 line_scheme_dim: 2
-line_scheme: 'a quadric surface and three planes'
+line_scheme: 'a quadric surface and three planes, one with multiplicity two (non-reduced; scheme degree 6)'
 point_scheme: 'a union of 4 lines'
 year: 2009
 slug: "ore-x"
