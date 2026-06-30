@@ -44,6 +44,14 @@
   <dt><a href="{{ "explained/kodaira-spencer-map/" | relURL }}">Kodaira–Spencer</a></dt>
   <dd>rank \({{ $f.ks_rank }}\)<br>injective: {{ if $f.ks_inj }}yes{{ else }}no{{ end }}<br>surjective: {{ if $f.ks_surj }}yes{{ else }}no{{ end }}</dd>
   {{ end }}
+  {{ if isset $f "nakayama" }}
+  <dt><a href="{{ "explained/nakayama-automorphism/" | relURL }}">Nakayama automorphism</a></dt>
+  <dd>\(\nu = {{ $f.nakayama }}\).{{ if $f.calabi_yau }} The algebra is <strong><a href="{{ "explained/nakayama-automorphism/" | relURL }}">Calabi–Yau</a></strong>.{{ end }}<br>
+  {{ if $f.num_parameters }}{{ if $f.nakayama_constant }}Constant over the parameter space.{{ else }}Depends on the parameters.{{ end }}<br>{{ end }}
+  Homological determinant \(\det \nu = {{ $f.homological_det }}\).<br>
+  <span class="muted">Computed {{ if eq $f.nakayama_field "qq" }}{{ if $f.num_parameters }}exactly over \(\mathbb{Q}(\text{params})\){{ else }}exactly over \(\mathbb{Q}\){{ end }}{{ else if eq $f.nakayama_field "gf-params" }}exactly over \(\mathbb{F}_{60013}(\text{params})\){{ else if eq $f.nakayama_field "gf" }}exactly over \(\mathbb{F}_{60013}\){{ else }}at a generic point of \(\mathbb{F}_{60013}\) (two parameter samples){{ end }}.</span></dd>
+  {{ end }}
+
   {{ with $f.notes }}<dt>Notes</dt><dd>{{ . }}</dd>{{ end }}
 
   <dt>Introduced</dt>

@@ -16,6 +16,7 @@
       <th class="wide" colspan="3">\(\mathrm{HH}^i_0\)</th>
       <th class="wide" colspan="3">\(\mathrm{HH}^i(\mathrm{qgr}\,A)\)</th>
       <th class="wide" colspan="3">Kodaira–Spencer</th>
+      <th rowspan="2" data-col="14">\(\det \nu\)</th>
     </tr>
     <tr>
       <th class="wide" data-col="5">1</th><th class="wide" data-col="6">2</th><th class="wide" data-col="7">3</th>
@@ -45,6 +46,7 @@
       <td class="wide">{{ .ks_rank }}</td>
       <td class="wide">{{ if .ks_inj }}yes{{ else }}no{{ end }}</td>
       <td class="wide">{{ if .ks_surj }}yes{{ else }}no{{ end }}</td>
+      <td>{{ if isset . "homological_det" }}\({{ .homological_det }}\){{ else }}?{{ end }}</td>
     </tr>
   {{- end }}
   {{- end }}
