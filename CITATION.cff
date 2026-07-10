@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this website, please cite it as below."
+type: dataset
+title: "4d-AS-regular: the classification of 4-dimensional Artin–Schelter regular algebras"
+abstract: >-
+  A website dedicated to the classification and properties of four-dimensional
+  quadratic (Koszul) Artin–Schelter regular algebras, organised around the
+  known families and their invariants.
+authors:
+  - family-names: Belmans
+    given-names: Pieter
+    affiliation: "Utrecht University"
+    orcid: "https://orcid.org/0000-0002-0140-2824"
+url: "https://4d-as.ncag.info"
+repository-code: "https://github.com/pbelmans/4d-as"
+license: CC-BY-4.0
+version: 1.0.0
+date-released: "2026-07-10"
+keywords:
+  - Artin–Schelter regular algebras
+  - noncommutative algebraic geometry
+  - Koszul algebras
+  - classification
