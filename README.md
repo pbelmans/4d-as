@@ -31,3 +31,19 @@ npm run build      # = npm run bib && hugo --gc --minify
 ```
 
 For local development, run `npm run bib` once, then `hugo server`.
+
+## How to cite
+
+The website is archived on Zenodo. To cite the version-independent latest
+release, use the concept DOI
+[10.5281/zenodo.21296619](https://doi.org/10.5281/zenodo.21296619).
+
+```bibtex
+@online{4d-as,
+  author = {Belmans, Pieter},
+  title  = {4d-AS-regular --- the classification of 4-dimensional Artin--Schelter regular algebras},
+  url    = {https://4d-as.ncag.info},
+  doi    = {10.5281/zenodo.21296619},
+  year   = {2026},
+}
+```
