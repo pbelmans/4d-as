@@ -27,6 +27,10 @@ Comments, corrections, and suggestions are welcome there: please open an
 
 ## How to cite
 
+The website is archived on Zenodo. To cite the version-independent latest
+release, use the concept DOI
+[10.5281/zenodo.21296619](https://doi.org/10.5281/zenodo.21296619).
+
 If you use `biblatex`:
 
 ```bibtex
@@ -34,6 +38,7 @@ If you use `biblatex`:
   author = {Belmans, Pieter},
   title  = {4d-AS-regular --- the classification of 4-dimensional Artin--Schelter regular algebras},
   url    = {https://4d-as.ncag.info},
+  doi    = {10.5281/zenodo.21296619},
   year   = {2026},
 }
 ```
@@ -45,6 +50,7 @@ If you still use `bibtex`:
   author       = {Belmans, Pieter},
   title        = {4d-AS-regular --- the classification of 4-dimensional Artin--Schelter regular algebras},
   howpublished = {\url{https://4d-as.ncag.info}},
+  doi          = {10.5281/zenodo.21296619},
   year         = {2026},
 }
 ```

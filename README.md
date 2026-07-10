@@ -1,5 +1,7 @@
 # 4-dimensional Artin–Schelter regular algebras
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21296619.svg)](https://doi.org/10.5281/zenodo.21296619)
+
 This is the repository for a website dedicated to the classification and
 properties of four-dimensional Artin–Schelter regular algebras.
 
