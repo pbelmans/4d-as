@@ -25,6 +25,7 @@ centre_z7: 0
 centre_z8: 5
 centre_z9: 0
 centre_z10: 6
+centre_hilbert: '\frac{1}{(1-t^2)^2}'
 normal_1: -1
 normal_2: 1
 parameters:

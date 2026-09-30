@@ -24,6 +24,7 @@ centre_z7: 0
 centre_z8: 35
 centre_z9: 0
 centre_z10: 56
+centre_hilbert: '\frac{1}{(1-t^2)^4}'
 normal_1: -1
 normal_2: 3
 parameters:

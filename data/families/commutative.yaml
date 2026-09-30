@@ -25,6 +25,7 @@ centre_z7: 120
 centre_z8: 165
 centre_z9: 220
 centre_z10: 286
+centre_hilbert: '\frac{1}{(1-t)^4}'
 normal_1: 3
 normal_2: 9
 introduced:

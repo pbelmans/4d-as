@@ -14,6 +14,7 @@ The table concerns the **general member** of each family in characteristic zero 
 The dimensions are supported by the finite-field checks described below.
 Special parameter values can have larger centres.
 Its entries are the dimensions&nbsp;$\dim_k \mathrm{Z}_n(A)$, counting all independent central elements in degree&nbsp;$n$, including products of elements of smaller degree.
+The last column records full Hilbert series where justified by a description of the centre; a dash means no such series is recorded here.
 
 {{< family-table "centre" >}}
 
@@ -23,6 +24,20 @@ The choices with&nbsp;$\alpha = -\beta$ instead give dimensions&nbsp;$(0,0,0,3,0
 **All other families with recorded centre dimensions have no nonzero central elements in degrees 1–10** at the parameters used in the computations.
 This does not rule out central elements in higher degrees or at special parameter values.
 Centre dimensions are not recorded for [Generalized Clifford 3](/families/generalized-clifford-3/) or [$\mathrm{S}_{d,i}$ twist](/families/s-d-i-twist/), so neither is included in this vanishing statement.
+
+## Hilbert series from the literature
+
+For Sklyanin, the centre is a polynomial ring on two degree-2 generators when the elliptic translation has infinite order; see [Levasseur–Smith, Proposition 6.12](https://www.numdam.org/item/BSMF_1993__121_1_35_0.pdf).
+The same description holds for the Sklyanin cocycle twist under the infinite-order hypothesis, by [Davies, Corollary 5.11](https://arxiv.org/pdf/1512.05717).
+These descriptions give the recorded series&nbsp;$1/(1-t^2)^2$.
+
+For Clifford, the centre is a polynomial ring on four degree-2 generators, giving&nbsp;$1/(1-t^2)^4$; see [Ingalls, Proposition 2.2](https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/214904/1/2009-10.pdf).
+
+For the untwisted central extension of Sklyanin, [Walton, Proposition V.10](https://math.rice.edu/~notlaw/thesis.pdf) identifies the centre as a polynomial ring on generators of degrees 1 and 3 when the elliptic translation has infinite order.
+This gives&nbsp;$1/((1-t)(1-t^3))$.
+
+[Caines, Proposition 3.4.4](https://dspace.mit.edu/handle/1721.1/31161) proves the series&nbsp;$1/(1-t^2)^2$ for the particular member&nbsp;$a=b=c=d=1$.
+That proposition is stated for this specialisation, so it is not recorded as a theorem about the general member in the table.
 
 ## Why does the twisted central extension have no central linear form?
 

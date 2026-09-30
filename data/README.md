@@ -42,6 +42,7 @@ centre_z7: 0               # dim Z_7(A)
 centre_z8: 5               # dim Z_8(A)
 centre_z9: 0               # dim Z_9(A)
 centre_z10: 6              # dim Z_10(A)
+centre_hilbert: '\frac{1}{(1-t^2)^2}' # full centre Hilbert series, when established
 centre_parameters: '$\alpha = \beta$' # optional branch label for the centre table
 normal_1: -1               # proj. dim of the normal locus in degree 1 (-1 = none)
 normal_2: 1                # proj. dim of the normal locus in degree 2
@@ -89,6 +90,8 @@ The Generalized Clifford 1 entries use `alpha=beta=i`, labelled by
 Generalized Clifford 2 uses `alpha2=1`; its `:zero` variant checks `alpha2=0`.
 Both normalizations satisfy the regularity condition and give the same dimensions
 in the five-prime checks.
+Sources and hypotheses for `centre_hilbert` are listed on the centre explanation
+page; these full series are not extrapolated from the computed coefficients.
 Generalized Clifford 3 and the S-d-i twist still have no recorded centre data.
 
 The Nakayama fields (`calabi_yau`, `nakayama`,
