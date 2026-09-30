@@ -8,9 +8,9 @@ hh_qgr: [1, 0, 14, 19]
 point_scheme_dim: 0
 line_scheme_dim: 1
 line_scheme: 'five quartic curves'
-year: 2016
+year: 2014
 slug: "s-infinity-twist"
-sortkey: "2016 s-infinity-twist"
+sortkey: "2014 s-infinity-twist"
 ks_rank: 2
 ks_inj: true
 ks_surj: false
@@ -31,16 +31,14 @@ parameters:
     description: >
       With \(α = -(β + γ)/(1 + βγ)\); \(α, β, γ\) nonzero and not \(\pm 1\).
 introduced:
-  reference: "MR3490085"
+  reference: "1502.06101"
   note: >
-    The cocycle twist of \(\mathrm{S}_\infty\) by the Klein four-group, in the same family
-    of exotic elliptic algebras studied by Davies and by Chirvasitu–Smith.
+    Davies's 2014 PhD thesis, §6.1, Lemma 6.1.6 and equation (6.1.7).
 construction: >
-  As for \(\mathrm{S}_\infty\), but the surviving Sklyanin relations are twisted
+  A cocycle twist of Stafford's $\mathrm{S}_\infty$ by the Klein four-group.
+  The surviving Sklyanin relations are twisted
   (commutators exchanged with anticommutators) and the signs in the two quadrics
-  change. The twist trades the elliptic point scheme for 20 points and produces
-  a single central quadric whose symbol is the smooth hyperbolic form
-  \(\mathbb{P}^1 \times \mathbb{P}^1\).
+  change.
 relations:
   - "(x_1 x_2 - x_2 x_1) - α (x_3 x_4 - x_4 x_3)"
   - "(x_1 x_2 + x_2 x_1) - (x_3 x_4 + x_4 x_3)"
@@ -49,10 +47,12 @@ relations:
   - "-x_1^2 + x_2^2 + x_3^2 - x_4^2"
   - "x_2^2 + ((1+α)/(1-β)) x_3^2 - ((1-α)/(1+γ)) x_4^2"
 references:
-  - "MR3490085"
-  - "MR3885145"
-point_scheme: '20 points'
-centre: '\(\dim \operatorname{Z}(A)_2 = 1\); the central quadric is a smooth \(\mathbb{P}^1 \times \mathbb{P}^1\)'
+  - "1502.06101"
+point_scheme: '20 points counting multiplicity for the general member in characteristic zero (Davies, Proposition 6.1.19)'
+centre: >
+  $\dim \mathrm{Z}_2(A)=1$ for the general member in characteristic zero,
+  spanned by $x_1x_4+x_4x_1+x_2x_3+x_3x_2$
+  (computed over $\mathbb{Q}(\beta,\gamma)$)
 code_derive:
   - "alpha = -(beta + gamma)/(1 + beta*gamma)"
 
