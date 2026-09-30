@@ -14,9 +14,16 @@ sortkey: "2016 sklyanin-twist"
 ks_rank: 2
 ks_inj: true
 ks_surj: false
+centre_z1: 0
 centre_z2: 2
 centre_z3: 0
 centre_z4: 3
+centre_z5: 0
+centre_z6: 4
+centre_z7: 0
+centre_z8: 5
+centre_z9: 0
+centre_z10: 6
 normal_1: -1
 normal_2: 1
 parameters:

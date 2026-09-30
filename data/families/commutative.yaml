@@ -15,9 +15,16 @@ sortkey: "0000 commutative"
 ks_rank: 0
 ks_inj: true
 ks_surj: false
+centre_z1: 4
 centre_z2: 10
 centre_z3: 20
 centre_z4: 35
+centre_z5: 56
+centre_z6: 84
+centre_z7: 120
+centre_z8: 165
+centre_z9: 220
+centre_z10: 286
 normal_1: 3
 normal_2: 9
 introduced:

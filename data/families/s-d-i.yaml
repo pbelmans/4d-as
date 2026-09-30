@@ -13,9 +13,16 @@ sortkey: "2016 s-d-i"
 ks_rank: 3
 ks_inj: true
 ks_surj: true
+centre_z1: 0
 centre_z2: 1
 centre_z3: 0
 centre_z4: 2
+centre_z5: 0
+centre_z6: 2
+centre_z7: 0
+centre_z8: 3
+centre_z9: 0
+centre_z10: 3
 parameters:
   - symbol: "β, γ"
     description: >

@@ -15,9 +15,16 @@ sortkey: "2001 shelton-tingey"
 ks_rank: 0
 ks_inj: true
 ks_surj: false
+centre_z1: 0
 centre_z2: 0
 centre_z3: 0
 centre_z4: 2
+centre_z5: 0
+centre_z6: 2
+centre_z7: 0
+centre_z8: 8
+centre_z9: 0
+centre_z10: 8
 normal_1: -1
 normal_2: 0
 parameters:

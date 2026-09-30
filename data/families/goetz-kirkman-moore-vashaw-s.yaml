@@ -13,9 +13,16 @@ sortkey: "2024 goetz-kirkman-moore-vashaw-s"
 ks_rank: 0
 ks_inj: true
 ks_surj: false
+centre_z1: 0
 centre_z2: 1
 centre_z3: 0
 centre_z4: 4
+centre_z5: 0
+centre_z6: 5
+centre_z7: 0
+centre_z8: 11
+centre_z9: 0
+centre_z10: 14
 parameters: []
 introduced:
   reference: "2410.08959"

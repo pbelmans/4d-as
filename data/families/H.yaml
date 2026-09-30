@@ -15,9 +15,16 @@ sortkey: "2009 ore-h"
 ks_rank: 2
 ks_inj: true
 ks_surj: false
+centre_z1: 0
 centre_z2: 0
 centre_z3: 0
 centre_z4: 0
+centre_z5: 0
+centre_z6: 0
+centre_z7: 0
+centre_z8: 0
+centre_z9: 0
+centre_z10: 0
 normal_1: 0
 normal_2: 0
 parameters:
