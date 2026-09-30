@@ -6,7 +6,9 @@ regular algebras of global dimension 4 — i.e. a "noncommutative `P^3`".
 ## Conventions
 
 - **Generators** are written `x_1, x_2, x_3, x_4` (four generators), never
-  `x, y, z, w`. In central-extension families `x_4` is the central generator.
+  `x, y, z, w`. In the untwisted central extension `x_4` is central; in its Zhang twist,
+  the distinguished generator is `x_3`, which is normal and anticommutes
+  with the other generators.
 - **Relations** are quadratic expressions understood to be equal to `0`.
   Monomials are written in the order they appear, e.g. `x_3 x_1 - h x_1 x_3`
   means `x_3 x_1 - h·x_1 x_3 = 0`.

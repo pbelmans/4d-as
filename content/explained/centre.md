@@ -41,6 +41,14 @@ The number of independent central quadrics, cubics and quartics
 
 {{< family-table "centre" >}}
 
+## Why does the twisted central extension have no central linear form?
+
+A central extension by a degree-1 element does have a nonzero&nbsp;$\mathrm{Z}_1(A)$ by definition.
+The family previously labelled “central extension of Sklyanin twist” is a **Zhang twist of a central extension**; see [Remark 5.13 of the classification paper](https://arxiv.org/html/2511.08390).
+In its displayed presentation,&nbsp;$x_3x_j=-x_jx_3$ for&nbsp;$j=1,2,4$.
+Thus twisting makes the distinguished generator normal rather than central, while&nbsp;$x_3^2$ is central.
+The general member has&nbsp;$\mathrm{Z}_1(A)=0$, consistently with the table.
+
 ## How it was computed
 
 The degree-by-degree dimensions above were computed with Macaulay2 over a
