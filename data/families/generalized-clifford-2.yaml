@@ -21,14 +21,16 @@ normal_1: -1
 normal_2: 1
 parameters:
   - symbol: "α_1, α_2, β_1, β_2"
-    description: "Four scalars."
+    description: >
+      Four scalars, with the normalization $\alpha_2 \in \{0,1\}$ and
+      regularity condition $(\alpha_1^2 + \alpha_2^2\beta_1)(\beta_1^2 + \beta_2^2\alpha_1) \neq 0$.
 introduced:
   reference: "MR2580455"
   note: >
-    Example 2 of Cassidy–Vancliff. It is the example that is an ordinary
-    (non-skew) graded Clifford algebra and a complete intersection, and so has by
-    far the largest centre of the three — a \(2\)-dimensional space of central
-    quadrics, with centre Hilbert series \(1 + 2t^2 + 5t^4 + 8t^6 + \cdots\).
+    Example 2 of Cassidy–Vancliff. Under the stated parameter conditions it is
+    a regular graded skew Clifford algebra, with a one-dimensional line scheme.
+    In particular, it is neither isomorphic to nor a twist of an ordinary graded
+    Clifford algebra.
 construction: >
   Another graded skew Clifford algebra, presented through symmetric and
   skew-symmetric relations whose quadratic corrections are multiples of the
