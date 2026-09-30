@@ -1,9 +1,12 @@
-{{- /* Overview table of one invariant for every family (family name links to its page).
+{{- /* Overview table of one invariant (family name links to its page).
+       The centre table includes only families with a nonzero recorded dimension.
        Usage: {{< family-table "point-scheme" | "hh0" | "hhqgr" | "ks" >}} */ -}}
 {{- $mode := .Get 0 -}}
+{{- if ne $mode "centre" }}
 <div class="table-controls">
   <label><input type="checkbox" class="hide-ore"> hide double Ore</label>
 </div>
+{{- end }}
 <div class="table-responsive">
 <table class="sortable">
   <thead><tr>
@@ -13,23 +16,25 @@
     {{- else if eq $mode "hh0" }}<th data-col="1">\(\mathrm{HH}^1_0\)</th><th data-col="2">\(\mathrm{HH}^2_0\)</th><th data-col="3">\(\mathrm{HH}^3_0\)</th>
     {{- else if eq $mode "hhqgr" }}<th data-col="1">\(\mathrm{HH}^1\)</th><th data-col="2">\(\mathrm{HH}^2\)</th><th data-col="3">\(\mathrm{HH}^3\)</th>
     {{- else if eq $mode "ks" }}<th data-col="1">\(\mathrm{HH}^1_0\)</th><th data-col="2">\(\mathrm{HH}^2_0\)</th><th data-col="3">\(\mathrm{HH}^3_0\)</th><th data-col="4">rank</th><th data-col="5">injective</th><th data-col="6">surjective</th>
-    {{- else if eq $mode "centre" }}<th data-col="1">\(\dim \operatorname{Z}(A)_2\)</th><th data-col="2">\(\dim \operatorname{Z}(A)_3\)</th><th data-col="3">\(\dim \operatorname{Z}(A)_4\)</th>
+    {{- else if eq $mode "centre" }}{{ range seq 1 10 }}<th data-col="{{ . }}">{{ printf "$\\dim_k \\mathrm{Z}_{%d}(A)$" . }}</th>{{ end }}
     {{- else if eq $mode "normal" }}<th data-col="1">degree 1</th><th data-col="2">degree 2</th>
     {{- else if eq $mode "nakayama" }}<th data-col="1">type</th><th data-col="2">Calabi–Yau</th><th data-col="3">constant</th><th data-col="4">\(\det\nu\)</th><th data-col="5">computed over</th>{{ end }}
   </tr></thead>
   <tbody>
   {{- range sort hugo.Data.families "sortkey" "asc" }}
+    {{- if or (ne $mode "centre") .centre_z1 .centre_z2 .centre_z3 .centre_z4 .centre_z5 .centre_z6 .centre_z7 .centre_z8 .centre_z9 .centre_z10 }}
     <tr data-kind="{{ .kind }}">
-      <td><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a></td>
+      <td><a href="{{ printf "families/%s/" .slug | relURL }}">{{ partial "famlabel.html" . }}</a>{{ if eq $mode "centre" }}{{ with .centre_parameters }} ({{ . }}){{ end }}{{ end }}</td>
       {{- if eq $mode "point-scheme" }}<td>{{ if isset . "point_scheme_dim" }}{{ .point_scheme_dim }}{{ else }}?{{ end }}</td><td>{{ with .point_scheme }}{{ . }}{{ else }}—{{ end }}</td>
       {{- else if eq $mode "line-scheme" }}<td>{{ if isset . "line_scheme_dim" }}{{ .line_scheme_dim }}{{ else }}?{{ end }}</td><td>{{ with .line_scheme }}{{ . }}{{ else }}—{{ end }}</td>
       {{- else if eq $mode "hh0" }}{{ if isset . "hh0" }}<td>{{ index .hh0 0 }}</td><td>{{ index .hh0 1 }}</td><td>{{ index .hh0 2 }}</td>{{ else }}<td>?</td><td>?</td><td>?</td>{{ end }}
       {{- else if eq $mode "hhqgr" }}{{ with .hh_qgr }}<td>{{ index . 1 }}</td><td>{{ index . 2 }}</td><td>{{ index . 3 }}</td>{{ else }}<td>—</td><td>—</td><td>—</td>{{ end }}
       {{- else if eq $mode "ks" }}{{ if isset . "hh0" }}<td>{{ index .hh0 0 }}</td><td>{{ index .hh0 1 }}</td><td>{{ index .hh0 2 }}</td>{{ else }}<td>?</td><td>?</td><td>?</td>{{ end }}<td>{{ .ks_rank }}</td><td>{{ if .ks_inj }}yes{{ else }}no{{ end }}</td><td>{{ if .ks_surj }}yes{{ else }}no{{ end }}</td>
-      {{- else if eq $mode "centre" }}<td>{{ if isset . "centre_z2" }}{{ .centre_z2 }}{{ else }}?{{ end }}</td><td>{{ if isset . "centre_z3" }}{{ .centre_z3 }}{{ else }}?{{ end }}</td><td>{{ if isset . "centre_z4" }}{{ .centre_z4 }}{{ else }}?{{ end }}</td>
+      {{- else if eq $mode "centre" }}{{ $f := . }}{{ range seq 1 10 }}{{ $key := printf "centre_z%d" . }}<td>{{ if isset $f $key }}{{ index $f $key }}{{ else }}?{{ end }}</td>{{ end }}
       {{- else if eq $mode "normal" }}<td>{{ if isset . "normal_1" }}{{ .normal_1 }}{{ else }}?{{ end }}</td><td>{{ if isset . "normal_2" }}{{ .normal_2 }}{{ else }}?{{ end }}</td>
       {{- else if eq $mode "nakayama" }}<td>{{ with .nakayama_type }}{{ . }}{{ else }}?{{ end }}</td><td>{{ if .calabi_yau }}yes{{ else }}no{{ end }}</td><td>{{ if .num_parameters }}{{ if .nakayama_constant }}yes{{ else }}no{{ end }}{{ else }}—{{ end }}</td><td>{{ with .homological_det }}\({{ . }}\){{ else }}?{{ end }}</td><td>{{ if eq .nakayama_field "qq" }}{{ if .num_parameters }}\(\mathbb{Q}(\text{params})\){{ else }}\(\mathbb{Q}\){{ end }}{{ else if eq .nakayama_field "gf-params" }}\(\mathbb{F}_{60013}(\text{params})\){{ else if eq .nakayama_field "gf" }}\(\mathbb{F}_{60013}\){{ else if eq .nakayama_field "gf-sample" }}\(\mathbb{F}_{60013}\) (sampled){{ else }}—{{ end }}</td>{{ end }}
     </tr>
+    {{- end }}
   {{- end }}
   </tbody>
 </table>
