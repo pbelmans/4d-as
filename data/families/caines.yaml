@@ -25,6 +25,12 @@ centre_z7: 0
 centre_z8: 5
 centre_z9: 0
 centre_z10: 6
+centre_z11: 0
+centre_z12: 7
+centre_z13: 0
+centre_z14: 8
+centre_z15: 0
+centre_z16: 9
 parameters:
   - symbol: "a, b, c, d"
     description: "Four scalars (\\(c \\neq 0\\))."

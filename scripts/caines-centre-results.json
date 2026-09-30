@@ -1,0 +1,101 @@
+{
+  "method": "scripts/compute-caines-centre.cpp",
+  "degrees": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "dimensions": [
+    0,
+    2,
+    0,
+    3,
+    0,
+    4,
+    0,
+    5,
+    0,
+    6,
+    0,
+    7,
+    0,
+    8,
+    0,
+    9
+  ],
+  "checks": {
+    "groebner_basis": "Macaulay2 NCGB through degree 3 returns exactly the six defining quadrics at each sample, in generator order x4,x3,x2,x1.",
+    "multiplication_matrices": "All eight degree-6 matrices agree entry-for-entry with Macaulay2 at p=60013 (80640 entries).",
+    "previous_results": "Degrees 1 through 10 agree with the previous Macaulay2 runs at all five primes."
+  },
+  "samples": [
+    {
+      "prime": 60013,
+      "parameters": [
+        -12389,
+        12704,
+        20003,
+        8563
+      ],
+      "seconds_through_degree_12": 0.428291,
+      "seconds_through_degree_16": 3.87617
+    },
+    {
+      "prime": 90001,
+      "parameters": [
+        -3977,
+        7625,
+        -17733,
+        25651
+      ],
+      "seconds_through_degree_12": 0.371743,
+      "seconds_through_degree_16": 3.92716
+    },
+    {
+      "prime": 120049,
+      "parameters": [
+        -54248,
+        13163,
+        -59306,
+        39550
+      ],
+      "seconds_through_degree_12": 0.361428,
+      "seconds_through_degree_16": 3.79052
+    },
+    {
+      "prime": 150001,
+      "parameters": [
+        10003,
+        -14646,
+        36396,
+        -48940
+      ],
+      "seconds_through_degree_12": 0.369195,
+      "seconds_through_degree_16": 4.57308
+    },
+    {
+      "prime": 180001,
+      "parameters": [
+        22983,
+        -19988,
+        34256,
+        -61814
+      ],
+      "seconds_through_degree_12": 0.651733,
+      "seconds_through_degree_16": 5.97611
+    }
+  ]
+}

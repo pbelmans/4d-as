@@ -94,6 +94,19 @@ Sources and hypotheses for `centre_hilbert` are listed on the centre explanation
 page; these full series are not extrapolated from the computed coefficients.
 Generalized Clifford 3 and the S-d-i twist still have no recorded centre data.
 
+Caines additionally has `centre_z11` through `centre_z16`, checked at the same
+five primes using `scripts/compute-caines-centre.cpp` and FLINT.
+The program builds multiplication matrices recursively in the ordered monomial
+basis, then computes the common kernel dimension of the four commutators.
+Macaulay2 confirms a quadratic Gröbner basis at every sample, and all eight
+degree-6 multiplication matrices agree entry-for-entry with Macaulay2 at 60013.
+The parameter samples, dimensions, and cumulative timings through degrees 12
+and 16 are saved in `scripts/caines-centre-results.json`; compilation and usage
+instructions are in the C++ source. For example, run the compiled program with
+`60013 16 -12389 12704 20003 8563` to reproduce the first sample.
+These timings measure the matrix computations, excluding compilation and
+independent validation, and vary with system load.
+
 The Nakayama fields (`calabi_yau`, `nakayama`,
 `nakayama_type`, `nakayama_constant`, `homological_det`, `nakayama_field`) come
 from `code/nakayama.m2`, and the point schemes of the seven families they were

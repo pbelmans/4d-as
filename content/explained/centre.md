@@ -38,6 +38,8 @@ This gives&nbsp;$1/((1-t)(1-t^3))$.
 
 [Caines, Proposition 3.4.4](https://dspace.mit.edu/handle/1721.1/31161) proves the series&nbsp;$1/(1-t^2)^2$ for the particular member&nbsp;$a=b=c=d=1$.
 That proposition is stated for this specialisation, so it is not recorded as a theorem about the general member in the table.
+For the general member of Caines, further checks at the same five primes give dimensions&nbsp;$(0,7,0,8,0,9)$ in degrees 11–16, using its ordered monomial basis and exact modular linear algebra.
+Thus its computed coefficients agree with&nbsp;$1/(1-t^2)^2$ through degree 16.
 
 ## Why does the twisted central extension have no central linear form?
 
